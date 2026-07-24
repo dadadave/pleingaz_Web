@@ -1,3 +1,8 @@
+# Node / Vite
+node_modules/
+dist/
+*.local
+
 # Screenshot workflow output (regenerated locally)
 temporary screenshots/
 
