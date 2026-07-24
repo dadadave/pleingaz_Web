@@ -26,6 +26,8 @@ export const Icon = ({ name, ...rest }) => {
     play: (<path d="M8 5v14l11-7z" />),
     cylinderBig: (<><rect x="8" y="9" width="8" height="13" rx="3" /><path d="M10 9V6a2 2 0 0 1 4 0v3" /></>),
     workerHat: (<><path d="M4 10a8 8 0 0 1 16 0" /><path d="M3 10h18v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><path d="M12 2v2" /></>),
+    stove: (<><rect x="4" y="4" width="16" height="16" rx="3" /><circle cx="12" cy="12" r="4" /><circle cx="12" cy="12" r="1" /></>),
+    mapPin: (<><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10Z" /><circle cx="12" cy="11" r="2.5" /></>),
   };
   const fillIcons = { play: true };
   return (
