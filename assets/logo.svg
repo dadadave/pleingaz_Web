@@ -1,0 +1,19 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PleinGaz">
+  <defs>
+    <linearGradient id="flame" x1="60" y1="8" x2="60" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC24B"/>
+      <stop offset="0.55" stop-color="#FF7A1A"/>
+      <stop offset="1" stop-color="#F5541F"/>
+    </linearGradient>
+    <linearGradient id="core" x1="60" y1="58" x2="60" y2="104" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2FA9FF"/>
+      <stop offset="1" stop-color="#0E5FC2"/>
+    </linearGradient>
+  </defs>
+  <!-- rounded tile -->
+  <rect x="4" y="4" width="112" height="112" rx="30" fill="#0A1F33"/>
+  <!-- outer flame -->
+  <path d="M60 14c14 16 30 27 30 49a30 30 0 0 1-60 0c0-10 5-18 11-24 1 7 5 11 9 12-4-14 3-27 10-37Z" fill="url(#flame)"/>
+  <!-- blue gas core -->
+  <path d="M60 62c7 8 14 13 14 24a14 14 0 0 1-28 0c0-6 3-10 6-14 1 4 3 6 5 7-2-7 1-13 3-17Z" fill="url(#core)"/>
+</svg>
