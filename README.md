@@ -1,15 +1,22 @@
-# PleinGaz — Landing page
+# PleinGaz — Site vitrine
 
-Landing page moderne pour **PleinGaz**, service de livraison de gaz domestique à
-domicile (bouteilles certifiées, recharge, accessoires).
+Site vitrine pour **PleinGaz** (« Bouteilles toujours pleines »), fournisseur
+d'énergie : bouteilles domestiques, gaz conditionné, gaz en vrac, gaz industriel
+et accessoires.
 
 ## Aperçu
 
+- Reprend la **structure de mise en page du site SIMAM CI** (nav, héros doré,
+  bandeau fournisseur, portefeuille produits, chiffres clés + réseau, actualités
+  + vidéo, bandeaux d'approche, pied de page marine), adaptée à la marque PleinGaz.
 - Page unique `index.html`, entièrement autonome (aucune dépendance CDN).
-- CSS écrit à la main dans `assets/styles.css` — palette de marque personnalisée
-  (bleu pétrole + flamme orange/ambre + bleu gaz), pas de couleurs Tailwind par défaut.
-- Polices auto-hébergées (`assets/fonts/`) : Bricolage Grotesque (titres),
-  Manrope (texte), Spline Sans Mono (données) — fonctionne hors-ligne.
+- Logo PleinGaz recréé en SVG inline (mot-symbole rouge + flamme).
+- CSS écrit à la main dans `assets/styles.css` — palette dorée/marine façon SIMAM
+  avec l'accent rouge de la marque, pas de couleurs Tailwind par défaut.
+- Imagerie de substitution 100 % locale (dégradés + icônes SVG) — aucune image
+  externe, fonctionne hors-ligne.
+- Polices auto-hébergées (`assets/fonts/`) : Manrope (texte/titres),
+  Spline Sans Mono (données) — fonctionne hors-ligne.
 - Responsive mobile-first, animations `transform`/`opacity` uniquement,
   états `hover`/`focus-visible`/`active` sur les éléments interactifs,
   respect de `prefers-reduced-motion`.

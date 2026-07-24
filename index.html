@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PleinGaz — Votre gaz domestique livré, plein gaz.</title>
-  <meta name="description" content="PleinGaz livre vos bouteilles de gaz certifiées à domicile en 30 minutes. Recharge, accessoires et sécurité garantie. Commandez en 2 minutes." />
+  <title>PleinGaz — L'énergie pour tous</title>
+  <meta name="description" content="PleinGaz, votre fournisseur d'énergie : bouteilles de gaz certifiées, gaz conditionné, gaz en vrac et accessoires, livrés partout au Cameroun. Bouteilles toujours pleines." />
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/fonts/fonts.local.css" />
   <link rel="stylesheet" href="assets/styles.css" />
@@ -12,386 +12,374 @@
 
 <body>
 
-  <!-- ░░ NAV ░░ -->
+  <!-- ══════════ reusable SVG symbols ══════════ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="flameGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#FFD23F"/>
+        <stop offset="0.5" stop-color="#F7941E"/>
+        <stop offset="1" stop-color="#F26522"/>
+      </linearGradient>
+      <symbol id="flame" viewBox="0 0 40 60">
+        <path d="M20 1c2 10-4 16-8 22-2 3-4 7-4 12a12 12 0 0 0 24 0c0-6-3-10-6-15 0 3-1 5-3 6 3-9-1-18-3-25Z" fill="url(#flameGrad)"/>
+        <path d="M20 27c1 5-2 8-4 11-1 2-2 4-2 7a6 6 0 0 0 12 0c0-4-2-6-4-9 0 2-1 3-2 3 2-4 1-8 0-12Z" fill="#FFF2C2"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ══════════ HEADER / NAV ══════════ -->
   <header class="site-header" id="top">
     <nav class="nav container">
       <a href="#top" class="brand" aria-label="PleinGaz — accueil">
-        <img src="assets/logo.svg" alt="" class="brand-mark" />
-        <span class="brand-word">Plein<span class="accent-amber">Gaz</span></span>
+        <span class="brand-word">PLE<svg class="flame" viewBox="0 0 40 60"><use href="#flame"/></svg>NGAZ</span>
       </a>
 
       <div class="nav-links">
-        <a href="#produits">Produits</a>
-        <a href="#etapes">Comment ça marche</a>
-        <a href="#securite">Sécurité</a>
-        <a href="#zones">Zones de livraison</a>
+        <a href="#top">Découvrir PleinGaz</a>
+        <a href="#portfolio">Nos activités <svg class="caret" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4z"/></svg></a>
+        <a href="#news">Actualités <svg class="caret" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4z"/></svg></a>
+        <a href="#footer">Carrières</a>
+        <a href="#footer">Contacts</a>
       </div>
 
-      <div class="nav-actions">
-        <a href="tel:+237600000000" class="nav-phone">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg>
-          <span class="mono">+237 6 00 00 00 00</span>
-        </a>
-        <a href="#commander" class="btn btn-flame btn-sm">Commander</a>
+      <div class="nav-right">
+        <div class="lang">
+          <a href="#" class="on">FR</a>
+          <a href="#">EN</a>
+        </div>
+        <a href="#portfolio" class="btn btn-outline-gold">Devenir revendeur</a>
+        <span class="nav-badge" title="Qualité certifiée" aria-label="Qualité certifiée">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+        </span>
+        <button class="nav-toggle" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
       </div>
     </nav>
   </header>
 
-  <!-- ░░ HERO ░░ -->
-  <section class="hero atmos grain">
-    <div class="container hero-grid">
-      <div class="reveal">
-        <span class="eyebrow accent-amber">
-          <span class="dot flicker"></span> Gaz domestique · Livraison express
-        </span>
-        <h1 class="hero-title">
-          Ne tombez plus jamais<br class="br-lg" /> en panne de gaz.
-          <span class="flame-text">Plein gaz.</span>
-        </h1>
-        <p class="hero-lead">
-          PleinGaz livre vos bouteilles certifiées à domicile en <strong>30 minutes</strong>. Recharge, remplacement et accessoires — commandés en deux minutes, payés par mobile money.
-        </p>
-
-        <div class="btn-row">
-          <a href="#commander" class="btn btn-flame">Commander maintenant</a>
-          <a href="#produits" class="btn btn-ghost">Voir les tarifs</a>
-        </div>
-
-        <div class="trust-row">
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg> Bouteilles homologuées</span>
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6m0 0 3-3m-3 3L9 5"/><path d="M5 12h14v8H5z"/></svg> Poids exact garanti</span>
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Support 7j/7</span>
-        </div>
-      </div>
-
-      <!-- order gauge panel -->
-      <div class="reveal">
-        <div class="panel-wrap">
-          <div class="panel-glow flicker" aria-hidden="true"></div>
-          <div class="card card-dark panel">
-            <div class="panel-head">
-              <div>
-                <p class="eyebrow muted">Commande express</p>
-                <p class="panel-title">En 3 étapes</p>
-              </div>
-              <span class="pill-online mono">● En ligne</span>
-            </div>
-
-            <div class="gauge-row">
-              <svg viewBox="0 0 200 130" class="gauge">
-                <defs>
-                  <linearGradient id="arc" x1="0" y1="0" x2="1" y2="0">
-                    <stop offset="0" stop-color="#2FA9FF"/><stop offset="0.5" stop-color="#FFB020"/><stop offset="1" stop-color="#F5541F"/>
-                  </linearGradient>
-                </defs>
-                <path d="M20 110 A80 80 0 0 1 180 110" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="14" stroke-linecap="round"/>
-                <path d="M20 110 A80 80 0 0 1 180 110" fill="none" stroke="url(#arc)" stroke-width="14" stroke-linecap="round" stroke-dasharray="251" stroke-dashoffset="42"/>
-                <g class="needle"><line x1="100" y1="112" x2="100" y2="46" stroke="#FAF6F0" stroke-width="4" stroke-linecap="round"/></g>
-                <circle cx="100" cy="112" r="7" fill="#FAF6F0"/>
-                <text x="100" y="128" text-anchor="middle" class="mono gauge-label" fill="#9DB2C7" font-size="11">NIVEAU · PLEIN</text>
-              </svg>
-
-              <ol class="steps-mini">
-                <li><span class="mono accent-flame">01</span> Choisissez votre bouteille</li>
-                <li><span class="mono accent-amber">02</span> On livre chez vous</li>
-                <li><span class="mono accent-blue">03</span> Branchez &amp; profitez</li>
-              </ol>
-            </div>
-
-            <div class="hairline"></div>
-
-            <div class="panel-foot">
-              <div>
-                <p class="panel-foot-label">Bouteille 12,5 kg · recharge</p>
-                <p class="panel-price">7 500 <span>FCFA</span></p>
-              </div>
-              <a href="#commander" class="btn btn-flame btn-sm">Commander</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ░░ STATS ░░ -->
-  <section class="stats">
-    <div class="container stats-grid">
-      <div class="reveal stat"><p class="stat-num flame-text">15 000+</p><p class="eyebrow muted">Foyers livrés</p></div>
-      <div class="reveal stat bl"><p class="stat-num">~30<span class="unit">min</span></p><p class="eyebrow muted">Délai moyen</p></div>
-      <div class="reveal stat bl"><p class="stat-num">12</p><p class="eyebrow muted">Zones couvertes</p></div>
-      <div class="reveal stat bl"><p class="stat-num">4,9<span class="unit">/5</span></p><p class="eyebrow muted">Note clients</p></div>
-    </div>
-  </section>
-
-  <!-- ░░ PRODUITS ░░ -->
-  <section id="produits" class="section on-cream">
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero">
     <div class="container">
-      <div class="reveal section-head">
-        <span class="eyebrow accent-flame-hot">Nos produits</span>
-        <h2 class="section-title">Choisissez la bouteille qu'il vous faut.</h2>
-        <p class="section-sub">Des formats pour chaque cuisine — du studio étudiant au restaurant. Tarifs recharge tout compris, consigne bouteille en option.</p>
+      <div class="hero-tagline reveal">
+        <p class="t1">PleinGaz.</p>
+        <p class="t2">L'énergie pour tous.</p>
       </div>
 
-      <div class="products">
-        <!-- 6 kg -->
-        <article class="reveal card card-cream product">
-          <div class="product-head">
-            <div>
-              <p class="eyebrow muted-2">Format compact</p>
-              <h3 class="product-name">Bouteille 6 kg</h3>
-            </div>
-            <svg class="cyl cyl-flame" viewBox="0 0 40 56" fill="none"><rect x="14" y="1" width="12" height="7" rx="2" fill="#123458"/><rect x="9" y="7" width="22" height="10" rx="4" fill="currentColor"/><rect x="8" y="14" width="24" height="40" rx="9" fill="currentColor"/><rect x="8" y="30" width="24" height="12" fill="#FAF6F0" opacity="0.85"/></svg>
-          </div>
-          <p class="product-desc">Idéale pour une personne ou un petit foyer. Légère et facile à transporter.</p>
-          <div class="product-foot">
-            <p class="price">4 200 <span>FCFA</span></p>
-            <a href="#commander" class="btn btn-outline btn-sm">Commander</a>
-          </div>
-        </article>
-
-        <!-- 12.5 kg featured -->
-        <article class="reveal card product product-featured">
-          <span class="badge mono">POPULAIRE</span>
-          <div>
-            <p class="eyebrow accent-amber">Le plus demandé</p>
-            <h3 class="product-name">Bouteille 12,5 kg</h3>
-          </div>
-          <svg class="cyl cyl-amber cyl-big" viewBox="0 0 40 56" fill="none"><rect x="14" y="1" width="12" height="7" rx="2" fill="#2FA9FF"/><rect x="9" y="7" width="22" height="10" rx="4" fill="currentColor"/><rect x="8" y="14" width="24" height="40" rx="9" fill="currentColor"/><rect x="8" y="30" width="24" height="12" fill="#0A1F33" opacity="0.6"/></svg>
-          <p class="product-desc light">Le format familial par excellence. Plusieurs semaines d'autonomie pour une cuisine active.</p>
-          <div class="product-foot">
-            <p class="price flame-text">7 500 <span>FCFA</span></p>
-            <a href="#commander" class="btn btn-flame btn-sm">Commander</a>
-          </div>
-        </article>
-
-        <!-- 38 kg pro -->
-        <article class="reveal card card-cream product">
-          <div class="product-head">
-            <div>
-              <p class="eyebrow muted-2">Professionnels</p>
-              <h3 class="product-name">Bouteille 38 kg</h3>
-            </div>
-            <svg class="cyl cyl-blue" viewBox="0 0 40 56" fill="none"><rect x="14" y="1" width="12" height="7" rx="2" fill="#123458"/><rect x="9" y="7" width="22" height="10" rx="4" fill="currentColor"/><rect x="8" y="14" width="24" height="40" rx="9" fill="currentColor"/><rect x="8" y="30" width="24" height="12" fill="#FAF6F0" opacity="0.85"/></svg>
-          </div>
-          <p class="product-desc">Pour restaurants, boulangeries et commerces. Livraison programmée et facturation entreprise.</p>
-          <div class="product-foot">
-            <p class="price">21 000 <span>FCFA</span></p>
-            <a href="#commander" class="btn btn-outline btn-sm">Devis</a>
-          </div>
-        </article>
-      </div>
-
-      <!-- accessories strip -->
-      <div class="reveal card card-cream accessory">
-        <div class="accessory-left">
-          <div class="accessory-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 4h6v6"/><path d="M10 20H4v-6"/><path d="M20 4 4 20"/><circle cx="7" cy="7" r="3"/></svg>
-          </div>
-          <div>
-            <h3 class="accessory-title">Détendeurs, tuyaux &amp; accessoires</h3>
-            <p class="accessory-desc">Détendeur de sécurité, tuyau homologué, réchaud et pièces de rechange — ajoutés à votre commande.</p>
+      <div class="hero-slide reveal">
+        <div class="ph ph-slate photo-cyl"></div>
+        <div class="ph-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="9" width="8" height="13" rx="3"/><path d="M10 9V6a2 2 0 0 1 4 0v3"/></svg>
+        </div>
+        <div class="veil"></div>
+        <div class="slide-body">
+          <h2>Faire de la sécurité une priorité absolue</h2>
+          <p>PleinGaz s'engage à appliquer et à contrôler des règles de sécurité strictes, conformes aux normes internationales, à chaque étape de la chaîne.</p>
+          <div class="slide-dots" aria-hidden="true">
+            <span class="on"></span><span></span><span></span><span></span><span></span>
           </div>
         </div>
-        <a href="#commander" class="btn btn-outline btn-sm">Parcourir</a>
       </div>
     </div>
   </section>
 
-  <!-- ░░ ÉTAPES ░░ -->
-  <section id="etapes" class="section atmos grain">
+  <!-- ══════════ SUPPLIER BAND ══════════ -->
+  <section class="supplier">
     <div class="container">
-      <div class="reveal section-head">
-        <span class="eyebrow accent-amber">Comment ça marche</span>
-        <h2 class="section-title on-dark">Du panier à la flamme, en trois étapes.</h2>
-      </div>
+      <div class="supplier-grid">
+        <div class="supplier-intro reveal">
+          <h2>Votre fournisseur d'énergie au Cameroun</h2>
+          <p>Que vous soyez un particulier, un professionnel ou un acteur du secteur public, retrouvez toute notre gamme de produits.</p>
+          <a href="#footer" class="btn btn-gold">À propos ›</a>
+        </div>
 
-      <div class="steps">
-        <div class="steps-line" aria-hidden="true"></div>
-        <div class="reveal card card-dark step">
-          <span class="step-num blue">01</span>
-          <h3 class="step-title">Choisissez</h3>
-          <p class="step-desc">Sélectionnez le format et vos accessoires. Passez commande sur WhatsApp, par appel ou en ligne.</p>
-        </div>
-        <div class="reveal card card-dark step">
-          <span class="step-num amber">02</span>
-          <h3 class="step-title">On livre</h3>
-          <p class="step-desc">Un livreur formé arrive chez vous en ~30 minutes. Paiement à la livraison ou par mobile money.</p>
-        </div>
-        <div class="reveal card card-dark step">
-          <span class="step-num flame">03</span>
-          <h3 class="step-title">Branchez &amp; profitez</h3>
-          <p class="step-desc">On vérifie l'étanchéité et le branchement sur place. Vous cuisinez, l'esprit tranquille.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <div class="choice-cards reveal">
+          <article class="choice-card">
+            <div class="thumb">
+              <div class="ph ph-warm"></div>
+              <div class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div>
+            </div>
+            <div class="choice-foot">
+              <span class="label">Je suis un<b>Particulier</b></span>
+              <a href="#portfolio" class="choice-arrow" aria-label="Particulier"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
 
-  <!-- ░░ SÉCURITÉ ░░ -->
-  <section id="securite" class="section on-cream">
-    <div class="container security-grid">
-      <div class="reveal">
-        <span class="eyebrow accent-flame-hot">Sécurité d'abord</span>
-        <h2 class="section-title">Le gaz, ça ne se prend pas à la légère.</h2>
-        <p class="section-sub">Chaque bouteille est contrôlée, chaque livreur est formé, chaque branchement est vérifié. La tranquillité fait partie de la livraison.</p>
-        <a href="#commander" class="btn btn-flame security-cta">Commander en confiance</a>
-      </div>
-
-      <div class="features">
-        <div class="reveal card card-cream feature">
-          <div class="feature-icon bg-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
-          <h3 class="feature-title">Bouteilles homologuées</h3>
-          <p class="feature-desc">Réservoirs contrôlés et conformes aux normes en vigueur.</p>
-        </div>
-        <div class="reveal card card-cream feature">
-          <div class="feature-icon bg-flame"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div>
-          <h3 class="feature-title">Livreurs formés</h3>
-          <p class="feature-desc">Manipulation, branchement et gestes de sécurité maîtrisés.</p>
-        </div>
-        <div class="reveal card card-cream feature">
-          <div class="feature-icon bg-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div>
-          <h3 class="feature-title">Poids exact garanti</h3>
-          <p class="feature-desc">Pesée à la livraison — vous payez le gaz que vous recevez.</p>
-        </div>
-        <div class="reveal card card-cream feature">
-          <div class="feature-icon bg-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></div>
-          <h3 class="feature-title">Contrôle d'étanchéité</h3>
-          <p class="feature-desc">Test du branchement effectué avant que le livreur ne reparte.</p>
+          <article class="choice-card">
+            <div class="thumb">
+              <div class="ph ph-worker"></div>
+              <div class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 10a8 8 0 0 1 16 0"/><path d="M3 10h18v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M12 2v2"/></svg></div>
+            </div>
+            <div class="choice-foot">
+              <span class="label">Je suis un<b>Professionnel</b></span>
+              <a href="#portfolio" class="choice-arrow" aria-label="Professionnel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
         </div>
       </div>
     </div>
+
+    <!-- flame mascot -->
+    <svg class="mascot" viewBox="0 0 120 150" fill="none" aria-hidden="true">
+      <ellipse cx="60" cy="140" rx="34" ry="7" fill="rgba(0,0,0,.12)"/>
+      <use href="#flame" x="30" y="6" width="60" height="90"/>
+      <circle cx="52" cy="48" r="4" fill="#16375C"/>
+      <circle cx="70" cy="48" r="4" fill="#16375C"/>
+      <path d="M50 60c4 4 12 4 16 0" stroke="#16375C" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
   </section>
 
-  <!-- ░░ ZONES ░░ -->
-  <section id="zones" class="section on-petrol">
+  <!-- ══════════ PRODUCT PORTFOLIO ══════════ -->
+  <section class="portfolio" id="portfolio">
     <div class="container">
-      <div class="reveal zones-head">
+      <div class="portfolio-head reveal">
         <div>
-          <span class="eyebrow accent-amber">Zones de livraison</span>
-          <h2 class="section-title on-dark">On livre déjà près de chez vous.</h2>
-          <p class="section-sub on-dark-sub">12 quartiers desservis et de nouvelles zones chaque mois. Votre quartier n'y est pas encore ? Écrivez-nous.</p>
+          <span class="eyebrow">Notre gamme</span>
+          <h2 class="section-title">Découvrez notre gamme de produits</h2>
         </div>
-        <a href="#commander" class="btn btn-ghost">Vérifier ma zone</a>
+        <p>Choisir PleinGaz, c'est choisir une énergie pratique et disponible pour un confort maximal au quotidien. Trouvez le produit qu'il vous faut.</p>
       </div>
 
-      <div class="reveal marquee">
-        <div class="marquee-track">
-          <span class="chip mono">Akwa</span>
-          <span class="chip mono">Bonapriso</span>
-          <span class="chip mono">Bonamoussadi</span>
-          <span class="chip mono">Deïdo</span>
-          <span class="chip mono">Makepe</span>
-          <span class="chip mono">Bonabéri</span>
-          <span class="chip mono">Logbessou</span>
-          <span class="chip mono">Ndogbong</span>
-          <span class="chip mono" aria-hidden="true">Akwa</span>
-          <span class="chip mono" aria-hidden="true">Bonapriso</span>
-          <span class="chip mono" aria-hidden="true">Bonamoussadi</span>
-          <span class="chip mono" aria-hidden="true">Deïdo</span>
-          <span class="chip mono" aria-hidden="true">Makepe</span>
-          <span class="chip mono" aria-hidden="true">Bonabéri</span>
-          <span class="chip mono" aria-hidden="true">Logbessou</span>
-          <span class="chip mono" aria-hidden="true">Ndogbong</span>
-        </div>
+      <div class="product-grid">
+        <!-- 1 -->
+        <article class="product-card reveal">
+          <div class="product-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="8" width="10" height="14" rx="3"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></div>
+          <h3>Bouteilles domestiques</h3>
+          <p class="desc">Formats 6, 12,5 et 38 kg pour la maison.</p>
+          <a href="#" class="find-out">En savoir plus <span class="plus">+</span></a>
+        </article>
+        <!-- 2 -->
+        <article class="product-card reveal">
+          <div class="product-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 10h12l-1.2 9a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8Z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg></div>
+          <h3>Gaz conditionné</h3>
+          <p class="desc">Bouteilles remplies, contrôlées et scellées.</p>
+          <a href="#" class="find-out">En savoir plus <span class="plus">+</span></a>
+        </article>
+        <!-- 3 -->
+        <article class="product-card reveal">
+          <div class="product-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3s6 6 6 11a6 6 0 0 1-12 0c0-5 6-11 6-11Z"/></svg></div>
+          <h3>Gaz en vrac</h3>
+          <p class="desc">Distribution de gaz en vrac aux industriels.</p>
+          <a href="#" class="find-out">En savoir plus <span class="plus">+</span></a>
+        </article>
+        <!-- 4 -->
+        <article class="product-card reveal">
+          <div class="product-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6"/><path d="M10 20H4v-6"/><path d="M20 4 4 20"/><circle cx="7" cy="7" r="3"/></svg></div>
+          <h3>Détendeurs & accessoires</h3>
+          <p class="desc">Détendeurs, tuyaux et pièces homologués.</p>
+          <a href="#" class="find-out">En savoir plus <span class="plus">+</span></a>
+        </article>
+        <!-- 5 -->
+        <article class="product-card reveal">
+          <div class="product-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21V8l7-4 7 4v13"/><path d="M9 21v-6h4v6"/><path d="M17 12h4v9"/></svg></div>
+          <h3>Gaz industriel</h3>
+          <p class="desc">Solutions énergie pour sites et commerces.</p>
+          <a href="#" class="find-out">En savoir plus <span class="plus">+</span></a>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ░░ TÉMOIGNAGES ░░ -->
-  <section class="section atmos grain">
+  <!-- ══════════ KEY FIGURES + DISTRIBUTORS ══════════ -->
+  <section class="figures-wrap">
     <div class="container">
-      <div class="reveal section-head">
-        <span class="eyebrow accent-amber">Ils cuisinent tranquilles</span>
-        <h2 class="section-title on-dark">Adopté par les familles et les pros.</h2>
-      </div>
-      <div class="testimonials">
-        <figure class="reveal card card-dark quote">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Commandé à midi, livré avant 13h. Le livreur a même vérifié le tuyau. Je ne retourne plus au dépôt. »</blockquote>
-          <figcaption><span class="avatar av1">A</span><span><b>Aïcha M.</b><i class="mono">Bonamoussadi</i></span></figcaption>
-        </figure>
-        <figure class="reveal card card-dark quote">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Pour mon restaurant, la livraison programmée du format 38 kg change tout. Plus jamais de rupture en plein service. »</blockquote>
-          <figcaption><span class="avatar av2">R</span><span><b>Roland T.</b><i class="mono">Restaurant · Akwa</i></span></figcaption>
-        </figure>
-        <figure class="reveal card card-dark quote">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Paiement par mobile money, prix affiché à l'avance, poids vérifié. Enfin un service de gaz sérieux. »</blockquote>
-          <figcaption><span class="avatar av3">N</span><span><b>Nadège K.</b><i class="mono">Makepe</i></span></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ░░ CTA FINAL ░░ -->
-  <section id="commander" class="section on-cream">
-    <div class="container">
-      <div class="reveal cta grain">
-        <div class="cta-inner">
-          <span class="eyebrow cta-eyebrow">Commande en 2 minutes</span>
-          <h2 class="cta-title">Prêt à passer à la flamme bleue ?</h2>
-          <p class="cta-lead">Commandez votre bouteille maintenant et recevez-la en ~30 minutes. Paiement mobile money ou à la livraison.</p>
-          <div class="btn-row">
-            <a href="tel:+237600000000" class="btn btn-white">Appeler pour commander</a>
-            <a href="https://wa.me/237600000000" class="btn btn-ghost btn-ghost-light">Commander sur WhatsApp</a>
+      <div class="figures-grid">
+        <div class="figures reveal">
+          <span class="eyebrow">Chiffres clés</span>
+          <div class="figure-list">
+            <div class="figure">
+              <span class="fig-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="8" width="10" height="13" rx="3"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span>
+              <div><p class="num">120 000<span class="plus">+</span></p><p class="cap">Bouteilles en circulation</p></div>
+            </div>
+            <div class="figure">
+              <span class="fig-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9h16v11H4z"/><path d="M9 20v-6h6v6"/></svg></span>
+              <div><p class="num">850<span class="plus">+</span></p><p class="cap">Revendeurs partenaires</p></div>
+            </div>
+            <div class="figure">
+              <span class="fig-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><path d="M3 21a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 21a5 5 0 0 1 5-5"/></svg></span>
+              <div><p class="num">400<span class="plus">+</span></p><p class="cap">Collaborateurs</p></div>
+            </div>
+            <div class="figure">
+              <span class="fig-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg></span>
+              <div><p class="num">10<span class="plus">+</span></p><p class="cap">Régions desservies</p></div>
+            </div>
           </div>
-          <p class="cta-phone mono">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg>
-          +237 6 00 00 00 00 · 7j/7 de 7h à 21h
-          </p>
+        </div>
+
+        <div class="distributors reveal">
+          <div class="map" aria-hidden="true">
+            <svg viewBox="0 0 300 300" fill="none">
+              <path d="M120 20l40 6 20 18 34 8 12 24-8 26 18 20-6 30-30 18-10 30-34 6-26-20-20 4-14-26 8-30-18-22 10-28 12-30 22-32Z"
+                    fill="none" stroke="rgba(255,255,255,.85)" stroke-width="2.5" stroke-linejoin="round"/>
+              <circle cx="150" cy="90" r="6" fill="#fff"/><circle cx="150" cy="90" r="11" fill="none" stroke="#fff" stroke-opacity=".5"/>
+              <circle cx="200" cy="150" r="6" fill="#fff"/>
+              <circle cx="120" cy="180" r="6" fill="#fff"/>
+              <circle cx="170" cy="220" r="6" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="distributors-body">
+            <h3>Notre réseau de distributeurs</h3>
+            <p>PleinGaz offre à ses clients un réseau sûr et efficace, au service des régions. Nos équipes travaillent chaque jour pour la performance, la qualité et la responsabilité.</p>
+            <a href="#footer" class="btn btn-white">Découvrir le réseau ›</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ░░ FOOTER ░░ -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <a href="#top" class="brand" aria-label="PleinGaz — accueil">
-          <img src="assets/logo.svg" alt="" class="brand-mark" />
-          <span class="brand-word">Plein<span class="accent-amber">Gaz</span></span>
-        </a>
-        <p class="footer-about">Votre gaz domestique certifié, livré à domicile en 30 minutes. Sécurité, poids exact, prix affiché.</p>
-      </div>
-      <div>
-        <p class="eyebrow footer-h">Produits</p>
-        <ul class="footer-list">
-          <li><a href="#produits">Bouteille 6 kg</a></li>
-          <li><a href="#produits">Bouteille 12,5 kg</a></li>
-          <li><a href="#produits">Bouteille 38 kg</a></li>
-          <li><a href="#produits">Accessoires</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="eyebrow footer-h">Société</p>
-        <ul class="footer-list">
-          <li><a href="#etapes">Comment ça marche</a></li>
-          <li><a href="#securite">Sécurité</a></li>
-          <li><a href="#zones">Zones de livraison</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="eyebrow footer-h">Contact</p>
-        <ul class="footer-list">
-          <li><a href="tel:+237600000000" class="mono">+237 6 00 00 00 00</a></li>
-          <li><a href="https://wa.me/237600000000">WhatsApp</a></li>
-          <li><a href="mailto:bonjour@pleingaz.cm">bonjour@pleingaz.cm</a></li>
-        </ul>
+  <!-- ══════════ NEWS + VIDEO ══════════ -->
+  <section class="news" id="news">
+    <div class="container">
+      <div class="news-grid">
+        <div>
+          <div class="news-top reveal"><span class="eyebrow">Actualités PleinGaz</span></div>
+          <div class="news-cards">
+            <!-- card 1 -->
+            <article class="news-card reveal">
+              <div class="thumb"><div class="ph ph-blue"></div><div class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="9" cy="9" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17" cy="10" r="2.5"/><path d="M15 20a5 5 0 0 1 5-5"/></svg></div></div>
+              <div class="body">
+                <div class="news-meta"><span class="date">◷ 06 06 2026</span><span class="tag">● News</span></div>
+                <h3>PleinGaz certifié conforme aux normes environnementales</h3>
+                <p>PleinGaz et son partenaire transport ont reçu leurs certificats de conformité environnementale.</p>
+                <a href="#" class="read-more">Lire la suite <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+              </div>
+            </article>
+            <!-- card 2 -->
+            <article class="news-card reveal">
+              <div class="thumb"><div class="ph ph-warm"></div><div class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20a8 8 0 0 1 16 0"/><circle cx="12" cy="7" r="4"/></svg></div></div>
+              <div class="body">
+                <div class="news-meta"><span class="date">◷ 18 03 2026</span><span class="tag">● News</span></div>
+                <h3>Don à la pouponnière : PleinGaz aux côtés des familles</h3>
+                <p>Dans le cadre de ses actions solidaires, PleinGaz a soutenu une pouponnière de la région.</p>
+                <a href="#" class="read-more">Lire la suite <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+              </div>
+            </article>
+            <!-- card 3 -->
+            <article class="news-card reveal">
+              <div class="thumb"><div class="ph ph-crowd"></div><div class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21V8l7-4 7 4v13"/><path d="M9 21v-6h4v6"/></svg></div></div>
+              <div class="body">
+                <div class="news-meta"><span class="date">◷ 18 03 2026</span><span class="tag">● News</span></div>
+                <h3>Rapport d'avancement : rénovation du complexe scolaire</h3>
+                <p>PleinGaz et la fondation ont effectué une visite de suivi du chantier de l'école primaire.</p>
+                <a href="#" class="read-more">Lire la suite <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="videos reveal">
+          <span class="eyebrow">Vidéos</span>
+          <article class="video-card">
+            <div class="video-thumb">
+              <div class="ph ph-green"></div>
+              <div class="video-play"><span class="pbtn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></div>
+            </div>
+            <div class="video-info">
+              <span class="date">◷ 03 01 2026</span>
+              <h3>PleinGaz sensibilise aux incidents liés au gaz</h3>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
+  </section>
+
+  <!-- ══════════ APPROACH BANNERS ══════════ -->
+  <section class="approaches">
+    <a class="approach" href="#footer">
+      <div class="ph ph-green bg"></div><div class="veil"></div>
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z"/></svg></span>
+      <span class="txt"><b>Approche<br>HSE</b></span>
+      <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="approach" href="#footer">
+      <div class="ph ph-slate bg"></div><div class="veil"></div>
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+      <span class="txt"><b>Approche<br>Qualité</b></span>
+      <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="approach" href="#footer">
+      <div class="ph ph-worker bg"></div><div class="veil"></div>
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 11a4 4 0 1 0-4-4"/><path d="M12 11v10"/><path d="M8 21h8"/><path d="M5 8c0 4 3 7 7 7s7-3 7-7"/></svg></span>
+      <span class="txt"><b>Fondation<br>PleinGaz</b></span>
+      <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#top" class="brand brand-mini" aria-label="PleinGaz">
+          <span class="brand-word" style="color:#fff">PLE<svg class="flame" viewBox="0 0 40 60"><use href="#flame"/></svg>NGAZ</span>
+        </a>
+        <div class="footer-contact">
+          <div class="fc-item">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg></span>
+            <div><p class="lbl">Appelez-nous</p><p class="val">+237 6 00 00 00 00</p></div>
+          </div>
+          <div class="fc-item">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <div><p class="lbl">Écrivez-nous</p><p class="val">contact@pleingaz.cm</p></div>
+          </div>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1Z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.5 8A1.5 1.5 0 1 0 6.5 5a1.5 1.5 0 0 0 0 3ZM5 10h3v9H5zm5 0h3v1.3c.5-.8 1.6-1.5 2.9-1.5 2.4 0 3.1 1.5 3.1 3.7V19h-3v-4.5c0-1.1-.4-1.8-1.4-1.8-1 0-1.6.7-1.6 1.8V19h-3z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-main">
+        <div class="newsletter">
+          <h3>Vous souhaitez recevoir nos actualités ?</h3>
+          <form class="news-form" onsubmit="return false">
+            <input type="email" placeholder="Saisissez votre adresse e-mail" aria-label="E-mail" />
+            <button type="submit" aria-label="S'inscrire"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg></button>
+          </form>
+        </div>
+
+        <div class="footer-col">
+          <h4>À propos</h4>
+          <ul>
+            <li><a href="#top">Qui sommes-nous ?</a></li>
+            <li><a href="#top">Histoire</a></li>
+            <li><a href="#top">Nos engagements</a></li>
+            <li><a href="#top">Organisation</a></li>
+            <li><a href="#top">Nos partenaires</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Activités</h4>
+          <ul>
+            <li><a href="#portfolio">Gaz en vrac</a></li>
+            <li><a href="#portfolio">Bouteilles domestiques</a></li>
+            <li><a href="#portfolio">Gaz conditionné</a></li>
+            <li><a href="#portfolio">Accessoires</a></li>
+            <li><a href="#portfolio">Gaz industriel</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Nos partenaires</h4>
+          <div class="partner-card">
+            <span class="plogo"><svg width="22" height="22" viewBox="0 0 24 24" class="tri" fill="currentColor"><path d="M12 3 2 20h20L12 3Z"/></svg>AfriqGaz</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="footer-bar">
       <div class="container footer-bar-inner">
-        <p>© 2026 PleinGaz. Tous droits réservés.</p>
-        <div class="pay mono"><span>Mobile Money</span><span>·</span><span>Orange Money</span><span>·</span><span>Paiement à la livraison</span></div>
+        <p>© 2026 PleinGaz — Cameroun. Tous droits réservés.</p>
+        <p class="made">Bouteilles toujours pleines · <b>PleinGaz</b></p>
       </div>
     </div>
   </footer>
 
   <script>
     const reveals = document.querySelectorAll('.reveal');
-    // ?static reveals everything at once (used for full-page screenshots); also a
-    // safe fallback if IntersectionObserver is unavailable.
     const showAll = new URLSearchParams(location.search).has('static');
     if (showAll || !('IntersectionObserver' in window)) {
       reveals.forEach((el) => el.classList.add('in'));
