@@ -1,5 +1,12 @@
 // Content data for the PleinGaz site. Editing copy/products happens here.
 
+export const CONTACT = {
+  phone: '+237 6 80 00 00 75',
+  phoneHref: 'tel:+237680000075',
+  email: 'support@pleingaz.com',
+  city: 'Yaoundé, Cameroun',
+};
+
 export const NAV_LINKS = [
   { label: 'Découvrir PleinGaz', href: '#top' },
   { label: 'Nos activités', href: '#portfolio', caret: true },
@@ -10,37 +17,42 @@ export const NAV_LINKS = [
 
 export const PRODUCTS = [
   {
-    title: 'Bouteilles domestiques',
-    desc: 'Formats 6, 12,5 et 38 kg pour la maison.',
+    title: 'Bouteille 6 kg',
+    desc: 'Idéale pour les petits foyers, légère et facile à transporter.',
+    price: 'Recharge dès 6 500 FCFA',
     icon: 'bottle',
   },
   {
-    title: 'Gaz conditionné',
-    desc: 'Bouteilles remplies, contrôlées et scellées.',
+    title: 'Bouteille 12,5 kg',
+    desc: 'Le format familial le plus demandé pour une cuisine active.',
+    price: 'Le plus populaire',
     icon: 'canister',
   },
   {
-    title: 'Gaz en vrac',
-    desc: 'Distribution de gaz en vrac aux industriels.',
-    icon: 'drop',
+    title: 'Bouteille 50 kg',
+    desc: 'Pour restaurants, hôtels et industries à forte consommation.',
+    price: 'Recharge dès 26 000 FCFA',
+    icon: 'factory',
+  },
+  {
+    title: 'Réchauds & cuisinières',
+    desc: 'Réchaud verre, allumage piézo — pratique et facile à nettoyer.',
+    price: 'Dès 18 000 FCFA',
+    icon: 'stove',
   },
   {
     title: 'Détendeurs & accessoires',
-    desc: 'Détendeurs, tuyaux et pièces homologués.',
+    desc: 'Détendeurs de sécurité, tuyaux et pièces homologués.',
+    price: 'Sur devis',
     icon: 'wrench',
-  },
-  {
-    title: 'Gaz industriel',
-    desc: 'Solutions énergie pour sites et commerces.',
-    icon: 'factory',
   },
 ];
 
 export const FIGURES = [
+  { num: '2015', plus: '', cap: 'Au service des foyers depuis', icon: 'shieldCheck' },
   { num: '120 000', plus: '+', cap: 'Bouteilles en circulation', icon: 'bottle' },
   { num: '850', plus: '+', cap: 'Revendeurs partenaires', icon: 'shop' },
-  { num: '400', plus: '+', cap: 'Collaborateurs', icon: 'team' },
-  { num: '10', plus: '+', cap: 'Régions desservies', icon: 'pin' },
+  { num: '24/7', plus: '', cap: 'Service client disponible', icon: 'team' },
 ];
 
 export const NEWS = [
@@ -72,5 +84,5 @@ export const FOOTER_ABOUT = [
 ];
 
 export const FOOTER_ACTIVITIES = [
-  'Gaz en vrac', 'Bouteilles domestiques', 'Gaz conditionné', 'Accessoires', 'Gaz industriel',
+  'Bouteilles domestiques', 'Gaz en vrac', 'Réchauds & cuisinières', 'Détendeurs & accessoires', 'Livraison à domicile',
 ];

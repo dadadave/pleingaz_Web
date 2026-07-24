@@ -13,8 +13,9 @@ export default function Supplier() {
           <div className="supplier-intro reveal">
             <h2>Votre fournisseur d'énergie au Cameroun</h2>
             <p>
-              Que vous soyez un particulier, un professionnel ou un acteur du secteur public,
-              retrouvez toute notre gamme de produits.
+              Depuis 2015, PleinGaz alimente les foyers camerounais avec fiabilité, sécurité
+              et passion. Particulier, professionnel ou secteur public : retrouvez toute
+              notre gamme de produits.
             </p>
             <a href="#footer" className="btn btn-gold">À propos ›</a>
           </div>

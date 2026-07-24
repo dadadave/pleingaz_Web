@@ -1,4 +1,4 @@
-import { FOOTER_ABOUT, FOOTER_ACTIVITIES } from '../data.js';
+import { FOOTER_ABOUT, FOOTER_ACTIVITIES, CONTACT } from '../data.js';
 import { Icon, Social, Wordmark } from './Icons.jsx';
 
 export default function Footer() {
@@ -12,11 +12,15 @@ export default function Footer() {
           <div className="footer-contact">
             <div className="fc-item">
               <span className="ico"><Icon name="phone" strokeWidth={2} /></span>
-              <div><p className="lbl">Appelez-nous</p><p className="val">+237 6 00 00 00 00</p></div>
+              <div><p className="lbl">Appelez-nous</p><p className="val">{CONTACT.phone}</p></div>
             </div>
             <div className="fc-item">
               <span className="ico"><Icon name="mail" strokeWidth={2} /></span>
-              <div><p className="lbl">Écrivez-nous</p><p className="val">contact@pleingaz.cm</p></div>
+              <div><p className="lbl">Écrivez-nous</p><p className="val">{CONTACT.email}</p></div>
+            </div>
+            <div className="fc-item">
+              <span className="ico"><Icon name="mapPin" strokeWidth={2} /></span>
+              <div><p className="lbl">Nous trouver</p><p className="val">{CONTACT.city}</p></div>
             </div>
             <div className="socials">
               <a href="#" aria-label="Facebook"><Social name="facebook" /></a>

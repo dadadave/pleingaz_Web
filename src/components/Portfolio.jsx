@@ -22,6 +22,7 @@ export default function Portfolio() {
               <div className="product-ico"><Icon name={p.icon} /></div>
               <h3>{p.title}</h3>
               <p className="desc">{p.desc}</p>
+              {p.price && <span className="price">{p.price}</span>}
               <a href="#" className="find-out">En savoir plus <span className="plus">+</span></a>
             </article>
           ))}
