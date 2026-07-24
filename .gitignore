@@ -1,0 +1,14 @@
+# Node / Vite
+node_modules/
+dist/
+*.local
+
+# Screenshot workflow output (regenerated locally)
+temporary screenshots/
+
+# Chrome temp profiles from screenshot.mjs
+pg-chrome-*/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
