@@ -154,8 +154,10 @@ export const CONTENT = {
       activitiesTitle: 'Activités',
       activities: ['Bouteilles domestiques', 'Gaz en vrac', 'Réchauds & cuisinières', 'Détendeurs & accessoires', 'Livraison à domicile'],
       partnersTitle: 'Nos partenaires',
+      partners: ['AfriqGaz', 'GazPlus', 'CamEnergy', 'SudGaz'],
       copyright: '© 2026 PleinGaz — Cameroun. Tous droits réservés.',
       slogan: 'Bouteilles toujours pleines',
+      designedBy: 'Conçu par',
     },
     newsletterAlert: {
       errorTitle: 'Oups !',
@@ -315,8 +317,10 @@ export const CONTENT = {
       activitiesTitle: 'Activities',
       activities: ['Domestic cylinders', 'Bulk gas', 'Stoves & cookers', 'Regulators & accessories', 'Home delivery'],
       partnersTitle: 'Our partners',
+      partners: ['AfriqGaz', 'GazPlus', 'CamEnergy', 'SudGaz'],
       copyright: '© 2026 PleinGaz — Cameroon. All rights reserved.',
       slogan: 'Always full cylinders',
+      designedBy: 'Designed by',
     },
     newsletterAlert: {
       errorTitle: 'Oops!',

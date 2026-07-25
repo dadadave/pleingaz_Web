@@ -167,7 +167,7 @@ ul { list-style: none; }
 }
 .brand { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
 .brand-logo { display: block; height: 46px; width: auto; }
-.brand-mini .brand-logo { height: 40px; }
+.brand-mini .brand-logo { height: 56px; }
 /* Footer sits on a dark band: knock the red wordmark out to white. */
 .brand-logo--footer { filter: brightness(0) invert(1); }
 .brand-word {
@@ -691,8 +691,19 @@ ul { list-style: none; }
   border-right: 1px solid rgba(255,255,255,.08);
 }
 .approach:last-child { border-right: none; }
-.approach .bg { position: absolute; inset: 0; opacity: .55; }
-.approach .veil { position: absolute; inset: 0; background: rgba(20,24,20,.55); }
+.approach .bg {
+  position: absolute; inset: 0; opacity: .72;
+  background-size: cover; background-position: center;
+  transition: transform .5s cubic-bezier(.2,.7,.3,1);
+}
+.approach:hover .bg { transform: scale(1.06); }
+/* Overlay changes to the brand colour on hover. */
+.approach .veil {
+  position: absolute; inset: 0;
+  background: rgba(18,22,18,.55);
+  transition: background-color .35s ease;
+}
+.approach:hover .veil { background: rgba(238,28,37,.62); }
 .approach .ico { position: relative; z-index: 2; color: var(--gold); width: 34px; height: 34px; flex-shrink: 0; }
 .approach .ico svg { width: 100%; height: 100%; }
 .approach .txt { position: relative; z-index: 2; }
@@ -705,7 +716,26 @@ ul { list-style: none; }
 .approach .arrow svg { width: 26px; height: 26px; }
 
 /* ============================ Footer ============================ */
-.footer { background: var(--red-deep); color: rgba(255,255,255,.85); }
+.footer {
+  position: relative;
+  overflow: hidden;
+  background: var(--red-deep);
+  color: rgba(255,255,255,.85);
+}
+/* Faint dotted texture (SIMAM-style). */
+.footer::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,.06) 1.5px, transparent 1.6px);
+  background-size: 22px 22px;
+  pointer-events: none;
+}
+.footer-deco {
+  position: absolute; right: 0; bottom: 0;
+  width: 620px; height: 620px;
+  pointer-events: none; z-index: 0;
+}
+.footer .container { position: relative; z-index: 1; }
 .footer-top {
   display: grid;
   grid-template-columns: auto auto;
@@ -764,9 +794,21 @@ ul { list-style: none; }
 .footer-col a::before { content: "›"; color: rgba(255,255,255,.85); font-weight: 700; }
 .footer-col a:hover { color: #fff; }
 
+.partner-carousel { overflow: hidden; margin-top: 4px; min-width: 0; }
+.footer-col { min-width: 0; }
+.partner-track {
+  display: flex; width: max-content;
+  animation: partnerScroll 18s linear infinite;
+}
+.partner-carousel:hover .partner-track { animation-play-state: paused; }
+@keyframes partnerScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
 .partner-card {
+  flex: 0 0 190px; width: 190px; margin-right: 16px;
   background: #fff; border-radius: 12px; padding: 18px;
-  display: grid; place-items: center; max-width: 190px; margin-top: 4px;
+  display: grid; place-items: center;
 }
 .partner-card .plogo { display: flex; align-items: center; gap: 8px; font-weight: 800; color: var(--navy); font-size: 18px; }
 .partner-card .plogo .tri { color: var(--gold-deep); }
@@ -787,7 +829,7 @@ ul { list-style: none; }
   * { scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .btn, .product-card, .news-card, .video-card { transition: none; }
-  .portfolio-track, .news-track { animation: none; }
+  .portfolio-track, .news-track, .partner-track { animation: none; }
 }
 
 /* ============================ Placeholder imagery ============================ */
