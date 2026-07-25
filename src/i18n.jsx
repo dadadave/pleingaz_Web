@@ -74,10 +74,25 @@ export const CONTENT = {
     ],
     hero: {
       brand: 'PleinGaz.',
-      tagline: 'L’énergie pour tous.',
-      slideTitle: 'Faire de la sécurité une priorité absolue',
-      slideText:
-        'PleinGaz s’engage à appliquer et à contrôler des règles de sécurité strictes, conformes aux normes internationales, à chaque étape de la chaîne.',
+      tagline: 'Bouteilles toujours pleines.',
+      slides: [
+        {
+          title: 'Faire de la sécurité une priorité absolue',
+          text: 'PleinGaz s’engage à appliquer et à contrôler des règles de sécurité strictes, conformes aux normes internationales, à chaque étape de la chaîne.',
+        },
+        {
+          title: 'Nous sommes à votre écoute pour tous vos besoins',
+          text: 'Contactez-nous au +237 6 80 00 00 75 ou à support@pleingaz.com.',
+        },
+        {
+          title: 'Votre avis compte pour nous',
+          text: 'Prenez quelques minutes pour participer à notre enquête de satisfaction.',
+        },
+        {
+          title: 'Une énergie fiable, partout au Cameroun',
+          text: 'Un réseau de plus de 850 revendeurs partenaires, au service des foyers et des professionnels.',
+        },
+      ],
     },
     supplier: {
       title: 'Votre fournisseur d’énergie au Cameroun',
@@ -220,10 +235,25 @@ export const CONTENT = {
     ],
     hero: {
       brand: 'PleinGaz.',
-      tagline: 'Energy for all.',
-      slideTitle: 'Making safety an absolute priority',
-      slideText:
-        'PleinGaz is committed to applying and monitoring strict safety rules, in line with international standards, at every stage of the chain.',
+      tagline: 'Always full cylinders.',
+      slides: [
+        {
+          title: 'Making safety an absolute priority',
+          text: 'PleinGaz is committed to applying and monitoring strict safety rules, in line with international standards, at every stage of the chain.',
+        },
+        {
+          title: 'We are here to help you with all your needs',
+          text: 'Contact us on +237 6 80 00 00 75 or at support@pleingaz.com.',
+        },
+        {
+          title: 'We value your opinion',
+          text: 'Take a few minutes to take part in our satisfaction survey.',
+        },
+        {
+          title: 'Reliable energy, everywhere in Cameroon',
+          text: 'A network of over 850 partner resellers, serving households and professionals.',
+        },
+      ],
     },
     supplier: {
       title: 'Your energy supplier in Cameroon',
