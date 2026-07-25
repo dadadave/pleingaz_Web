@@ -299,10 +299,7 @@ ul { list-style: none; }
 /* ============================ Hero ============================ */
 .hero {
   position: relative;
-  /* Wave texture across the red, matching the supplier band. */
-  background:
-    url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22140%22%20height%3D%2226%22%20viewBox%3D%220%200%20140%2026%22%3E%3Cpath%20d%3D%22M0%2013%20Q%2035%201%2070%2013%20T%20140%2013%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-opacity%3D%220.4%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E") 0 0 / 140px 26px repeat,
-    linear-gradient(135deg, #F0242B 0%, #E01820 55%, #C8111A 100%);
+  background: linear-gradient(135deg, #F0242B 0%, #E01820 55%, #C8111A 100%);
   overflow: hidden;
   padding: 40px 0 70px;
 }
@@ -396,16 +393,6 @@ ul { list-style: none; }
     #C8111A;
   padding: 10px 0 96px;
   overflow: hidden;
-}
-/* Wave texture overlay (visible). */
-.supplier::before {
-  content: "";
-  position: absolute; inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22140%22%20height%3D%2226%22%20viewBox%3D%220%200%20140%2026%22%3E%3Cpath%20d%3D%22M0%2013%20Q%2035%201%2070%2013%20T%20140%2013%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-opacity%3D%220.8%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E");
-  background-size: 140px 26px;
-  opacity: .5;
-  z-index: 0;
-  pointer-events: none;
 }
 .supplier .container { position: relative; z-index: 2; }
 .supplier-deco {
