@@ -1,7 +1,34 @@
+import { useState } from 'react';
 import { FOOTER_ABOUT, FOOTER_ACTIVITIES, CONTACT } from '../data.js';
 import { Icon, Social, Wordmark } from './Icons.jsx';
+import Alert from './Alert.jsx';
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export default function Footer() {
+  const [email, setEmail] = useState('');
+  const [alert, setAlert] = useState({ open: false });
+
+  const onSubscribe = (e) => {
+    e.preventDefault();
+    if (!EMAIL_RE.test(email.trim())) {
+      setAlert({
+        open: true,
+        type: 'error',
+        title: 'Oups !',
+        text: 'Veuillez saisir une adresse e-mail valide.',
+      });
+      return;
+    }
+    setAlert({
+      open: true,
+      type: 'success',
+      title: 'Merci !',
+      text: 'Votre inscription à la newsletter est bien enregistrée.',
+    });
+    setEmail('');
+  };
+
   return (
     <footer className="footer" id="footer">
       <div className="container">
@@ -33,8 +60,14 @@ export default function Footer() {
         <div className="footer-main">
           <div className="newsletter">
             <h3>Vous souhaitez recevoir nos actualités ?</h3>
-            <form className="news-form" onSubmit={(e) => e.preventDefault()}>
-              <input type="email" placeholder="Saisissez votre adresse e-mail" aria-label="E-mail" />
+            <form className="news-form" onSubmit={onSubscribe} noValidate>
+              <input
+                type="email"
+                placeholder="Saisissez votre adresse e-mail"
+                aria-label="E-mail"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
               <button type="submit" aria-label="S'inscrire"><Icon name="send" strokeWidth={2} /></button>
             </form>
           </div>
@@ -73,6 +106,14 @@ export default function Footer() {
           <p className="made">Bouteilles toujours pleines · <b>PleinGaz</b></p>
         </div>
       </div>
+
+      <Alert
+        open={alert.open}
+        type={alert.type}
+        title={alert.title}
+        text={alert.text}
+        onClose={() => setAlert((a) => ({ ...a, open: false }))}
+      />
     </footer>
   );
 }

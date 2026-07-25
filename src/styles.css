@@ -682,3 +682,151 @@ ul { list-style: none; }
   .distributors-body { max-width: 100%; }
   .distributors .map { opacity: .25; }
 }
+
+/* ======================= Animated alert (SweetAlert-style) ======================= */
+.pg-alert-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(30, 39, 49, .45);
+  animation: pgAlertFade .25s ease;
+}
+
+.pg-alert {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 26px 28px 30px;
+  text-align: center;
+  box-shadow: 0 30px 70px -30px rgba(0, 0, 0, .5);
+  animation: pgAlertPop .3s ease;
+}
+
+.pg-alert-title {
+  margin: 8px 0 6px;
+  font-size: 24px;
+  color: var(--navy);
+}
+
+.pg-alert-text {
+  margin: 0 0 22px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.pg-alert-btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 11px 30px;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: var(--red);
+  transition: transform .12s ease, background .18s ease;
+}
+.pg-alert-btn:hover { background: var(--red-dark); }
+.pg-alert-btn:active { transform: scale(.97); }
+.pg-alert-btn:focus-visible { outline: 3px solid var(--gold-soft); outline-offset: 2px; }
+
+/* --- shared icon frame --- */
+.pg-alert-icon {
+  position: relative;
+  box-sizing: content-box;
+  width: 80px;
+  height: 80px;
+  margin: 6px auto 18px;
+  border: 4px solid;
+  border-radius: 50%;
+}
+
+/* --- error (animated X) --- */
+.pg-alert-icon--error {
+  border-color: var(--red);
+  animation: pgErrorIcon .5s;
+}
+.pg-x-mark {
+  position: relative;
+  display: block;
+  animation: pgXMark .5s;
+}
+.pg-x-line {
+  position: absolute;
+  top: 37px;
+  display: block;
+  width: 47px;
+  height: 5px;
+  border-radius: 2px;
+  background: var(--red);
+}
+.pg-x-line--left { left: 17px; transform: rotate(45deg); }
+.pg-x-line--right { right: 16px; transform: rotate(-45deg); }
+
+/* --- success (animated check) --- */
+.pg-alert-icon--success { border-color: #2ecc71; }
+.pg-check-tip,
+.pg-check-long {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  height: 5px;
+  border-radius: 2px;
+  background: #2ecc71;
+}
+.pg-check-tip {
+  top: 46px;
+  left: 14px;
+  width: 25px;
+  transform: rotate(45deg);
+  animation: pgCheckTip .75s;
+}
+.pg-check-long {
+  top: 38px;
+  right: 8px;
+  width: 47px;
+  transform: rotate(-45deg);
+  animation: pgCheckLong .75s;
+}
+
+@keyframes pgAlertFade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pgAlertPop {
+  0%   { transform: scale(.85); opacity: 0; }
+  60%  { transform: scale(1.03); }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes pgErrorIcon {
+  0%  { transform: rotateX(100deg); opacity: 0; }
+  100% { transform: rotateX(0deg); opacity: 1; }
+}
+@keyframes pgXMark {
+  0%   { transform: scale(.4); margin-top: 26px; opacity: 0; }
+  50%  { transform: scale(.4); margin-top: 26px; opacity: 0; }
+  80%  { transform: scale(1.15); margin-top: -6px; }
+  100% { transform: scale(1); margin-top: 0; opacity: 1; }
+}
+@keyframes pgCheckTip {
+  0%   { width: 0; left: 1px; top: 19px; }
+  54%  { width: 0; left: 1px; top: 19px; }
+  70%  { width: 50px; left: -8px; top: 37px; }
+  84%  { width: 17px; left: 21px; top: 48px; }
+  100% { width: 25px; left: 14px; top: 46px; }
+}
+@keyframes pgCheckLong {
+  0%   { width: 0; right: 46px; top: 54px; }
+  65%  { width: 0; right: 46px; top: 54px; }
+  84%  { width: 55px; right: 0; top: 35px; }
+  100% { width: 47px; right: 8px; top: 38px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pg-alert-overlay,
+  .pg-alert,
+  .pg-alert-icon--error,
+  .pg-x-mark,
+  .pg-check-tip,
+  .pg-check-long { animation: none; }
+}
