@@ -844,7 +844,8 @@ ul { list-style: none; }
   * { scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .btn, .product-card, .news-card, .video-card { transition: none; }
-  .portfolio-track, .news-track, .partner-track { animation: none; }
+  /* The product/news/partner carousels keep auto-scrolling: they're a core
+     part of the design and should animate on every device. */
 }
 
 /* ============================ Placeholder imagery ============================ */
@@ -919,6 +920,12 @@ ul { list-style: none; }
   .footer-main { grid-template-columns: 1fr; }
   .distributors-body { max-width: 100%; }
   .distributors .map { opacity: .25; }
+}
+
+/* On small phones the no-wrap key figures force the 2-col grid to overflow;
+   stack them so nothing spills past the viewport. */
+@media (max-width: 480px) {
+  .figure-list { grid-template-columns: 1fr; }
 }
 
 /* ======================= Animated alert (SweetAlert-style) ======================= */
