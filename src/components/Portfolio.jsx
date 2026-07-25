@@ -14,16 +14,24 @@ export default function Portfolio() {
           <p>{t.portfolio.intro}</p>
         </div>
 
-        <div className="product-grid">
-          {t.products.map((p, i) => (
-            <article className="product-card reveal" key={i}>
-              <div className="product-ico"><Icon name={p.icon} /></div>
-              <h3>{p.title}</h3>
-              <p className="desc">{p.desc}</p>
-              {p.price && <span className="price">{p.price}</span>}
-              <a href="#" className="find-out">{t.portfolio.learnMore} <span className="plus">+</span></a>
-            </article>
-          ))}
+        {/* Auto-scrolling carousel (pauses on hover). Products are duplicated
+            so the marquee loops seamlessly. */}
+        <div className="portfolio-carousel">
+          <div className="portfolio-track">
+            {[...t.products, ...t.products].map((p, i) => (
+              <article
+                className="product-card"
+                key={i}
+                aria-hidden={i >= t.products.length ? 'true' : undefined}
+              >
+                <div className="product-ico"><Icon name={p.icon} /></div>
+                <h3>{p.title}</h3>
+                <p className="desc">{p.desc}</p>
+                {p.price && <span className="price">{p.price}</span>}
+                <a href="#" className="find-out">{t.portfolio.learnMore} <span className="plus">+</span></a>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>

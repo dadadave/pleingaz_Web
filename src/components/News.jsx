@@ -9,9 +9,14 @@ export default function News() {
         <div className="news-grid">
           <div>
             <div className="news-top reveal"><span className="eyebrow">{t.news.eyebrow}</span></div>
-            <div className="news-cards">
-              {t.news.items.map((n, i) => (
-                <article className="news-card reveal" key={i}>
+            <div className="news-carousel">
+             <div className="news-track">
+              {[...t.news.items, ...t.news.items].map((n, i) => (
+                <article
+                  className="news-card"
+                  key={i}
+                  aria-hidden={i >= t.news.items.length ? 'true' : undefined}
+                >
                   <div className="thumb">
                     <div className={`ph ${n.ph}`} />
                     <div className="ph-icon"><Icon name={n.icon} strokeWidth={1.4} /></div>
@@ -29,6 +34,7 @@ export default function News() {
                   </div>
                 </article>
               ))}
+             </div>
             </div>
           </div>
 
