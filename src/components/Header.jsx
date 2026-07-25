@@ -1,12 +1,12 @@
 import { NAV_LINKS } from '../data.js';
-import { Icon, Wordmark } from './Icons.jsx';
+import { Icon } from './Icons.jsx';
 
 export default function Header() {
   return (
     <header className="site-header" id="top">
       <nav className="nav container">
         <a href="#top" className="brand" aria-label="PleinGaz — accueil">
-          <Wordmark />
+          <img src="/assets/logo.png" alt="PleinGaz" className="brand-logo" />
         </a>
 
         <div className="nav-links">
