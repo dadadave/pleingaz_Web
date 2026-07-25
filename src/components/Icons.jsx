@@ -23,6 +23,7 @@ export const Icon = ({ name, ...rest }) => {
     mail: (<><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></>),
     send: (<><path d="M22 2 11 13" /><path d="M22 2 15 22l-4-9-9-4Z" /></>),
     menu: (<path d="M3 6h18M3 12h18M3 18h18" />),
+    close: (<path d="M6 6l12 12M18 6 6 18" />),
     play: (<path d="M8 5v14l11-7z" />),
     cylinderBig: (<><rect x="8" y="9" width="8" height="13" rx="3" /><path d="M10 9V6a2 2 0 0 1 4 0v3" /></>),
     workerHat: (<><path d="M4 10a8 8 0 0 1 16 0" /><path d="M3 10h18v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><path d="M12 2v2" /></>),

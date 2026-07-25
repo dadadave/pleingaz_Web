@@ -12,9 +12,9 @@ export default function Supplier() {
     <section className="supplier">
       {/* Decorative white ring on the red band, with a dot sitting on its edge (SIMAM-style). */}
       <svg className="supplier-deco" viewBox="0 0 600 600" fill="none" aria-hidden="true">
-        <circle cx="300" cy="300" r="240" stroke="rgba(255,255,255,.28)" strokeWidth="2" />
-        <circle cx="300" cy="300" r="300" stroke="rgba(255,255,255,.16)" strokeWidth="2" />
-        <circle cx="470" cy="130" r="8" fill="rgba(255,255,255,.8)" />
+        <circle cx="300" cy="300" r="240" stroke="rgba(255,255,255,.5)" strokeWidth="2.5" />
+        <circle cx="300" cy="300" r="300" stroke="rgba(255,255,255,.32)" strokeWidth="2.5" />
+        <circle cx="470" cy="130" r="9" fill="#ffffff" />
       </svg>
 
       <div className="container">

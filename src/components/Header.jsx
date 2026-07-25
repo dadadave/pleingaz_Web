@@ -1,13 +1,16 @@
+import { useState } from 'react';
 import { Icon } from './Icons.jsx';
 import { useLang } from '../i18n.jsx';
 
 export default function Header() {
   const { lang, setLang, t } = useLang();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <header className="site-header" id="top">
       <nav className="nav container">
-        <a href="#top" className="brand" aria-label="PleinGaz">
+        <a href="#top" className="brand" aria-label="PleinGaz" onClick={closeMenu}>
           <img src="/assets/logo.png" alt="PleinGaz" className="brand-logo" />
         </a>
 
@@ -68,11 +71,48 @@ export default function Header() {
           <span className="nav-badge" title={t.header.certified} aria-label={t.header.certified}>
             <Icon name="shieldCheck" strokeWidth={2} />
           </span>
-          <button className="nav-toggle" aria-label={t.header.menu}>
-            <Icon name="menu" strokeWidth={2} />
+          <button
+            className={`nav-toggle${menuOpen ? ' open' : ''}`}
+            aria-label={t.header.menu}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((o) => !o)}
+          >
+            <Icon name={menuOpen ? 'close' : 'menu'} strokeWidth={2} />
           </button>
         </div>
       </nav>
+
+      {/* Mobile menu (shown on small screens when the hamburger is toggled). */}
+      <div className={`mobile-menu${menuOpen ? ' open' : ''}`}>
+        <div className="container">
+          <ul className="mm-links">
+            {t.nav.map((l) => (
+              <li key={l.key}>
+                <a href={l.href} onClick={closeMenu}>{l.label}</a>
+                {l.mega && (
+                  <ul className="mm-sub">
+                    {l.mega.links.map((m) => (
+                      <li key={m.label}>
+                        <a href={m.href} onClick={closeMenu}>
+                          <span className="dot" aria-hidden="true">›</span>{m.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          <div className="mm-foot">
+            <div className="lang">
+              <button type="button" className={lang === 'fr' ? 'on' : ''} onClick={() => setLang('fr')}>FR</button>
+              <button type="button" className={lang === 'en' ? 'on' : ''} onClick={() => setLang('en')}>EN</button>
+            </div>
+            <a href="#portfolio" className="btn btn-outline-gold" onClick={closeMenu}>{t.header.reseller}</a>
+          </div>
+        </div>
+      </div>
     </header>
   );
 }
