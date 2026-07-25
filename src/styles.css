@@ -368,6 +368,16 @@ ul { list-style: none; }
   overflow: hidden;
 }
 .supplier .container { position: relative; z-index: 2; }
+.supplier-deco {
+  position: absolute;
+  left: -300px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 620px;
+  height: 620px;
+  z-index: 0;
+  pointer-events: none;
+}
 .supplier-divider {
   position: absolute;
   left: 0;
