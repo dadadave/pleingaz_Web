@@ -32,6 +32,12 @@ export default function Footer() {
 
   return (
     <footer className="footer" id="footer">
+      {/* Decorative arc + dot, bottom-right (SIMAM-style). */}
+      <svg className="footer-deco" viewBox="0 0 600 600" fill="none" aria-hidden="true">
+        <circle cx="600" cy="600" r="470" stroke="rgba(255,255,255,.14)" strokeWidth="2" />
+        <circle cx="268" cy="268" r="12" fill="var(--gold)" />
+      </svg>
+
       <div className="container">
         <div className="footer-top">
           <a href="#top" className="brand brand-mini" aria-label="PleinGaz">
@@ -89,13 +95,23 @@ export default function Footer() {
 
           <div className="footer-col">
             <h4>{t.footer.partnersTitle}</h4>
-            <div className="partner-card">
-              <span className="plogo">
-                <svg width="22" height="22" viewBox="0 0 24 24" className="tri" fill="currentColor">
-                  <path d="M12 3 2 20h20L12 3Z" />
-                </svg>
-                AfriqGaz
-              </span>
+            <div className="partner-carousel">
+              <div className="partner-track">
+                {[...t.footer.partners, ...t.footer.partners].map((name, i) => (
+                  <div
+                    className="partner-card"
+                    key={i}
+                    aria-hidden={i >= t.footer.partners.length ? 'true' : undefined}
+                  >
+                    <span className="plogo">
+                      <svg width="22" height="22" viewBox="0 0 24 24" className="tri" fill="currentColor">
+                        <path d="M12 3 2 20h20L12 3Z" />
+                      </svg>
+                      {name}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -104,7 +120,7 @@ export default function Footer() {
       <div className="footer-bar">
         <div className="container footer-bar-inner">
           <p>{t.footer.copyright}</p>
-          <p className="made">{t.footer.slogan} · <b>PleinGaz</b></p>
+          <p className="made">{t.footer.designedBy} <b>Dadadave</b></p>
         </div>
       </div>
 
