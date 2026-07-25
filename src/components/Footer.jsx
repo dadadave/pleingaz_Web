@@ -32,10 +32,16 @@ export default function Footer() {
 
   return (
     <footer className="footer" id="footer">
-      {/* Decorative arc + dot, bottom-right (SIMAM-style). */}
+      {/* Decorative gold arc + dot, bottom-right (SIMAM-style). */}
       <svg className="footer-deco" viewBox="0 0 600 600" fill="none" aria-hidden="true">
-        <circle cx="600" cy="600" r="470" stroke="rgba(255,255,255,.14)" strokeWidth="2" />
-        <circle cx="268" cy="268" r="12" fill="var(--gold)" />
+        <circle cx="600" cy="600" r="470" stroke="rgba(255,210,63,.55)" strokeWidth="2" />
+        <circle cx="268" cy="268" r="11" fill="#FFD23F" />
+      </svg>
+      {/* Faint concentric ripples, bottom-left. */}
+      <svg className="footer-ripple" viewBox="0 0 520 520" fill="none" aria-hidden="true">
+        <circle cx="70" cy="470" r="150" stroke="rgba(255,255,255,.06)" strokeWidth="2" />
+        <circle cx="70" cy="470" r="250" stroke="rgba(255,255,255,.06)" strokeWidth="2" />
+        <circle cx="70" cy="470" r="350" stroke="rgba(255,255,255,.06)" strokeWidth="2" />
       </svg>
 
       <div className="container">
@@ -119,8 +125,13 @@ export default function Footer() {
 
       <div className="footer-bar">
         <div className="container footer-bar-inner">
-          <p>{t.footer.copyright}</p>
-          <p className="made">{t.footer.designedBy} <b>Dadadave</b></p>
+          <p className="copy">
+            <span className="footer-seal" aria-label="Qualité certifiée">
+              <Icon name="shieldCheck" strokeWidth={2} />
+            </span>
+            {t.footer.copyright}
+          </p>
+          <p className="made">{t.footer.designedBy} <a href="#top" className="designer">Dadadave</a></p>
         </div>
       </div>
 
