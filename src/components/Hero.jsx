@@ -1,12 +1,14 @@
 import { Icon } from './Icons.jsx';
+import { useLang } from '../i18n.jsx';
 
 export default function Hero() {
+  const { t } = useLang();
   return (
     <section className="hero">
       <div className="container">
         <div className="hero-tagline reveal">
-          <p className="t1">PleinGaz.</p>
-          <p className="t2">L'énergie pour tous.</p>
+          <p className="t1">{t.hero.brand}</p>
+          <p className="t2">{t.hero.tagline}</p>
         </div>
 
         <div className="hero-slide reveal">
@@ -16,11 +18,8 @@ export default function Hero() {
           </div>
           <div className="veil" />
           <div className="slide-body">
-            <h2>Faire de la sécurité une priorité absolue</h2>
-            <p>
-              PleinGaz s'engage à appliquer et à contrôler des règles de sécurité strictes,
-              conformes aux normes internationales, à chaque étape de la chaîne.
-            </p>
+            <h2>{t.hero.slideTitle}</h2>
+            <p>{t.hero.slideText}</p>
             <div className="slide-dots" aria-hidden="true">
               <span className="on" /><span /><span /><span /><span />
             </div>

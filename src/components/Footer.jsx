@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { FOOTER_ABOUT, FOOTER_ACTIVITIES, CONTACT } from '../data.js';
 import { Icon, Social } from './Icons.jsx';
 import Alert from './Alert.jsx';
+import { useLang } from '../i18n.jsx';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export default function Footer() {
+  const { t } = useLang();
   const [email, setEmail] = useState('');
   const [alert, setAlert] = useState({ open: false });
 
@@ -15,16 +16,16 @@ export default function Footer() {
       setAlert({
         open: true,
         type: 'error',
-        title: 'Oups !',
-        text: 'Veuillez saisir une adresse e-mail valide.',
+        title: t.newsletterAlert.errorTitle,
+        text: t.newsletterAlert.errorText,
       });
       return;
     }
     setAlert({
       open: true,
       type: 'success',
-      title: 'Merci !',
-      text: 'Votre inscription à la newsletter est bien enregistrée.',
+      title: t.newsletterAlert.successTitle,
+      text: t.newsletterAlert.successText,
     });
     setEmail('');
   };
@@ -39,15 +40,15 @@ export default function Footer() {
           <div className="footer-contact">
             <div className="fc-item">
               <span className="ico"><Icon name="phone" strokeWidth={2} /></span>
-              <div><p className="lbl">Appelez-nous</p><p className="val">{CONTACT.phone}</p></div>
+              <div><p className="lbl">{t.contact.callLabel}</p><p className="val">{t.contact.phone}</p></div>
             </div>
             <div className="fc-item">
               <span className="ico"><Icon name="mail" strokeWidth={2} /></span>
-              <div><p className="lbl">Écrivez-nous</p><p className="val">{CONTACT.email}</p></div>
+              <div><p className="lbl">{t.contact.writeLabel}</p><p className="val">{t.contact.email}</p></div>
             </div>
             <div className="fc-item">
               <span className="ico"><Icon name="mapPin" strokeWidth={2} /></span>
-              <div><p className="lbl">Nous trouver</p><p className="val">{CONTACT.city}</p></div>
+              <div><p className="lbl">{t.contact.findLabel}</p><p className="val">{t.contact.city}</p></div>
             </div>
             <div className="socials">
               <a href="#" aria-label="Facebook"><Social name="facebook" /></a>
@@ -59,35 +60,35 @@ export default function Footer() {
 
         <div className="footer-main">
           <div className="newsletter">
-            <h3>Vous souhaitez recevoir nos actualités ?</h3>
+            <h3>{t.footer.newsletterTitle}</h3>
             <form className="news-form" onSubmit={onSubscribe} noValidate>
               <input
                 type="email"
-                placeholder="Saisissez votre adresse e-mail"
+                placeholder={t.footer.newsletterPlaceholder}
                 aria-label="E-mail"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <button type="submit" aria-label="S'inscrire"><Icon name="send" strokeWidth={2} /></button>
+              <button type="submit" aria-label={t.footer.newsletterTitle}><Icon name="send" strokeWidth={2} /></button>
             </form>
           </div>
 
           <div className="footer-col">
-            <h4>À propos</h4>
+            <h4>{t.footer.aboutTitle}</h4>
             <ul>
-              {FOOTER_ABOUT.map((x) => <li key={x}><a href="#top">{x}</a></li>)}
+              {t.footer.about.map((x) => <li key={x}><a href="#top">{x}</a></li>)}
             </ul>
           </div>
 
           <div className="footer-col">
-            <h4>Activités</h4>
+            <h4>{t.footer.activitiesTitle}</h4>
             <ul>
-              {FOOTER_ACTIVITIES.map((x) => <li key={x}><a href="#portfolio">{x}</a></li>)}
+              {t.footer.activities.map((x) => <li key={x}><a href="#portfolio">{x}</a></li>)}
             </ul>
           </div>
 
           <div className="footer-col">
-            <h4>Nos partenaires</h4>
+            <h4>{t.footer.partnersTitle}</h4>
             <div className="partner-card">
               <span className="plogo">
                 <svg width="22" height="22" viewBox="0 0 24 24" className="tri" fill="currentColor">
@@ -102,8 +103,8 @@ export default function Footer() {
 
       <div className="footer-bar">
         <div className="container footer-bar-inner">
-          <p>© 2026 PleinGaz — Cameroun. Tous droits réservés.</p>
-          <p className="made">Bouteilles toujours pleines · <b>PleinGaz</b></p>
+          <p>{t.footer.copyright}</p>
+          <p className="made">{t.footer.slogan} · <b>PleinGaz</b></p>
         </div>
       </div>
 

@@ -1,16 +1,17 @@
-import { FIGURES } from '../data.js';
 import { Icon } from './Icons.jsx';
+import { useLang } from '../i18n.jsx';
 
 export default function Figures() {
+  const { t } = useLang();
   return (
     <section className="figures-wrap">
       <div className="container">
         <div className="figures-grid">
           <div className="figures reveal">
-            <span className="eyebrow">Chiffres clés</span>
+            <span className="eyebrow">{t.figures.eyebrow}</span>
             <div className="figure-list">
-              {FIGURES.map((f) => (
-                <div className="figure" key={f.cap}>
+              {t.figures.list.map((f, i) => (
+                <div className="figure" key={i}>
                   <span className="fig-ico"><Icon name={f.icon} strokeWidth={1.6} /></span>
                   <div>
                     <p className="num">{f.num}<span className="plus">{f.plus}</span></p>
@@ -36,12 +37,9 @@ export default function Figures() {
               </svg>
             </div>
             <div className="distributors-body">
-              <h3>Notre réseau de distributeurs</h3>
-              <p>
-                PleinGaz offre à ses clients un réseau sûr et efficace, au service des régions.
-                Nos équipes travaillent chaque jour pour la performance, la qualité et la responsabilité.
-              </p>
-              <a href="#footer" className="btn btn-white">Découvrir le réseau ›</a>
+              <h3>{t.distributors.title}</h3>
+              <p>{t.distributors.text}</p>
+              <a href="#footer" className="btn btn-white">{t.distributors.cta}</a>
             </div>
           </div>
         </div>
