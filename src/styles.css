@@ -166,6 +166,10 @@ ul { list-style: none; }
   height: 74px;
 }
 .brand { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.brand-logo { display: block; height: 46px; width: auto; }
+.brand-mini .brand-logo { height: 40px; }
+/* Footer sits on a dark band: knock the red wordmark out to white. */
+.brand-logo--footer { filter: brightness(0) invert(1); }
 .brand-word {
   display: inline-flex;
   align-items: center;

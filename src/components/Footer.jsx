@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FOOTER_ABOUT, FOOTER_ACTIVITIES, CONTACT } from '../data.js';
-import { Icon, Social, Wordmark } from './Icons.jsx';
+import { Icon, Social } from './Icons.jsx';
 import Alert from './Alert.jsx';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -34,7 +34,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-top">
           <a href="#top" className="brand brand-mini" aria-label="PleinGaz">
-            <Wordmark color="#fff" />
+            <img src="/assets/logo.png" alt="PleinGaz" className="brand-logo brand-logo--footer" />
           </a>
           <div className="footer-contact">
             <div className="fc-item">
