@@ -116,16 +116,20 @@ export default function Figures() {
 
           <div className="distributors reveal">
             <div className="map" aria-hidden="true">
-              <svg viewBox="0 0 300 300" fill="none">
+              <svg viewBox="0 0 207 300" fill="none">
                 <path
-                  d="M120 20l40 6 20 18 34 8 12 24-8 26 18 20-6 30-30 18-10 30-34 6-26-20-20 4-14-26 8-30-18-22 10-28 12-30 22-32Z"
-                  fill="none" stroke="rgba(255,255,255,.85)" strokeWidth="2.5" strokeLinejoin="round"
+                  d="M124.7 280L121.5 278.6L106.1 282L90.4 278.5L78.1 280.2L36 279.6L39.8 259.2L29.7 242.1L17.9 237.7L12.6 226.1L6 222.4L6.3 215.2L13 196.9L25.3 172L32.7 171.7L48.2 156.6L58 156.2L72.5 166.8L90.3 158.1L92.7 147.3L98.5 136.9L102.5 123.8L116.3 113.2L121.6 95L127 89.3L130.7 75.8L137.5 59.3L159.3 39.3L160.7 30.7L163.5 26L153.3 15.7L154.1 7.5L161.4 6L171.7 22.6L173.4 39.7L172.5 56.9L186.6 80.4L172.1 80.2L164.8 82L153 79.4L147.4 91.6L162.7 106.7L173.9 111.1L177.6 121.8L185.7 139.7L181.7 146.7L168.7 172.9L162.5 177.6L160.5 197.7L163 208.5L161 216.3L173.2 229.8L175.4 239.1L184.9 252.4L196.8 260.7L197.9 272.5L200.7 280L198.8 294L178.2 287.9L157.3 281.1L124.7 280Z"
+                  fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.85)" strokeWidth="2" strokeLinejoin="round"
                 />
-                <circle cx="150" cy="90" r="6" fill="#fff" />
-                <circle cx="150" cy="90" r="11" fill="none" stroke="#fff" strokeOpacity=".5" />
-                <circle cx="200" cy="150" r="6" fill="#fff" />
-                <circle cx="120" cy="180" r="6" fill="#fff" />
-                <circle cx="170" cy="220" r="6" fill="#fff" />
+                {/* Yaoundé (capital) with a pulse ring */}
+                <circle cx="84" cy="239" r="5" fill="#fff" />
+                <circle cx="84" cy="239" r="10" fill="none" stroke="#fff" strokeOpacity=".5" />
+                <circle cx="39" cy="234" r="5" fill="#fff" />
+                <circle cx="49" cy="184" r="5" fill="#fff" />
+                <circle cx="138" cy="149" r="5" fill="#fff" />
+                <circle cx="133" cy="98" r="5" fill="#fff" />
+                <circle cx="157" cy="65" r="5" fill="#fff" />
+                <circle cx="140" cy="220" r="5" fill="#fff" />
               </svg>
             </div>
             <div className="distributors-body">
