@@ -1,23 +1,21 @@
 import { Icon } from './Icons.jsx';
-
-const CHOICES = [
-  { label: 'Particulier', ph: 'ph-warm', icon: 'person' },
-  { label: 'Professionnel', ph: 'ph-worker', icon: 'workerHat' },
-];
+import { useLang } from '../i18n.jsx';
 
 export default function Supplier() {
+  const { t } = useLang();
+  const CHOICES = [
+    { label: t.supplier.choices.individual, ph: 'ph-warm', icon: 'person' },
+    { label: t.supplier.choices.professional, ph: 'ph-worker', icon: 'workerHat' },
+  ];
+
   return (
     <section className="supplier">
       <div className="container">
         <div className="supplier-grid">
           <div className="supplier-intro reveal">
-            <h2>Votre fournisseur d'énergie au Cameroun</h2>
-            <p>
-              Depuis 2015, PleinGaz alimente les foyers camerounais avec fiabilité, sécurité
-              et passion. Particulier, professionnel ou secteur public : retrouvez toute
-              notre gamme de produits.
-            </p>
-            <a href="#footer" className="btn btn-gold">À propos ›</a>
+            <h2>{t.supplier.title}</h2>
+            <p>{t.supplier.text}</p>
+            <a href="#footer" className="btn btn-gold">{t.supplier.about}</a>
           </div>
 
           <div className="choice-cards reveal">
@@ -28,7 +26,7 @@ export default function Supplier() {
                   <div className="ph-icon"><Icon name={c.icon} strokeWidth={1.5} /></div>
                 </div>
                 <div className="choice-foot">
-                  <span className="label">Je suis un<b>{c.label}</b></span>
+                  <span className="label">{t.supplier.iam}<b>{c.label}</b></span>
                   <a href="#portfolio" className="choice-arrow" aria-label={c.label}>
                     <Icon name="arrow" strokeWidth={2.4} />
                   </a>

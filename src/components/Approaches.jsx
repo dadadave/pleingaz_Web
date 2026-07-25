@@ -1,16 +1,12 @@
 import { Icon } from './Icons.jsx';
-
-const APPROACHES = [
-  { bg: 'ph-green', icon: 'shield', lines: ['Approche', 'HSE'] },
-  { bg: 'ph-slate', icon: 'search', lines: ['Approche', 'Qualité'] },
-  { bg: 'ph-worker', icon: 'hand', lines: ['Fondation', 'PleinGaz'] },
-];
+import { useLang } from '../i18n.jsx';
 
 export default function Approaches() {
+  const { t } = useLang();
   return (
     <section className="approaches">
-      {APPROACHES.map((a) => (
-        <a className="approach" href="#footer" key={a.lines.join(' ')}>
+      {t.approaches.map((a, i) => (
+        <a className="approach" href="#footer" key={i}>
           <div className={`ph ${a.bg} bg`} />
           <div className="veil" />
           <span className="ico"><Icon name={a.icon} /></span>
