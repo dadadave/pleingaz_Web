@@ -603,7 +603,10 @@ ul { list-style: none; }
   gap: 30px;
   align-items: start;
 }
-.news-carousel { overflow: hidden; }
+/* Keep the carousel column from blowing out and pushing the videos column
+   off to the right (grid items default to min-width: auto). */
+.news-grid > * { min-width: 0; }
+.news-carousel { overflow: hidden; min-width: 0; }
 .news-track {
   display: flex;
   width: max-content;
