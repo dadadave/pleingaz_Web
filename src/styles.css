@@ -543,10 +543,10 @@ ul { list-style: none; }
   justify-content: center;
 }
 .distributors .map {
-  position: absolute; right: -20px; top: 50%; transform: translateY(-50%);
-  width: 74%; opacity: .9; pointer-events: none;
+  position: absolute; right: 14px; top: 50%; transform: translateY(-50%);
+  height: 100%; opacity: .9; pointer-events: none;
 }
-.distributors .map svg { width: 100%; height: auto; }
+.distributors .map svg { height: 100%; width: auto; }
 .distributors-body { position: relative; z-index: 2; max-width: 60%; }
 .distributors h3 { font-size: 26px; font-weight: 800; line-height: 1.15; }
 .distributors p { font-size: 13.5px; color: rgba(255,255,255,.92); margin: 14px 0 22px; }
