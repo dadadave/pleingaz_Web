@@ -446,24 +446,39 @@ ul { list-style: none; }
 .portfolio-head p { color: var(--muted); font-size: 14.5px; max-width: 420px; }
 .portfolio-head .section-title { margin-top: 12px; }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+.portfolio-carousel { overflow: hidden; }
+.portfolio-track {
+  display: flex;
+  width: max-content;
+  padding: 14px 0; /* room for the hover lift/shadow */
+  animation: portfolioScroll 26s linear infinite;
+}
+.portfolio-carousel:hover .portfolio-track { animation-play-state: paused; }
+@keyframes portfolioScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 .product-card {
+  flex: 0 0 236px;
+  width: 236px;
+  margin-right: 20px;
   background: #fff;
+  border: 2px solid transparent;
   border-radius: var(--radius);
   padding: 26px 20px 20px;
   text-align: center;
   box-shadow: var(--shadow-soft);
-  transition: transform .2s cubic-bezier(.2,.7,.3,1), box-shadow .2s ease;
+  transition: transform .2s cubic-bezier(.2,.7,.3,1), box-shadow .2s ease, border-color .2s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .product-card .find-out { margin-top: auto; }
-.product-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-card); }
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card);
+  border-color: var(--red);
+}
 .product-ico {
   width: 66px; height: 66px; border-radius: 50%;
   background: var(--red); color: #fff;
@@ -547,16 +562,31 @@ ul { list-style: none; }
   gap: 30px;
   align-items: start;
 }
-.news-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.news-carousel { overflow: hidden; }
+.news-track {
+  display: flex;
+  width: max-content;
+  padding: 10px 0;
+  animation: newsScroll 24s linear infinite;
+}
+.news-carousel:hover .news-track { animation-play-state: paused; }
+@keyframes newsScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
 .news-card {
+  flex: 0 0 262px;
+  width: 262px;
+  margin-right: 20px;
   background: #fff;
+  border: 2px solid transparent;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
-  transition: transform .2s ease, box-shadow .2s ease;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
   display: flex; flex-direction: column;
 }
-.news-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-card); }
+.news-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-card); border-color: var(--red); }
 .news-card .thumb { height: 128px; position: relative; }
 .news-card .body { padding: 16px 16px 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
 .news-meta { display: flex; align-items: center; gap: 10px; font-size: 10.5px; }
@@ -716,6 +746,7 @@ ul { list-style: none; }
   * { scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .btn, .product-card, .news-card, .video-card { transition: none; }
+  .portfolio-track, .news-track { animation: none; }
 }
 
 /* ============================ Placeholder imagery ============================ */
@@ -745,12 +776,10 @@ ul { list-style: none; }
   .supplier-grid { grid-template-columns: 1fr; }
   .choice-cards { max-width: 520px; }
   .mascot { display: none; }
-  .product-grid { grid-template-columns: repeat(2, 1fr); }
   .portfolio-head { grid-template-columns: 1fr; align-items: start; }
   .figures-grid { grid-template-columns: 1fr; }
   .distributors { min-height: 260px; }
   .news-grid { grid-template-columns: 1fr; }
-  .news-cards { grid-template-columns: repeat(3, 1fr); }
   .approaches { grid-template-columns: 1fr; }
   .approach { border-right: none; border-bottom: 1px solid rgba(255,255,255,.08); }
   .footer-main { grid-template-columns: 1fr 1fr; }
@@ -760,8 +789,6 @@ ul { list-style: none; }
 
 @media (max-width: 620px) {
   .hero-slide .slide-body { padding: 34px 26px; }
-  .product-grid { grid-template-columns: 1fr 1fr; }
-  .news-cards { grid-template-columns: 1fr; }
   .choice-cards { grid-template-columns: 1fr 1fr; }
   .figure-list { grid-template-columns: 1fr 1fr; }
   .footer-main { grid-template-columns: 1fr; }
