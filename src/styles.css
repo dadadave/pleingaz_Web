@@ -334,15 +334,23 @@ ul { list-style: none; }
   box-shadow: var(--shadow-card);
   background: linear-gradient(120deg, #1c2f45 0%, #2a4056 45%, #3a5670 100%);
 }
-.hero-slide .photo-cyl { position: absolute; inset: 0; opacity: .5; }
+/* crossfading slides */
+.hero-pane {
+  position: absolute; inset: 0;
+  opacity: 0;
+  transition: opacity .7s ease;
+  pointer-events: none;
+}
+.hero-pane.on { opacity: 1; pointer-events: auto; }
+.hero-pane .ph-icon { color: rgba(255,255,255,.5); }
 .hero-slide .veil {
   position: absolute; inset: 0;
-  background: linear-gradient(90deg, rgba(11,25,40,.78) 0%, rgba(11,25,40,.45) 45%, rgba(11,25,40,.05) 75%);
+  background: linear-gradient(90deg, rgba(11,25,40,.82) 0%, rgba(11,25,40,.5) 45%, rgba(11,25,40,.08) 75%);
 }
 .hero-slide .slide-body {
   position: relative; z-index: 2;
   max-width: 460px;
-  padding: 54px 48px;
+  padding: 54px 48px 68px;
   color: #fff;
 }
 .hero-slide h2 {
@@ -353,12 +361,20 @@ ul { list-style: none; }
   letter-spacing: .01em;
 }
 .hero-slide p { margin-top: 14px; font-size: 14px; color: rgba(255,255,255,.82); max-width: 380px; }
-.slide-dots { display: flex; gap: 8px; margin-top: 26px; }
-.slide-dots span {
-  width: 9px; height: 9px; border-radius: 50%;
-  background: rgba(255,255,255,.4);
+.slide-dots {
+  position: absolute; z-index: 3;
+  left: 48px; bottom: 34px;
+  display: flex; gap: 8px;
 }
-.slide-dots span.on { background: var(--gold); width: 26px; border-radius: 999px; }
+.slide-dots button {
+  width: 9px; height: 9px; padding: 0; border: none; cursor: pointer;
+  border-radius: 999px;
+  background: rgba(255,255,255,.4);
+  transition: width .3s ease, background-color .3s ease;
+}
+.slide-dots button:hover { background: rgba(255,255,255,.7); }
+.slide-dots button.on { background: var(--gold); width: 26px; }
+.slide-dots button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
 
 /* ============================ Supplier band ============================ */
 .supplier {
