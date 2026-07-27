@@ -32,6 +32,13 @@ export default function Hero() {
 
   return (
     <section className="hero">
+      {/* Decorative gold arc with a dot riding the curve, top-right
+          (matches the footer / SIMAM motif). */}
+      <svg className="hero-deco" viewBox="0 0 600 600" fill="none" aria-hidden="true">
+        <circle cx="600" cy="0" r="470" stroke="rgba(255,210,63,.55)" strokeWidth="2" />
+        <circle cx="151" cy="103" r="11" fill="#FFD23F" />
+      </svg>
+
       <div className="container">
         <div className="hero-tagline reveal">
           <p className="t1">{t.hero.brand}</p>
