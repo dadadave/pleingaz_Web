@@ -481,7 +481,12 @@ ul { list-style: none; }
 .portfolio-head p { color: var(--muted); font-size: 14.5px; max-width: 420px; }
 .portfolio-head .section-title { margin-top: 12px; }
 
-.portfolio-carousel { overflow: hidden; }
+.portfolio-carousel {
+  overflow: hidden;
+  /* Fade the cards in/out at the edges instead of a hard cut. */
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 4%, #000 96%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 4%, #000 96%, transparent 100%);
+}
 .portfolio-track {
   display: flex;
   width: max-content;
@@ -618,7 +623,11 @@ ul { list-style: none; }
 /* Keep the carousel column from blowing out and pushing the videos column
    off to the right (grid items default to min-width: auto). */
 .news-grid > * { min-width: 0; }
-.news-carousel { overflow: hidden; min-width: 0; }
+.news-carousel {
+  overflow: hidden; min-width: 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 3%, #000 97%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 3%, #000 97%, transparent 100%);
+}
 .news-track {
   display: flex;
   width: max-content;
@@ -750,6 +759,11 @@ ul { list-style: none; }
   width: 620px; height: 620px;
   pointer-events: none; z-index: 0;
 }
+.footer-ripple {
+  position: absolute; left: 0; bottom: 0;
+  width: 520px; height: 520px;
+  pointer-events: none; z-index: 0;
+}
 .footer .container { position: relative; z-index: 1; }
 .footer-top {
   display: grid;
@@ -831,10 +845,21 @@ ul { list-style: none; }
 .footer-bar { border-top: 1px solid rgba(255,255,255,.1); }
 .footer-bar-inner {
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
-  padding: 20px 0; font-size: 12px; color: rgba(255,255,255,.6);
+  padding: 18px 0; font-size: 12px; color: rgba(255,255,255,.6);
   flex-wrap: wrap;
 }
-.footer-bar-inner .made b { color: #fff; font-weight: 800; }
+.footer-bar-inner .copy { display: inline-flex; align-items: center; gap: 12px; }
+.footer-seal {
+  width: 34px; height: 34px; border-radius: 50%; flex-shrink: 0;
+  border: 1.5px solid rgba(255,255,255,.5);
+  display: grid; place-items: center; color: #fff;
+}
+.footer-seal svg { width: 18px; height: 18px; }
+.footer-bar-inner .made .designer {
+  color: #FFD23F; font-weight: 800;
+  border-bottom: 1px solid transparent; transition: border-color .18s ease;
+}
+.footer-bar-inner .made .designer:hover { border-bottom-color: #FFD23F; }
 
 /* ============================ Reveal animation ============================ */
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .6s ease, transform .6s cubic-bezier(.2,.7,.3,1); }
@@ -915,7 +940,8 @@ ul { list-style: none; }
 
 @media (max-width: 620px) {
   .hero-slide .slide-body { padding: 34px 26px; }
-  .choice-cards { grid-template-columns: 1fr 1fr; }
+  /* Stack the two choice cards so each shows full-width on phones. */
+  .choice-cards { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
   .figure-list { grid-template-columns: 1fr 1fr; }
   .footer-main { grid-template-columns: 1fr; }
   .distributors-body { max-width: 100%; }
