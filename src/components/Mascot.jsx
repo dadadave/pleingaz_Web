@@ -48,14 +48,7 @@ export default function Mascot() {
         aria-label={m.label}
         type="button"
       >
-        {/* Placeholder flame mascot — swapped for the real PleinGaz mascot image. */}
-        <svg className="mascot-fig" viewBox="0 0 120 150" fill="none" aria-hidden="true">
-          <ellipse cx="60" cy="141" rx="28" ry="6" fill="rgba(0,0,0,.16)" />
-          <use href="#flame" x="30" y="4" width="60" height="92" />
-          <circle cx="52" cy="46" r="4" fill="#16375C" />
-          <circle cx="70" cy="46" r="4" fill="#16375C" />
-          <path d="M50 58c4 4 12 4 16 0" stroke="#16375C" strokeWidth="2.5" strokeLinecap="round" />
-        </svg>
+        <img className="mascot-fig" src="/images/mascotte.png" alt="Mascotte PleinGaz" />
         <span className="mascot-label">{m.label}</span>
       </button>
     </div>
