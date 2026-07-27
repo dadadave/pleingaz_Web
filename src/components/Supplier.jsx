@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Icon } from './Icons.jsx';
 import { useLang } from '../i18n.jsx';
 
@@ -22,7 +23,7 @@ export default function Supplier() {
           <div className="supplier-intro reveal">
             <h2>{t.supplier.title}</h2>
             <p>{t.supplier.text}</p>
-            <a href="#footer" className="btn btn-gold">{t.supplier.about}</a>
+            <Link to="/apropos" className="btn btn-gold">{t.supplier.about}</Link>
           </div>
 
           <div className="choice-cards reveal">

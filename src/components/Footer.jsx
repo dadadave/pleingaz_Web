@@ -98,7 +98,9 @@ export default function Footer() {
           <div className="footer-col">
             <h4>{t.footer.activitiesTitle}</h4>
             <ul>
-              {t.footer.activities.map((x) => <li key={x}><a href="#portfolio">{x}</a></li>)}
+              {t.footer.activities.map((x) => (
+                <li key={x.label}><SmartLink href={x.href}>{x.label}</SmartLink></li>
+              ))}
             </ul>
           </div>
 

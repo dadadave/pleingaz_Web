@@ -5,19 +5,22 @@ import Approaches from './Approaches.jsx';
 import { useLang } from '../i18n.jsx';
 import { useReveal } from '../useReveal.js';
 
-// Shared layout for the "Discover PleinGaz" inner pages (About, History,
-// Engagements): banner + title/breadcrumb + body slot + sidebar, then the
-// reused product portfolio and approaches sections.
-export default function InnerPage({ title, bannerIcon = 'workerHat', children }) {
+// Shared layout for the inner pages (About, History, Engagements, Product):
+// banner + title/breadcrumb + body slot + sidebar, then the reused product
+// portfolio and approaches sections. `sidebar` defaults to the "Discover
+// PleinGaz" menu; pages can pass their own { title, links }.
+export default function InnerPage({ title, bannerIcon = 'workerHat', bannerPh = 'ph-worker', sidebar, aside, crumbParent, children }) {
   const { t } = useLang();
   const a = t.about;
+  const side = sidebar || { title: a.sidebarTitle, links: a.sidebar };
+  const parent = crumbParent || side.title;
   const { pathname } = useLocation();
   useReveal(pathname);
 
   return (
     <main className="page">
       <div className="page-banner">
-        <div className="ph ph-worker" />
+        <div className={`ph ${bannerPh}`} />
         <div className="page-banner-veil" />
         <span className="page-banner-ico" aria-hidden="true">
           <Icon name={bannerIcon} strokeWidth={1.4} />
@@ -30,7 +33,7 @@ export default function InnerPage({ title, bannerIcon = 'workerHat', children })
           <nav className="crumb" aria-label="breadcrumb">
             <Link to="/">{a.home}</Link>
             <span>›</span>
-            <span>{a.sidebarTitle}</span>
+            <span>{parent}</span>
             <span>›</span>
             <span className="on">{title}</span>
           </nav>
@@ -40,18 +43,20 @@ export default function InnerPage({ title, bannerIcon = 'workerHat', children })
           <article className="page-body reveal">{children}</article>
 
           <aside className="page-side reveal">
-            <div className="side-card">
-              <h4>{a.sidebarTitle}</h4>
-              <ul>
-                {a.sidebar.map((s) => (
-                  <li key={s.label}>
-                    <Link to={s.href} className={pathname === s.href ? 'on' : ''}>
-                      <span className="dot" aria-hidden="true">›</span>{s.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {aside || (
+              <div className="side-card">
+                <h4>{side.title}</h4>
+                <ul>
+                  {side.links.map((s) => (
+                    <li key={s.label}>
+                      <Link to={s.href} className={pathname === s.href ? 'on' : ''}>
+                        <span className="dot" aria-hidden="true">›</span>{s.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
             <a href="/#footer" className="side-btn">
               {a.quote}<span className="ico"><Icon name="mail" strokeWidth={2} /></span>
             </a>
