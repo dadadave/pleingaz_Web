@@ -30,6 +30,9 @@ export const Icon = ({ name, ...rest }) => {
     workerHat: (<><path d="M4 10a8 8 0 0 1 16 0" /><path d="M3 10h18v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><path d="M12 2v2" /></>),
     stove: (<><rect x="4" y="4" width="16" height="16" rx="3" /><circle cx="12" cy="12" r="4" /><circle cx="12" cy="12" r="1" /></>),
     mapPin: (<><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10Z" /><circle cx="12" cy="11" r="2.5" /></>),
+    truck: (<><path d="M3 6h11v10H3z" /><path d="M14 9h4l3 3v4h-7" /><circle cx="7" cy="18" r="2" /><circle cx="17" cy="18" r="2" /></>),
+    clock: (<><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></>),
+    award: (<><circle cx="12" cy="9" r="5" /><path d="m8.5 13-1.5 8 5-3 5 3-1.5-8" /></>),
   };
   const fillIcons = { play: true };
   return (

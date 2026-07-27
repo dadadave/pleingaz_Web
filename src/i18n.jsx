@@ -128,6 +128,21 @@ export const CONTENT = {
       text: 'PleinGaz offre à ses clients un réseau sûr et efficace, au service des régions. Nos équipes travaillent chaque jour pour la performance, la qualité et la responsabilité.',
       cta: 'Découvrir le réseau ›',
     },
+    promo: {
+      eyebrow: 'PleinGaz est disponible !',
+      title: 'Votre énergie, toujours à portée de main',
+      text: 'Des bouteilles toujours pleines, livrées près de chez vous. Qualité, sécurité et disponibilité à chaque étape.',
+      cta: 'Trouver un point de vente',
+      features: [
+        { icon: 'award', label: 'Haute qualité' },
+        { icon: 'shieldCheck', label: 'Sécurité garantie' },
+        { icon: 'clock', label: 'Disponibilité rapide' },
+        { icon: 'truck', label: 'Livraison assurée' },
+      ],
+      serviceLabel: 'Service client',
+      servicePhone: '680 000 075',
+      serviceTag: 'L’énergie qui vous accompagne, partout et à tout moment.',
+    },
     network: {
       title: 'Points de vente',
       crumbParent: 'Nos activités',
@@ -398,6 +413,21 @@ export const CONTENT = {
       title: 'Our distributor network',
       text: 'PleinGaz offers its customers a safe and efficient network, at the service of the regions. Our teams work every day for performance, quality and responsibility.',
       cta: 'Discover the network ›',
+    },
+    promo: {
+      eyebrow: 'PleinGaz is available!',
+      title: 'Your energy, always within reach',
+      text: 'Always-full cylinders, delivered close to you. Quality, safety and availability at every step.',
+      cta: 'Find a point of sale',
+      features: [
+        { icon: 'award', label: 'High quality' },
+        { icon: 'shieldCheck', label: 'Guaranteed safety' },
+        { icon: 'clock', label: 'Fast availability' },
+        { icon: 'truck', label: 'Assured delivery' },
+      ],
+      serviceLabel: 'Customer service',
+      servicePhone: '680 000 075',
+      serviceTag: 'The energy that supports you, everywhere and at all times.',
     },
     network: {
       title: 'Points of sale',
