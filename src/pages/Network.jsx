@@ -1,4 +1,5 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { useEffect } from 'react';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { Link, useLocation } from 'react-router-dom';
@@ -19,6 +20,17 @@ const pinIcon = L.divIcon({
   iconAnchor: [15, 45],
   popupAnchor: [0, -42],
 });
+
+// Frame the map to the actual markers once, on mount.
+function FitToMarkers({ points }) {
+  const map = useMap();
+  useEffect(() => {
+    if (!points.length) return;
+    const bounds = L.latLngBounds(points.map((p) => [p.lat, p.lng]));
+    map.fitBounds(bounds, { padding: [40, 40] });
+  }, [map, points]);
+  return null;
+}
 
 // "Points de vente" page: a full-width interactive Leaflet / OpenStreetMap of
 // PleinGaz's distributor network, one marker per point of sale.
@@ -57,28 +69,24 @@ export default function Network() {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
+          <FitToMarkers points={pointsOfSale} />
           {pointsOfSale.map((p, i) => (
             <Marker key={i} position={[p.lat, p.lng]} icon={pinIcon}>
               <Popup>
-                <strong>{p.name}</strong>
-                {(p.city || p.region) && (
-                  <>
-                    <br />
-                    {[p.city, p.region].filter(Boolean).join(' — ')}
-                  </>
-                )}
-                {p.address && (
-                  <>
-                    <br />
-                    {p.address}
-                  </>
-                )}
-                {p.phone && (
-                  <>
-                    <br />
-                    {p.phone}
-                  </>
-                )}
+                <span className="pos-pop">
+                  <strong>{p.name}</strong>
+                  {(p.type || p.city) && (
+                    <span className="pos-pop-sub">
+                      {[p.type, p.city].filter(Boolean).join(' · ')}
+                    </span>
+                  )}
+                  {p.address && <span className="pos-pop-addr">{p.address}</span>}
+                  {p.phone && (
+                    <a className="pos-pop-tel" href={`tel:${p.phone.split('/')[0].replace(/\s/g, '')}`}>
+                      {p.phone}
+                    </a>
+                  )}
+                </span>
               </Popup>
             </Marker>
           ))}
