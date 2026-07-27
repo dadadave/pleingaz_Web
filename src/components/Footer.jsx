@@ -47,9 +47,9 @@ export default function Footer() {
 
       <div className="container">
         <div className="footer-top">
-          <a href="#top" className="brand brand-mini" aria-label="PleinGaz">
+          <SmartLink href="/" className="brand brand-mini" aria-label="PleinGaz">
             <img src="/assets/logo.png" alt="PleinGaz" className="brand-logo brand-logo--footer" />
-          </a>
+          </SmartLink>
           <div className="footer-contact">
             <div className="fc-item">
               <span className="ico"><Icon name="phone" strokeWidth={2} /></span>
@@ -89,8 +89,8 @@ export default function Footer() {
           <div className="footer-col">
             <h4>{t.footer.aboutTitle}</h4>
             <ul>
-              {t.footer.about.map((x, i) => (
-                <li key={x}><SmartLink href={i === 0 ? '/apropos' : '#top'}>{x}</SmartLink></li>
+              {t.footer.about.map((x) => (
+                <li key={x.label}><SmartLink href={x.href}>{x.label}</SmartLink></li>
               ))}
             </ul>
           </div>
