@@ -931,7 +931,8 @@ ul { list-style: none; }
 
 @media (max-width: 620px) {
   .hero-slide .slide-body { padding: 34px 26px; }
-  .choice-cards { grid-template-columns: 1fr 1fr; }
+  /* Stack the two choice cards so each shows full-width on phones. */
+  .choice-cards { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
   .figure-list { grid-template-columns: 1fr 1fr; }
   .footer-main { grid-template-columns: 1fr; }
   .distributors-body { max-width: 100%; }
