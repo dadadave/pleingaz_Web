@@ -32,17 +32,11 @@ export default function ProductPage() {
       aside={aside}
     >
       <div className="product-lead">
-        {product.image ? (
-          <div className="product-photo has-img">
-            <img src={product.image} alt={product.title} loading="lazy" />
-          </div>
-        ) : (
-          <div className={`product-photo ph ${product.ph}`}>
-            <span className="product-photo-ico" aria-hidden="true">
-              <Icon name={product.icon} strokeWidth={1.4} />
-            </span>
-          </div>
-        )}
+        <div className={`product-photo ph ${product.ph}`}>
+          <span className="product-photo-ico" aria-hidden="true">
+            <Icon name={product.icon} strokeWidth={1.4} />
+          </span>
+        </div>
         <div className="product-copy">
           {product.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
         </div>
