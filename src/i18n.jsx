@@ -127,6 +127,13 @@ export const CONTENT = {
       text: 'PleinGaz offre à ses clients un réseau sûr et efficace, au service des régions. Nos équipes travaillent chaque jour pour la performance, la qualité et la responsabilité.',
       cta: 'Découvrir le réseau ›',
     },
+    network: {
+      title: 'Points de vente',
+      crumbParent: 'Nos activités',
+      intro: 'Retrouvez PleinGaz partout au Cameroun. Notre réseau de plus de 850 revendeurs partenaires couvre les grandes villes et les régions. Cliquez sur un marqueur pour voir le point de vente.',
+      overlayCount: 'points de vente',
+      note: 'Emplacements indicatifs — les points de vente précis seront ajoutés prochainement.',
+    },
     news: {
       eyebrow: 'Actualités PleinGaz',
       tag: 'News',
@@ -389,6 +396,13 @@ export const CONTENT = {
       title: 'Our distributor network',
       text: 'PleinGaz offers its customers a safe and efficient network, at the service of the regions. Our teams work every day for performance, quality and responsibility.',
       cta: 'Discover the network ›',
+    },
+    network: {
+      title: 'Points of sale',
+      crumbParent: 'Our activities',
+      intro: 'Find PleinGaz everywhere in Cameroon. Our network of more than 850 partner resellers covers the major cities and regions. Click a marker to see the point of sale.',
+      overlayCount: 'points of sale',
+      note: 'Indicative locations — exact points of sale will be added soon.',
     },
     news: {
       eyebrow: 'PleinGaz news',
