@@ -128,6 +128,13 @@ export const CONTENT = {
       text: 'PleinGaz offre à ses clients un réseau sûr et efficace, au service des régions. Nos équipes travaillent chaque jour pour la performance, la qualité et la responsabilité.',
       cta: 'Découvrir le réseau ›',
     },
+    mascot: {
+      label: 'À votre service',
+      title: 'Discutez avec nous',
+      whatsapp: 'WhatsApp',
+      call: 'Nous appeler',
+      close: 'Fermer',
+    },
     network: {
       title: 'Points de vente',
       crumbParent: 'Nos activités',
@@ -398,6 +405,13 @@ export const CONTENT = {
       title: 'Our distributor network',
       text: 'PleinGaz offers its customers a safe and efficient network, at the service of the regions. Our teams work every day for performance, quality and responsibility.',
       cta: 'Discover the network ›',
+    },
+    mascot: {
+      label: 'At your service',
+      title: 'Chat with us',
+      whatsapp: 'WhatsApp',
+      call: 'Call us',
+      close: 'Close',
     },
     network: {
       title: 'Points of sale',

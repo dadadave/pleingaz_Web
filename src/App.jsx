@@ -9,6 +9,7 @@ import History from './pages/History.jsx';
 import Engagements from './pages/Engagements.jsx';
 import ProductPage from './pages/ProductPage.jsx';
 import Network from './pages/Network.jsx';
+import Mascot from './components/Mascot.jsx';
 
 // Jump to the top of the page on every route change.
 function ScrollToTop() {
@@ -34,6 +35,7 @@ export default function App() {
         <Route path="/reseau" element={<Network />} />
       </Routes>
       <Footer />
+      <Mascot />
     </>
   );
 }
