@@ -143,6 +143,11 @@ export const CONTENT = {
       servicePhone: '680 000 075',
       serviceTag: 'L’énergie qui vous accompagne, partout et à tout moment.',
     },
+    flags: {
+      eyebrow: 'PleinGaz sur le terrain',
+      title: 'Présents à vos côtés, partout au Cameroun',
+      text: 'De nos points de vente aux grands événements sportifs et culturels, la marque PleinGaz accompagne le quotidien des Camerounais.',
+    },
     network: {
       title: 'Points de vente',
       crumbParent: 'Nos activités',
@@ -249,6 +254,7 @@ export const CONTENT = {
     catalog: [
       {
         slug: 'bouteilles-domestiques', title: 'Bouteilles domestiques', icon: 'bottle', ph: 'ph-warm',
+        image: '/images/bouteille-6kg.jpg',
         paragraphs: [
           'PleinGaz met à disposition des ménages une gamme complète de bouteilles de gaz : 6 kg pour les petits foyers, 12,5 kg pour la cuisine familiale et 50 kg pour les besoins les plus importants.',
           'Chaque bouteille répond à des contrôles de sécurité stricts et bénéficie de notre réseau de recharge disponible partout au Cameroun.',
@@ -257,6 +263,7 @@ export const CONTENT = {
       },
       {
         slug: 'gaz-vrac', title: 'Gaz en vrac', icon: 'factory', ph: 'ph-slate',
+        image: '/images/bouteille-50kg.jpg',
         paragraphs: [
           'Pour les industriels et les professionnels à forte consommation, PleinGaz assure l’approvisionnement en gaz en vrac, livré directement dans vos citernes.',
           'Un suivi régulier et une logistique dédiée garantissent la continuité de votre activité.',
@@ -429,6 +436,11 @@ export const CONTENT = {
       servicePhone: '680 000 075',
       serviceTag: 'The energy that supports you, everywhere and at all times.',
     },
+    flags: {
+      eyebrow: 'PleinGaz in the field',
+      title: 'By your side, everywhere in Cameroon',
+      text: 'From our points of sale to major sporting and cultural events, the PleinGaz brand is part of everyday life across Cameroon.',
+    },
     network: {
       title: 'Points of sale',
       crumbParent: 'Our activities',
@@ -535,6 +547,7 @@ export const CONTENT = {
     catalog: [
       {
         slug: 'bouteilles-domestiques', title: 'Domestic cylinders', icon: 'bottle', ph: 'ph-warm',
+        image: '/images/bouteille-6kg.jpg',
         paragraphs: [
           'PleinGaz offers households a full range of gas cylinders: 6 kg for small homes, 12.5 kg for family cooking and 50 kg for the heaviest needs.',
           'Every cylinder meets strict safety checks and benefits from our refill network available throughout Cameroon.',
@@ -543,6 +556,7 @@ export const CONTENT = {
       },
       {
         slug: 'gaz-vrac', title: 'Bulk gas', icon: 'factory', ph: 'ph-slate',
+        image: '/images/bouteille-50kg.jpg',
         paragraphs: [
           'For industry and high-consumption professionals, PleinGaz ensures a bulk gas supply, delivered directly into your tanks.',
           'Regular monitoring and dedicated logistics keep your operations running without interruption.',
