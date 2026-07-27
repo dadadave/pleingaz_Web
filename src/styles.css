@@ -1110,6 +1110,12 @@ ul { list-style: none; }
   position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(20,24,20,.15), rgba(20,24,20,.5));
 }
+.page-banner-ico {
+  position: absolute; inset: 0; z-index: 1;
+  display: grid; place-items: center;
+  color: rgba(255,255,255,.3);
+}
+.page-banner-ico svg { width: 64px; height: 64px; }
 .page-head { padding: 30px 0 6px; }
 .page-head h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; color: var(--navy); }
 .crumb { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 10px; font-size: 13px; color: var(--muted); }
