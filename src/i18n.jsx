@@ -43,11 +43,11 @@ export const CONTENT = {
           blurb:
             'PleinGaz répond à tous vos besoins en énergie : bouteilles domestiques, gaz en vrac, réchauds, détendeurs et livraison à domicile.',
           links: [
-            { label: 'Bouteilles domestiques', href: '#portfolio' },
-            { label: 'Gaz en vrac', href: '#portfolio' },
-            { label: 'Réchauds & cuisinières', href: '#portfolio' },
-            { label: 'Détendeurs & accessoires', href: '#portfolio' },
-            { label: 'Livraison à domicile', href: '#portfolio' },
+            { label: 'Bouteilles domestiques', href: '/produit/bouteilles-domestiques' },
+            { label: 'Gaz en vrac', href: '/produit/gaz-vrac' },
+            { label: 'Réchauds & cuisinières', href: '/produit/rechauds-cuisinieres' },
+            { label: 'Détendeurs & accessoires', href: '/produit/detendeurs-accessoires' },
+            { label: 'Livraison à domicile', href: '/produit/livraison-domicile' },
           ],
           image: { ph: 'ph-warm', icon: 'bottle' },
         },
@@ -154,7 +154,13 @@ export const CONTENT = {
         { label: 'Nos engagements', href: '/nos-engagements' },
       ],
       activitiesTitle: 'Activités',
-      activities: ['Bouteilles domestiques', 'Gaz en vrac', 'Réchauds & cuisinières', 'Détendeurs & accessoires', 'Livraison à domicile'],
+      activities: [
+        { label: 'Bouteilles domestiques', href: '/produit/bouteilles-domestiques' },
+        { label: 'Gaz en vrac', href: '/produit/gaz-vrac' },
+        { label: 'Réchauds & cuisinières', href: '/produit/rechauds-cuisinieres' },
+        { label: 'Détendeurs & accessoires', href: '/produit/detendeurs-accessoires' },
+        { label: 'Livraison à domicile', href: '/produit/livraison-domicile' },
+      ],
       partnersTitle: 'Nos partenaires',
       partners: ['AfriqGaz', 'GazPlus', 'CamEnergy', 'SudGaz'],
       copyright: '© 2026 PleinGaz — Cameroun. Tous droits réservés.',
@@ -209,6 +215,56 @@ export const CONTENT = {
         { title: 'Fondation PleinGaz', text: 'À travers ses actions solidaires, PleinGaz s’investit sur le terrain pour la santé, l’éducation et le bien-être des communautés camerounaises : soutien aux écoles, dons aux structures d’accueil et participation à des initiatives sociales et culturelles.' },
       ],
     },
+    catalogTitle: 'Nos activités',
+    catalogPromo: {
+      title: 'Ce produit vous intéresse ?',
+      text: 'Nos conseillers sont à votre disposition pour vous orienter vers la solution la mieux adaptée à vos besoins et vous communiquer nos tarifs.',
+      quote: 'Demander un devis',
+      pos: 'Points de vente',
+      features: 'Nos atouts',
+    },
+    catalog: [
+      {
+        slug: 'bouteilles-domestiques', title: 'Bouteilles domestiques', icon: 'bottle', ph: 'ph-warm',
+        paragraphs: [
+          'PleinGaz met à disposition des ménages une gamme complète de bouteilles de gaz : 6 kg pour les petits foyers, 12,5 kg pour la cuisine familiale et 50 kg pour les besoins les plus importants.',
+          'Chaque bouteille répond à des contrôles de sécurité stricts et bénéficie de notre réseau de recharge disponible partout au Cameroun.',
+        ],
+        features: ['Formats 6 kg, 12,5 kg et 50 kg', 'Recharge rapide chez plus de 850 revendeurs', 'Bouteilles contrôlées et sécurisées'],
+      },
+      {
+        slug: 'gaz-vrac', title: 'Gaz en vrac', icon: 'factory', ph: 'ph-slate',
+        paragraphs: [
+          'Pour les industriels et les professionnels à forte consommation, PleinGaz assure l’approvisionnement en gaz en vrac, livré directement dans vos citernes.',
+          'Un suivi régulier et une logistique dédiée garantissent la continuité de votre activité.',
+        ],
+        features: ['Livraison en citerne', 'Approvisionnement continu', 'Solutions sur mesure pour l’industrie'],
+      },
+      {
+        slug: 'rechauds-cuisinieres', title: 'Réchauds & cuisinières', icon: 'stove', ph: 'ph-crowd',
+        paragraphs: [
+          'Complétez votre installation avec nos réchauds et cuisinières : allumage piézo, plans en verre trempé, faciles à nettoyer et adaptés à un usage quotidien.',
+          'Des équipements fiables, pensés pour la sécurité et le confort de toute la famille.',
+        ],
+        features: ['Allumage piézo', 'Verre trempé facile à nettoyer', 'Modèles 1 à 4 feux'],
+      },
+      {
+        slug: 'detendeurs-accessoires', title: 'Détendeurs & accessoires', icon: 'wrench', ph: 'ph-green',
+        paragraphs: [
+          'Détendeurs de sécurité, tuyaux, colliers et pièces homologuées : tout le nécessaire pour raccorder et utiliser votre installation en toute sérénité.',
+          'Des accessoires certifiés, conformes aux normes en vigueur.',
+        ],
+        features: ['Détendeurs de sécurité homologués', 'Tuyaux et raccords certifiés', 'Pièces de rechange disponibles'],
+      },
+      {
+        slug: 'livraison-domicile', title: 'Livraison à domicile', icon: 'team', ph: 'ph-blue',
+        paragraphs: [
+          'Commandez votre gaz et faites-vous livrer directement chez vous, rapidement et en toute sécurité, partout dans nos zones de couverture.',
+          'Un service pensé pour vous simplifier le quotidien, particuliers comme professionnels.',
+        ],
+        features: ['Livraison rapide et sécurisée', 'Particuliers et professionnels', 'Large zone de couverture'],
+      },
+    ],
   },
 
   en: {
@@ -250,11 +306,11 @@ export const CONTENT = {
           blurb:
             'PleinGaz meets all your energy needs: domestic cylinders, bulk gas, stoves, regulators and home delivery.',
           links: [
-            { label: 'Domestic cylinders', href: '#portfolio' },
-            { label: 'Bulk gas', href: '#portfolio' },
-            { label: 'Stoves & cookers', href: '#portfolio' },
-            { label: 'Regulators & accessories', href: '#portfolio' },
-            { label: 'Home delivery', href: '#portfolio' },
+            { label: 'Domestic cylinders', href: '/produit/bouteilles-domestiques' },
+            { label: 'Bulk gas', href: '/produit/gaz-vrac' },
+            { label: 'Stoves & cookers', href: '/produit/rechauds-cuisinieres' },
+            { label: 'Regulators & accessories', href: '/produit/detendeurs-accessoires' },
+            { label: 'Home delivery', href: '/produit/livraison-domicile' },
           ],
           image: { ph: 'ph-warm', icon: 'bottle' },
         },
@@ -361,7 +417,13 @@ export const CONTENT = {
         { label: 'Our commitments', href: '/nos-engagements' },
       ],
       activitiesTitle: 'Activities',
-      activities: ['Domestic cylinders', 'Bulk gas', 'Stoves & cookers', 'Regulators & accessories', 'Home delivery'],
+      activities: [
+        { label: 'Domestic cylinders', href: '/produit/bouteilles-domestiques' },
+        { label: 'Bulk gas', href: '/produit/gaz-vrac' },
+        { label: 'Stoves & cookers', href: '/produit/rechauds-cuisinieres' },
+        { label: 'Regulators & accessories', href: '/produit/detendeurs-accessoires' },
+        { label: 'Home delivery', href: '/produit/livraison-domicile' },
+      ],
       partnersTitle: 'Our partners',
       partners: ['AfriqGaz', 'GazPlus', 'CamEnergy', 'SudGaz'],
       copyright: '© 2026 PleinGaz — Cameroon. All rights reserved.',
@@ -416,6 +478,56 @@ export const CONTENT = {
         { title: 'PleinGaz Foundation', text: 'Through its charitable actions, PleinGaz works on the ground for the health, education and well-being of Cameroonian communities: support for schools, donations to care facilities and participation in social and cultural initiatives.' },
       ],
     },
+    catalogTitle: 'Our activities',
+    catalogPromo: {
+      title: 'Interested in this product?',
+      text: 'Our advisers are on hand to guide you toward the solution best suited to your needs and to share our pricing with you.',
+      quote: 'Request a quote',
+      pos: 'Points of sale',
+      features: 'Key benefits',
+    },
+    catalog: [
+      {
+        slug: 'bouteilles-domestiques', title: 'Domestic cylinders', icon: 'bottle', ph: 'ph-warm',
+        paragraphs: [
+          'PleinGaz offers households a full range of gas cylinders: 6 kg for small homes, 12.5 kg for family cooking and 50 kg for the heaviest needs.',
+          'Every cylinder meets strict safety checks and benefits from our refill network available throughout Cameroon.',
+        ],
+        features: ['6 kg, 12.5 kg and 50 kg formats', 'Fast refills at over 850 resellers', 'Inspected and secured cylinders'],
+      },
+      {
+        slug: 'gaz-vrac', title: 'Bulk gas', icon: 'factory', ph: 'ph-slate',
+        paragraphs: [
+          'For industry and high-consumption professionals, PleinGaz ensures a bulk gas supply, delivered directly into your tanks.',
+          'Regular monitoring and dedicated logistics keep your operations running without interruption.',
+        ],
+        features: ['Tanker delivery', 'Continuous supply', 'Tailored solutions for industry'],
+      },
+      {
+        slug: 'rechauds-cuisinieres', title: 'Stoves & cookers', icon: 'stove', ph: 'ph-crowd',
+        paragraphs: [
+          'Complete your setup with our stoves and cookers: piezo ignition, tempered-glass tops, easy to clean and built for daily use.',
+          'Reliable equipment designed for the safety and comfort of the whole family.',
+        ],
+        features: ['Piezo ignition', 'Easy-clean tempered glass', '1 to 4-burner models'],
+      },
+      {
+        slug: 'detendeurs-accessoires', title: 'Regulators & accessories', icon: 'wrench', ph: 'ph-green',
+        paragraphs: [
+          'Safety regulators, hoses, clamps and approved parts: everything you need to connect and use your installation with complete peace of mind.',
+          'Certified accessories that comply with current standards.',
+        ],
+        features: ['Approved safety regulators', 'Certified hoses and fittings', 'Spare parts available'],
+      },
+      {
+        slug: 'livraison-domicile', title: 'Home delivery', icon: 'team', ph: 'ph-blue',
+        paragraphs: [
+          'Order your gas and have it delivered straight to your door, quickly and safely, anywhere within our coverage areas.',
+          'A service designed to make your everyday life easier, for individuals and professionals alike.',
+        ],
+        features: ['Fast, secure delivery', 'Individuals and professionals', 'Wide coverage area'],
+      },
+    ],
   },
 };
 
