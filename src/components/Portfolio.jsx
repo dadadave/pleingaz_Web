@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Icon } from './Icons.jsx';
 import { useLang } from '../i18n.jsx';
 
@@ -28,7 +29,9 @@ export default function Portfolio() {
                 <h3>{p.title}</h3>
                 <p className="desc">{p.desc}</p>
                 {p.price && <span className="price">{p.price}</span>}
-                <a href="#" className="find-out">{t.portfolio.learnMore} <span className="plus">+</span></a>
+                <Link to={`/produit/${p.slug}`} className="find-out">
+                  {t.portfolio.learnMore} <span className="plus">+</span>
+                </Link>
               </article>
             ))}
           </div>
