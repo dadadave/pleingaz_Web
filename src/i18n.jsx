@@ -28,7 +28,7 @@ export const CONTENT = {
         mega: {
           blurb: 'PleinGaz, acteur majeur de la distribution de gaz et d’énergie au Cameroun.',
           links: [
-            { label: 'Qui sommes-nous ?', href: '#footer' },
+            { label: 'Qui sommes-nous ?', href: '/apropos' },
             { label: 'Histoire', href: '#footer' },
             { label: 'Nos engagements', href: '#footer' },
             { label: 'Organisation', href: '#footer' },
@@ -165,6 +165,35 @@ export const CONTENT = {
       successTitle: 'Merci !',
       successText: 'Votre inscription à la newsletter est bien enregistrée.',
     },
+    about: {
+      home: 'Accueil',
+      title: 'Qui sommes-nous ?',
+      sidebarTitle: 'Découvrir PleinGaz',
+      sidebar: [
+        { label: 'Qui sommes-nous ?', href: '/apropos' },
+        { label: 'Histoire', href: '/apropos' },
+        { label: 'Nos engagements', href: '/apropos' },
+        { label: 'Organisation', href: '/apropos' },
+        { label: 'Nos partenaires', href: '/apropos' },
+        { label: 'Politique QSE', href: '/apropos' },
+      ],
+      quote: 'Demander un devis',
+      pos: 'Points de vente',
+      paragraphs: [
+        'PleinGaz est un acteur majeur de la distribution de gaz et de produits énergétiques au Cameroun. Grâce à sa stratégie de distribution unique, les bouteilles sont livrées chaque jour à son vaste réseau de dépôts, garantissant la disponibilité du gaz.',
+        'Notre gamme s’adresse, d’une part, aux professionnels — bouteilles industrielles, gaz en vrac, lubrifiants, additifs et biocides — et, d’autre part, aux ménages, avec les bouteilles domestiques de 6 kg, 12,5 kg et 50 kg.',
+        'Afin d’offrir un haut niveau de sécurité, des innovations majeures ont été apportées à nos bouteilles et à nos équipements. Avec plus de 850 revendeurs partenaires à travers le pays, PleinGaz met son expertise au service du plus grand nombre depuis 2015.',
+        'PleinGaz est conscient de sa responsabilité face aux enjeux sociétaux et environnementaux. L’entreprise veille au respect de l’environnement, à la sécurité au travail et à la conformité de ses procédures, tout en multipliant ses initiatives sociales.',
+      ],
+      valuesTitle: 'Nos valeurs',
+      values: [
+        { title: 'La sécurité avant tout', items: ['Adopter un comportement sûr dans tout ce que nous faisons.', 'Veiller à ce que le travail et les déplacements se fassent en toute sécurité.', 'Promouvoir la sécurité et la santé au travail.'] },
+        { title: 'La réussite des employés', items: ['Continuer à se développer et à faire grandir les autres.', 'Chercher des solutions et encourager chacun à progresser.', 'Participer à la vie de l’entreprise, être socialement responsable.'] },
+        { title: 'Esprit d’équipe et collaboration', items: ['Traiter ses collègues comme on aimerait l’être.', 'Faire confiance aux compétences de chacun.', 'Rechercher activement des points de vue et des idées nouvelles.'] },
+        { title: 'Excellence et amélioration continue', items: ['Être professionnel en respectant ses engagements.', 'Exceller, avec la volonté d’être un leader.', 'Oser innover en prenant des risques raisonnables.'] },
+        { title: 'Satisfaction client', items: ['Placer le client au cœur de nos préoccupations.', 'Répondre aux besoins des clients et à leurs attentes.', 'Apporter de la valeur à chacune de nos interactions.'] },
+      ],
+    },
   },
 
   en: {
@@ -191,7 +220,7 @@ export const CONTENT = {
         mega: {
           blurb: 'PleinGaz, a major player in gas and energy distribution in Cameroon.',
           links: [
-            { label: 'Who are we?', href: '#footer' },
+            { label: 'Who are we?', href: '/apropos' },
             { label: 'History', href: '#footer' },
             { label: 'Our commitments', href: '#footer' },
             { label: 'Organization', href: '#footer' },
@@ -327,6 +356,35 @@ export const CONTENT = {
       errorText: 'Please enter a valid email address.',
       successTitle: 'Thank you!',
       successText: 'Your newsletter subscription has been registered.',
+    },
+    about: {
+      home: 'Home',
+      title: 'Who are we?',
+      sidebarTitle: 'Discover PleinGaz',
+      sidebar: [
+        { label: 'Who are we?', href: '/apropos' },
+        { label: 'History', href: '/apropos' },
+        { label: 'Our commitments', href: '/apropos' },
+        { label: 'Organization', href: '/apropos' },
+        { label: 'Our partners', href: '/apropos' },
+        { label: 'QSE policy', href: '/apropos' },
+      ],
+      quote: 'Ask for a quote',
+      pos: 'Points of sale',
+      paragraphs: [
+        'PleinGaz is a major player in the distribution of gas and energy products in Cameroon. Thanks to its unique distribution strategy, cylinders are delivered daily to its extensive network of depots, ensuring the availability of gas.',
+        'Our range is aimed, on the one hand, at professionals — industrial cylinders, bulk gas, lubricants, additives and biocides — and, on the other hand, at households, with the 6 kg, 12.5 kg and 50 kg domestic cylinders.',
+        'In order to offer a high level of safety, major innovations have been made to our cylinders and equipment. With more than 850 partner resellers across the country, PleinGaz has put its expertise at the service of the greatest number since 2015.',
+        'PleinGaz is aware of its responsibility in the face of societal and environmental challenges. The company ensures respect for the environment, workplace safety and compliance of its procedures, while increasing its social initiatives.',
+      ],
+      valuesTitle: 'Our values',
+      values: [
+        { title: 'Health and safety first', items: ['Demonstrate safe behavior in everything we do.', 'Ensure that all work and travel is done safely.', 'Promote safety and health in the workplace.'] },
+        { title: 'Employee achievement', items: ['Continue to develop oneself and others.', 'Seek solutions and encourage others to improve.', 'Take part in the life of the company, be socially responsible.'] },
+        { title: 'Team spirit and collaboration', items: ['Treat colleagues as we would like to be treated.', 'Trust in the abilities of our colleagues.', 'Actively seek different points of view and new ideas.'] },
+        { title: 'Excellence and continuous improvement', items: ['Be professional by respecting the commitments made.', 'Excel, with the will to be a leader.', 'Dare to innovate while taking reasonable risks.'] },
+        { title: 'Client satisfaction', items: ['Put the customer at the heart of our concerns.', 'Respond to customer needs and expectations.', 'Bring value to every one of our interactions.'] },
+      ],
     },
   },
 };

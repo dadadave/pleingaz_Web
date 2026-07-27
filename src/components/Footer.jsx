@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Icon, Social } from './Icons.jsx';
+import SmartLink from './SmartLink.jsx';
 import Alert from './Alert.jsx';
 import { useLang } from '../i18n.jsx';
 
@@ -88,7 +89,9 @@ export default function Footer() {
           <div className="footer-col">
             <h4>{t.footer.aboutTitle}</h4>
             <ul>
-              {t.footer.about.map((x) => <li key={x}><a href="#top">{x}</a></li>)}
+              {t.footer.about.map((x, i) => (
+                <li key={x}><SmartLink href={i === 0 ? '/apropos' : '#top'}>{x}</SmartLink></li>
+              ))}
             </ul>
           </div>
 
