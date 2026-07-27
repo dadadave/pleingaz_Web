@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Icon } from './Icons.jsx';
 import { useLang } from '../i18n.jsx';
 
@@ -135,7 +136,7 @@ export default function Figures() {
             <div className="distributors-body">
               <h3>{t.distributors.title}</h3>
               <p>{t.distributors.text}</p>
-              <a href="#footer" className="btn btn-white">{t.distributors.cta}</a>
+              <Link to="/reseau" className="btn btn-white">{t.distributors.cta}</Link>
             </div>
           </div>
         </div>
