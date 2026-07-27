@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Icon, Flame } from '../components/Icons.jsx';
+import Portfolio from '../components/Portfolio.jsx';
+import Approaches from '../components/Approaches.jsx';
 import { useLang } from '../i18n.jsx';
 import { useReveal } from '../useReveal.js';
 
@@ -10,10 +12,11 @@ export default function About() {
 
   return (
     <main className="page">
-      {/* Banner */}
+      {/* Banner (photo space) */}
       <div className="page-banner">
         <div className="ph ph-worker" />
         <div className="page-banner-veil" />
+        <span className="page-banner-ico" aria-hidden="true"><Icon name="workerHat" strokeWidth={1.4} /></span>
       </div>
 
       <div className="container">
@@ -69,6 +72,10 @@ export default function About() {
           </aside>
         </div>
       </div>
+
+      {/* Reused home sections at the bottom, like SIMAM's inner pages. */}
+      <Portfolio />
+      <Approaches />
     </main>
   );
 }
