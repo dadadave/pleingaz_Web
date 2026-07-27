@@ -1249,7 +1249,7 @@ ul { list-style: none; }
 }
 
 /* ── Points de vente / distributor network map ───────────────────── */
-.network-page { padding-bottom: 60px; }
+.network-page { padding-bottom: 0; }
 .network-head {
   display: flex; flex-wrap: wrap; align-items: flex-end;
   justify-content: space-between; gap: 12px; padding: 40px 0 6px;
@@ -1261,9 +1261,9 @@ ul { list-style: none; }
 
 .network-map-full {
   position: relative;
-  height: clamp(420px, 72vh, 760px);
-  margin-top: 12px;
-  border-top: 3px solid var(--red);
+  /* Fill the viewport below the sticky 74px header. */
+  height: calc(100vh - 75px);
+  min-height: 420px;
   border-bottom: 3px solid var(--red);
 }
 .network-map-full .leaflet-container {
