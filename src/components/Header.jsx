@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Icon } from './Icons.jsx';
 import SmartLink from './SmartLink.jsx';
 import { useLang } from '../i18n.jsx';
@@ -11,11 +12,14 @@ export default function Header() {
   return (
     <header className="site-header" id="top">
       <nav className="nav container">
-        <a href="#top" className="brand" aria-label="PleinGaz" onClick={closeMenu}>
+        <Link to="/" className="brand" aria-label="PleinGaz" onClick={closeMenu}>
           <img src="/assets/logo.png" alt="PleinGaz" className="brand-logo" />
-        </a>
+        </Link>
 
         <div className="nav-links">
+          <Link to="/" className="nav-home" aria-label={t.header.home}>
+            <Icon name="home" strokeWidth={2} />
+          </Link>
           {t.nav.map((l) => (
             <div className={`nav-item${l.mega ? ' has-mega' : ''}`} key={l.key}>
               <a href={l.href}>

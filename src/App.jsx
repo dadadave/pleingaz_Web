@@ -5,6 +5,8 @@ import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
+import History from './pages/History.jsx';
+import Engagements from './pages/Engagements.jsx';
 
 // Jump to the top of the page on every route change.
 function ScrollToTop() {
@@ -24,6 +26,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<About />} />
+        <Route path="/histoire" element={<History />} />
+        <Route path="/nos-engagements" element={<Engagements />} />
       </Routes>
       <Footer />
     </>

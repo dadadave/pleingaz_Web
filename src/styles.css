@@ -1172,3 +1172,42 @@ ul { list-style: none; }
   .page-grid { grid-template-columns: 1fr; gap: 30px; }
   .page-side { position: static; }
 }
+
+/* ---- Inner-page extras ---- */
+.nav-home {
+  display: inline-grid; place-items: center;
+  width: 34px; height: 34px; border-radius: 8px;
+  color: var(--ink-2); flex-shrink: 0; transition: color .15s ease, background-color .15s ease;
+}
+.nav-home:hover { color: var(--red); background: var(--gray-2); }
+.nav-home svg { width: 20px; height: 20px; }
+
+/* white -> grey curved transition */
+.inner-curve { background: #fff; line-height: 0; }
+.inner-curve svg { display: block; width: 100%; height: 56px; fill: var(--gray-bg); }
+
+/* History timeline */
+.tl-row {
+  display: grid; grid-template-columns: 92px 1fr; gap: 24px;
+  padding: 22px 0; border-bottom: 1px solid var(--line); align-items: start;
+}
+.tl-row:last-child { border-bottom: none; }
+.tl-year { font-size: 26px; font-weight: 800; color: var(--red); line-height: 1.1; }
+.tl-events { display: grid; gap: 8px; list-style: none; }
+.tl-events li { color: var(--ink-2); font-size: 14px; line-height: 1.55; }
+
+/* Engagements sections */
+.engage { margin-bottom: 30px; }
+.engage:last-child { margin-bottom: 0; }
+.engage h3 {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 17px; font-weight: 800; color: var(--navy); margin-bottom: 10px;
+}
+.engage h3 .flame-bullet { width: 20px; height: 26px; display: inline-flex; }
+.engage h3 .flame-bullet .flame { width: 100%; height: 100%; }
+.engage p { color: var(--ink-2); line-height: 1.75; font-size: 14.5px; }
+
+@media (max-width: 520px) {
+  .tl-row { grid-template-columns: 70px 1fr; gap: 16px; }
+  .tl-year { font-size: 22px; }
+}
