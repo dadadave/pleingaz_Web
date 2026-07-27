@@ -481,7 +481,12 @@ ul { list-style: none; }
 .portfolio-head p { color: var(--muted); font-size: 14.5px; max-width: 420px; }
 .portfolio-head .section-title { margin-top: 12px; }
 
-.portfolio-carousel { overflow: hidden; }
+.portfolio-carousel {
+  overflow: hidden;
+  /* Fade the cards in/out at the edges instead of a hard cut. */
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 4%, #000 96%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 4%, #000 96%, transparent 100%);
+}
 .portfolio-track {
   display: flex;
   width: max-content;
@@ -618,7 +623,11 @@ ul { list-style: none; }
 /* Keep the carousel column from blowing out and pushing the videos column
    off to the right (grid items default to min-width: auto). */
 .news-grid > * { min-width: 0; }
-.news-carousel { overflow: hidden; min-width: 0; }
+.news-carousel {
+  overflow: hidden; min-width: 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 3%, #000 97%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 3%, #000 97%, transparent 100%);
+}
 .news-track {
   display: flex;
   width: max-content;
