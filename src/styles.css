@@ -1273,8 +1273,13 @@ ul { list-style: none; }
 }
 .pos-pin { background: none; border: none; filter: drop-shadow(0 4px 6px rgba(0,0,0,.3)); }
 .network-map-full .leaflet-popup-content-wrapper { border-radius: 10px; }
-.network-map-full .leaflet-popup-content { font-size: 13px; line-height: 1.5; color: var(--navy); }
-.network-map-full .leaflet-popup-content strong { color: var(--red); }
+.network-map-full .leaflet-popup-content { margin: 12px 14px; font-size: 13px; line-height: 1.5; color: var(--navy); }
+.pos-pop { display: flex; flex-direction: column; gap: 2px; }
+.pos-pop strong { color: var(--red); font-size: 14px; }
+.pos-pop-sub { font-weight: 700; color: var(--navy); }
+.pos-pop-addr { color: var(--muted); }
+.pos-pop-tel { color: var(--red); font-weight: 700; text-decoration: none; }
+.pos-pop-tel:hover { text-decoration: underline; }
 
 .network-overlay {
   position: absolute; left: 0; bottom: 24px; z-index: 500;

@@ -130,9 +130,9 @@ export const CONTENT = {
     network: {
       title: 'Points de vente',
       crumbParent: 'Nos activités',
-      intro: 'Retrouvez PleinGaz partout au Cameroun. Notre réseau de plus de 850 revendeurs partenaires couvre les grandes villes et les régions. Cliquez sur un marqueur pour voir le point de vente.',
+      intro: 'Retrouvez PleinGaz partout au Cameroun. Notre réseau de revendeurs partenaires couvre les grandes villes et les régions. Cliquez sur un marqueur pour voir les coordonnées du point de vente.',
       overlayCount: 'points de vente',
-      note: 'Emplacements indicatifs — les points de vente précis seront ajoutés prochainement.',
+      note: 'Réseau en expansion continue — de nouveaux points de vente sont ajoutés régulièrement.',
     },
     news: {
       eyebrow: 'Actualités PleinGaz',
@@ -400,9 +400,9 @@ export const CONTENT = {
     network: {
       title: 'Points of sale',
       crumbParent: 'Our activities',
-      intro: 'Find PleinGaz everywhere in Cameroon. Our network of more than 850 partner resellers covers the major cities and regions. Click a marker to see the point of sale.',
+      intro: 'Find PleinGaz everywhere in Cameroon. Our network of partner resellers covers the major cities and regions. Click a marker to see the point-of-sale details.',
       overlayCount: 'points of sale',
-      note: 'Indicative locations — exact points of sale will be added soon.',
+      note: 'A continuously growing network — new points of sale are added regularly.',
     },
     news: {
       eyebrow: 'PleinGaz news',
