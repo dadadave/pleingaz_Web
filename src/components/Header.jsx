@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Icon } from './Icons.jsx';
+import SmartLink from './SmartLink.jsx';
 import { useLang } from '../i18n.jsx';
 
 export default function Header() {
@@ -31,9 +32,9 @@ export default function Header() {
                     <ul className="mega-links">
                       {l.mega.links.map((m) => (
                         <li key={m.label}>
-                          <a href={m.href} role="menuitem">
+                          <SmartLink href={m.href} role="menuitem">
                             <span className="dot" aria-hidden="true">›</span>{m.label}
-                          </a>
+                          </SmartLink>
                         </li>
                       ))}
                     </ul>
@@ -93,9 +94,9 @@ export default function Header() {
                   <ul className="mm-sub">
                     {l.mega.links.map((m) => (
                       <li key={m.label}>
-                        <a href={m.href} onClick={closeMenu}>
+                        <SmartLink href={m.href} onClick={closeMenu}>
                           <span className="dot" aria-hidden="true">›</span>{m.label}
-                        </a>
+                        </SmartLink>
                       </li>
                     ))}
                   </ul>
