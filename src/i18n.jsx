@@ -118,9 +118,9 @@ export const CONTENT = {
       eyebrow: 'Chiffres clés',
       list: [
         { num: '2015', plus: '', cap: 'Au service des foyers depuis', icon: 'shieldCheck' },
-        { num: '120 000', plus: '+', cap: 'Bouteilles en circulation', icon: 'bottle' },
-        { num: '850', plus: '+', cap: 'Revendeurs partenaires', icon: 'shop' },
-        { num: '24/7', plus: '', cap: 'Service client disponible', icon: 'team' },
+        { num: '120 000', plus: '+', cap: 'Bouteilles en circulation', icon: 'gasBottle' },
+        { num: '850', plus: '+', cap: 'Revendeurs partenaires', icon: 'house' },
+        { num: '24/7', plus: '', cap: 'Service client disponible', icon: 'headset' },
       ],
     },
     distributors: {
@@ -389,9 +389,9 @@ export const CONTENT = {
       eyebrow: 'Key figures',
       list: [
         { num: '2015', plus: '', cap: 'Serving households since', icon: 'shieldCheck' },
-        { num: '120,000', plus: '+', cap: 'Cylinders in circulation', icon: 'bottle' },
-        { num: '850', plus: '+', cap: 'Partner resellers', icon: 'shop' },
-        { num: '24/7', plus: '', cap: 'Customer service available', icon: 'team' },
+        { num: '120,000', plus: '+', cap: 'Cylinders in circulation', icon: 'gasBottle' },
+        { num: '850', plus: '+', cap: 'Partner resellers', icon: 'house' },
+        { num: '24/7', plus: '', cap: 'Customer service available', icon: 'headset' },
       ],
     },
     distributors: {
