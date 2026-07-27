@@ -2,10 +2,8 @@ import { useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { Link, useLocation } from 'react-router-dom';
 import { pointsOfSale, CAMEROON_CENTER, CAMEROON_ZOOM } from '../data/pointsOfSale.js';
 import { useLang } from '../i18n.jsx';
-import { useReveal } from '../useReveal.js';
 
 // Brand-red teardrop pin drawn as an inline SVG so no marker image assets are
 // bundled and the colour matches PleinGaz.
@@ -37,27 +35,9 @@ function FitToMarkers({ points }) {
 export default function Network() {
   const { t } = useLang();
   const n = t.network;
-  const { pathname } = useLocation();
-  useReveal(pathname);
 
   return (
     <main className="network-page">
-      <div className="container network-head reveal">
-        <div>
-          <span className="eyebrow">{n.crumbParent}</span>
-          <h1>{n.title}</h1>
-        </div>
-        <nav className="crumb" aria-label="breadcrumb">
-          <Link to="/">{t.about.home}</Link>
-          <span>›</span>
-          <span className="on">{n.title}</span>
-        </nav>
-      </div>
-
-      <div className="container network-lead reveal">
-        <p>{n.intro}</p>
-      </div>
-
       <div className="network-map-full">
         <MapContainer
           center={[CAMEROON_CENTER.lat, CAMEROON_CENTER.lng]}
@@ -102,10 +82,6 @@ export default function Network() {
           <h2>{n.title}</h2>
           <p>{pointsOfSale.length} {n.overlayCount}</p>
         </div>
-      </div>
-
-      <div className="container network-lead reveal">
-        <p className="network-note">{n.note}</p>
       </div>
     </main>
   );

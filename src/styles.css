@@ -1248,8 +1248,86 @@ ul { list-style: none; }
   .tl-year { font-size: 22px; }
 }
 
+/* ── "PleinGaz est disponible !" promo band ──────────────────────── */
+.promo {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--red-deep) 0%, var(--red) 55%, var(--red-dark) 100%);
+  color: #fff;
+}
+.promo-deco {
+  position: absolute; right: -160px; top: -140px;
+  width: 620px; height: 620px; pointer-events: none;
+}
+.promo-inner {
+  position: relative; z-index: 1;
+  display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px;
+  align-items: center; padding: 60px 0 54px;
+}
+.promo-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+  font-size: 13px; color: #fff;
+}
+.promo-eyebrow .flame { width: 20px; height: 28px; }
+.promo-head h2 {
+  margin: 14px 0 12px;
+  font-size: clamp(26px, 3.4vw, 40px); font-weight: 800; line-height: 1.1;
+}
+.promo-head p { max-width: 460px; opacity: .92; line-height: 1.65; margin-bottom: 22px; }
+
+.promo-features {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px; list-style: none;
+}
+.promo-features li {
+  display: flex; align-items: center; gap: 14px;
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 14px; padding: 16px 18px;
+  backdrop-filter: blur(2px);
+}
+.promo-ico {
+  flex-shrink: 0; width: 46px; height: 46px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: #fff; color: var(--red);
+}
+.promo-ico svg { width: 24px; height: 24px; }
+.promo-feat-label { font-weight: 800; font-size: 15px; line-height: 1.2; }
+
+.promo-service {
+  position: relative; z-index: 1;
+  background: rgba(0, 0, 0, .22);
+  border-top: 1px solid rgba(255, 255, 255, .18);
+}
+.promo-service-inner {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px;
+  padding: 16px 0;
+}
+.promo-service-num {
+  display: inline-flex; align-items: center; gap: 12px;
+  color: #fff; text-decoration: none;
+}
+.promo-service-ico {
+  width: 40px; height: 40px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: #fff; color: var(--red);
+}
+.promo-service-label {
+  display: block; font-size: 11px; letter-spacing: .06em;
+  text-transform: uppercase; opacity: .85;
+}
+.promo-service-num strong { font-size: 22px; font-weight: 800; letter-spacing: .02em; }
+.promo-service-tag { opacity: .9; font-size: 14px; }
+
+@media (max-width: 860px) {
+  .promo-inner { grid-template-columns: 1fr; gap: 28px; padding: 44px 0 40px; }
+}
+@media (max-width: 460px) {
+  .promo-features { grid-template-columns: 1fr; }
+}
+
 /* ── Points de vente / distributor network map ───────────────────── */
-.network-page { padding-bottom: 60px; }
+.network-page { padding-bottom: 0; }
 .network-head {
   display: flex; flex-wrap: wrap; align-items: flex-end;
   justify-content: space-between; gap: 12px; padding: 40px 0 6px;
@@ -1261,9 +1339,9 @@ ul { list-style: none; }
 
 .network-map-full {
   position: relative;
-  height: clamp(420px, 72vh, 760px);
-  margin-top: 12px;
-  border-top: 3px solid var(--red);
+  /* Fill the viewport below the sticky 74px header. */
+  height: calc(100vh - 75px);
+  min-height: 420px;
   border-bottom: 3px solid var(--red);
 }
 .network-map-full .leaflet-container {
