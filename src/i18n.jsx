@@ -125,9 +125,9 @@ export const CONTENT = {
     },
     products: [
       { title: 'Bouteille 6 kg', desc: 'Idéale pour les petits foyers, légère et facile à transporter.', price: 'Recharge dès 6 500 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteilles-domestiques' },
-      { title: 'Bouteille 12,5 kg', desc: 'Le format familial le plus demandé pour une cuisine active.', price: 'Le plus populaire', icon: 'canister', slug: 'bouteilles-domestiques' },
-      { title: 'Bouteille 50 kg', desc: 'Pour restaurants, hôtels et industries à forte consommation.', price: 'Recharge dès 26 000 FCFA', icon: 'factory', slug: 'bouteilles-domestiques' },
-      { title: 'Réchauds & cuisinières', desc: 'Réchaud verre, allumage piézo — pratique et facile à nettoyer.', price: 'Dès 18 000 FCFA', icon: 'stove', slug: 'rechauds-cuisinieres' },
+      { title: 'Bouteille 12,5 kg', desc: 'Le format familial le plus demandé pour une cuisine active.', price: 'Le plus populaire', icon: 'canister', image: '/images/products/bouteille-12kg.png', slug: 'bouteilles-domestiques' },
+      { title: 'Bouteille 50 kg', desc: 'Pour restaurants, hôtels et industries à forte consommation.', price: 'Recharge dès 26 000 FCFA', icon: 'factory', image: '/images/products/bouteille-50kg.png', slug: 'bouteilles-domestiques' },
+      { title: 'Réchauds & cuisinières', desc: 'Réchaud verre, allumage piézo — pratique et facile à nettoyer.', price: 'Dès 18 000 FCFA', icon: 'stove', image: '/images/products/plaque-gaz.jpg', slug: 'rechauds-cuisinieres' },
       { title: 'Détendeurs & accessoires', desc: 'Détendeurs de sécurité, tuyaux et pièces homologués.', price: 'Sur devis', icon: 'wrench', slug: 'detendeurs-accessoires' },
     ],
     figures: {
@@ -264,7 +264,7 @@ export const CONTENT = {
         features: ['Formats 6 kg, 12,5 kg et 50 kg', 'Recharge rapide chez plus de 850 revendeurs', 'Bouteilles contrôlées et sécurisées'],
       },
       {
-        slug: 'gaz-vrac', title: 'Gaz en vrac', icon: 'factory', ph: 'ph-slate',
+        slug: 'gaz-vrac', title: 'Gaz en vrac', icon: 'factory', ph: 'ph-slate', image: '/images/products/bouteille-50kg.png',
         paragraphs: [
           'Pour les industriels et les professionnels à forte consommation, PleinGaz assure l’approvisionnement en gaz en vrac, livré directement dans vos citernes.',
           'Un suivi régulier et une logistique dédiée garantissent la continuité de votre activité.',
@@ -272,7 +272,7 @@ export const CONTENT = {
         features: ['Livraison en citerne', 'Approvisionnement continu', 'Solutions sur mesure pour l’industrie'],
       },
       {
-        slug: 'rechauds-cuisinieres', title: 'Réchauds & cuisinières', icon: 'stove', ph: 'ph-crowd',
+        slug: 'rechauds-cuisinieres', title: 'Réchauds & cuisinières', icon: 'stove', ph: 'ph-crowd', image: '/images/products/plaque-gaz.jpg',
         paragraphs: [
           'Complétez votre installation avec nos réchauds et cuisinières : allumage piézo, plans en verre trempé, faciles à nettoyer et adaptés à un usage quotidien.',
           'Des équipements fiables, pensés pour la sécurité et le confort de toute la famille.',
@@ -419,9 +419,9 @@ export const CONTENT = {
     },
     products: [
       { title: '6 kg cylinder', desc: 'Ideal for small households, light and easy to carry.', price: 'Refill from 6,500 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteilles-domestiques' },
-      { title: '12.5 kg cylinder', desc: 'The most requested family size for an active kitchen.', price: 'Most popular', icon: 'canister', slug: 'bouteilles-domestiques' },
-      { title: '50 kg cylinder', desc: 'For restaurants, hotels and high-consumption industries.', price: 'Refill from 26,000 FCFA', icon: 'factory', slug: 'bouteilles-domestiques' },
-      { title: 'Stoves & cookers', desc: 'Glass stove, piezo ignition — practical and easy to clean.', price: 'From 18,000 FCFA', icon: 'stove', slug: 'rechauds-cuisinieres' },
+      { title: '12.5 kg cylinder', desc: 'The most requested family size for an active kitchen.', price: 'Most popular', icon: 'canister', image: '/images/products/bouteille-12kg.png', slug: 'bouteilles-domestiques' },
+      { title: '50 kg cylinder', desc: 'For restaurants, hotels and high-consumption industries.', price: 'Refill from 26,000 FCFA', icon: 'factory', image: '/images/products/bouteille-50kg.png', slug: 'bouteilles-domestiques' },
+      { title: 'Stoves & cookers', desc: 'Glass stove, piezo ignition — practical and easy to clean.', price: 'From 18,000 FCFA', icon: 'stove', image: '/images/products/plaque-gaz.jpg', slug: 'rechauds-cuisinieres' },
       { title: 'Regulators & accessories', desc: 'Safety regulators, hoses and approved parts.', price: 'On quote', icon: 'wrench', slug: 'detendeurs-accessoires' },
     ],
     figures: {
@@ -558,7 +558,7 @@ export const CONTENT = {
         features: ['6 kg, 12.5 kg and 50 kg formats', 'Fast refills at over 850 resellers', 'Inspected and secured cylinders'],
       },
       {
-        slug: 'gaz-vrac', title: 'Bulk gas', icon: 'factory', ph: 'ph-slate',
+        slug: 'gaz-vrac', title: 'Bulk gas', icon: 'factory', ph: 'ph-slate', image: '/images/products/bouteille-50kg.png',
         paragraphs: [
           'For industry and high-consumption professionals, PleinGaz ensures a bulk gas supply, delivered directly into your tanks.',
           'Regular monitoring and dedicated logistics keep your operations running without interruption.',
@@ -566,7 +566,7 @@ export const CONTENT = {
         features: ['Tanker delivery', 'Continuous supply', 'Tailored solutions for industry'],
       },
       {
-        slug: 'rechauds-cuisinieres', title: 'Stoves & cookers', icon: 'stove', ph: 'ph-crowd',
+        slug: 'rechauds-cuisinieres', title: 'Stoves & cookers', icon: 'stove', ph: 'ph-crowd', image: '/images/products/plaque-gaz.jpg',
         paragraphs: [
           'Complete your setup with our stoves and cookers: piezo ignition, tempered-glass tops, easy to clean and built for daily use.',
           'Reliable equipment designed for the safety and comfort of the whole family.',
