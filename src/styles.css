@@ -1130,6 +1130,56 @@ ul { list-style: none; }
   display: grid; grid-template-columns: 1fr 320px; gap: 44px;
   padding: 30px 0 70px; align-items: start;
 }
+.page-wide { padding: 30px 0 70px; }
+
+/* ── Contact page ────────────────────────────────────────────────── */
+.contact-grid {
+  display: grid; grid-template-columns: 320px 1fr; gap: 48px; align-items: start;
+}
+.contact-col-title {
+  font-size: 22px; font-weight: 800; color: var(--navy); margin-bottom: 22px;
+}
+.contact-info ul { list-style: none; display: grid; gap: 22px; }
+.contact-info li { display: flex; gap: 14px; align-items: flex-start; }
+.contact-info-ico {
+  flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: #fff5f5; color: var(--red);
+}
+.contact-info-ico svg { width: 22px; height: 22px; }
+.contact-info-label {
+  display: block; font-weight: 800; color: var(--navy); font-size: 15px; margin-bottom: 3px;
+}
+.contact-info-value { color: var(--muted); font-size: 14px; text-decoration: none; }
+a.contact-info-value:hover { color: var(--red); }
+
+.contact-form { display: grid; gap: 14px; }
+.contact-form input,
+.contact-form textarea {
+  width: 100%; font: inherit; font-size: 14.5px; color: var(--navy);
+  background: #fff; border: 1.5px solid var(--line); border-radius: 10px;
+  padding: 14px 16px; transition: border-color .2s ease, box-shadow .2s ease;
+}
+.contact-form textarea { resize: vertical; min-height: 150px; }
+.contact-form input::placeholder,
+.contact-form textarea::placeholder { color: var(--muted-2); }
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none; border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(238, 28, 37, .12);
+}
+.contact-send {
+  justify-self: start; display: inline-flex; align-items: center; gap: 8px;
+  background: var(--red); color: #fff; border: none; cursor: pointer;
+  font-weight: 800; font-size: 15px; padding: 13px 26px; border-radius: 12px;
+  margin-top: 6px; transition: background .2s ease, box-shadow .2s ease;
+}
+.contact-send:hover { background: var(--red-dark); box-shadow: 0 12px 26px -14px rgba(238,28,37,.6); }
+.contact-send svg { width: 18px; height: 18px; }
+
+@media (max-width: 760px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 34px; }
+}
 .page-body p { color: var(--ink-2); line-height: 1.75; font-size: 14.5px; margin-bottom: 16px; }
 .page-body .values-title {
   text-align: center; font-size: 24px; font-weight: 800; color: var(--navy);

@@ -9,6 +9,7 @@ import History from './pages/History.jsx';
 import Engagements from './pages/Engagements.jsx';
 import ProductPage from './pages/ProductPage.jsx';
 import Network from './pages/Network.jsx';
+import Contact from './pages/Contact.jsx';
 import Mascot from './components/Mascot.jsx';
 
 // Jump to the top of the page on every route change.
@@ -33,6 +34,7 @@ export default function App() {
         <Route path="/nos-engagements" element={<Engagements />} />
         <Route path="/produit/:slug" element={<ProductPage />} />
         <Route path="/reseau" element={<Network />} />
+        <Route path="/contacts" element={<Contact />} />
       </Routes>
       <Footer />
       <Mascot />
