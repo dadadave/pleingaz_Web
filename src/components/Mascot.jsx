@@ -50,10 +50,6 @@ export default function Mascot() {
         type="button"
       >
         <img className="mascot-fig" src="/images/mascotte.png" alt="Mascotte PleinGaz" />
-        <span className="mascot-tab">
-          <img className="mascot-tab-logo" src="/assets/logo.svg" alt="" aria-hidden="true" />
-          <span className="mascot-tab-text">{m.label}</span>
-        </span>
       </button>
     </div>
   );

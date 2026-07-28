@@ -1255,32 +1255,19 @@ ul { list-style: none; }
 
 /* ── Floating "À votre service" mascot widget (SIMAM-style) ───────── */
 .mascot-widget {
-  position: fixed; right: 0; bottom: 22px; z-index: 1200;
-  display: flex; flex-direction: column; align-items: flex-end; gap: 14px;
+  position: fixed; right: 18px; bottom: 18px; z-index: 1200;
+  display: flex; flex-direction: column; align-items: flex-end; gap: 12px;
 }
 .mascot-toggle {
-  display: flex; align-items: flex-end;
+  display: block;
   background: none; border: none; cursor: pointer; padding: 0;
 }
 .mascot-fig {
   width: auto; height: 132px; display: block;
-  position: relative; z-index: 2; margin-right: -26px;
   filter: drop-shadow(0 10px 16px rgba(0, 0, 0, .3));
   transition: transform .2s ease;
 }
 .mascot-toggle:hover .mascot-fig { transform: translateY(-4px); }
-.mascot-tab {
-  background: var(--red); color: #fff;
-  border-radius: 14px 0 0 14px;
-  padding: 12px 16px 12px 34px; margin-bottom: 6px;
-  display: flex; flex-direction: column; align-items: center; gap: 5px;
-  box-shadow: -8px 10px 22px -12px rgba(0, 0, 0, .5);
-}
-.mascot-tab-logo { width: 30px; height: 30px; display: block; }
-.mascot-tab-text {
-  font-size: 11px; font-weight: 800; letter-spacing: .02em; text-transform: uppercase;
-  line-height: 1.15; text-align: center; max-width: 74px;
-}
 
 .mascot-panel {
   position: relative;
@@ -1314,11 +1301,8 @@ ul { list-style: none; }
 .mascot-btn-wa .mascot-btn-ico { color: #25D366; }
 
 @media (max-width: 480px) {
-  .mascot-widget { bottom: 14px; }
-  .mascot-fig { height: 104px; margin-right: -22px; }
-  .mascot-tab { padding: 10px 12px 10px 28px; }
-  .mascot-tab-logo { width: 24px; height: 24px; }
-  .mascot-tab-text { font-size: 10px; max-width: 64px; }
+  .mascot-widget { right: 12px; bottom: 12px; }
+  .mascot-fig { height: 104px; }
 }
 
 /* ── Points de vente / distributor network map ───────────────────── */
