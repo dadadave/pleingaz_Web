@@ -256,7 +256,7 @@ export const CONTENT = {
     },
     catalog: [
       {
-        slug: 'bouteilles-domestiques', title: 'Bouteilles domestiques', icon: 'bottle', ph: 'ph-warm',
+        slug: 'bouteilles-domestiques', title: 'Bouteilles domestiques', icon: 'bottle', ph: 'ph-warm', image: '/images/products/bouteille-6kg.png',
         paragraphs: [
           'PleinGaz met à disposition des ménages une gamme complète de bouteilles de gaz : 6 kg pour les petits foyers, 12,5 kg pour la cuisine familiale et 50 kg pour les besoins les plus importants.',
           'Chaque bouteille répond à des contrôles de sécurité stricts et bénéficie de notre réseau de recharge disponible partout au Cameroun.',
@@ -550,7 +550,7 @@ export const CONTENT = {
     },
     catalog: [
       {
-        slug: 'bouteilles-domestiques', title: 'Domestic cylinders', icon: 'bottle', ph: 'ph-warm',
+        slug: 'bouteilles-domestiques', title: 'Domestic cylinders', icon: 'bottle', ph: 'ph-warm', image: '/images/products/bouteille-6kg.png',
         paragraphs: [
           'PleinGaz offers households a full range of gas cylinders: 6 kg for small homes, 12.5 kg for family cooking and 50 kg for the heaviest needs.',
           'Every cylinder meets strict safety checks and benefits from our refill network available throughout Cameroon.',
