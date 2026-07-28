@@ -21,7 +21,7 @@ export const CONTENT = {
       formTitle: 'Formulaire',
       info: [
         { icon: 'mapPin', label: 'Siège social', value: 'Yaoundé, Cameroun' },
-        { icon: 'clock', label: 'Horaires', value: 'Lundi – Vendredi : 08h00 – 17h00' },
+        { icon: 'clock', label: 'Horaires', value: 'Lundi – Vendredi : 08h00 – 18h00' },
         { icon: 'phone', label: 'Standard', value: '+237 6 80 00 00 75', href: 'tel:+237680000075' },
         { icon: 'mail', label: 'E-mail', value: 'support@pleingaz.com', href: 'mailto:support@pleingaz.com' },
       ],
@@ -315,7 +315,7 @@ export const CONTENT = {
       formTitle: 'Form',
       info: [
         { icon: 'mapPin', label: 'Head office', value: 'Yaoundé, Cameroon' },
-        { icon: 'clock', label: 'Hours', value: 'Monday – Friday: 08:00 – 17:00' },
+        { icon: 'clock', label: 'Hours', value: 'Monday – Friday: 08:00 – 18:00' },
         { icon: 'phone', label: 'Switchboard', value: '+237 6 80 00 00 75', href: 'tel:+237680000075' },
         { icon: 'mail', label: 'E-mail', value: 'support@pleingaz.com', href: 'mailto:support@pleingaz.com' },
       ],
