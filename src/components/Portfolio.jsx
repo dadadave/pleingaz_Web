@@ -25,7 +25,13 @@ export default function Portfolio() {
                 key={i}
                 aria-hidden={i >= t.products.length ? 'true' : undefined}
               >
-                <div className="product-ico"><Icon name={p.icon} /></div>
+                {p.image ? (
+                  <div className="product-photo-thumb">
+                    <img src={p.image} alt={p.title} loading="lazy" />
+                  </div>
+                ) : (
+                  <div className="product-ico"><Icon name={p.icon} /></div>
+                )}
                 <h3>{p.title}</h3>
                 <p className="desc">{p.desc}</p>
                 {p.price && <span className="price">{p.price}</span>}

@@ -124,7 +124,7 @@ export const CONTENT = {
       learnMore: 'En savoir plus',
     },
     products: [
-      { title: 'Bouteille 6 kg', desc: 'Idéale pour les petits foyers, légère et facile à transporter.', price: 'Recharge dès 6 500 FCFA', icon: 'bottle', slug: 'bouteilles-domestiques' },
+      { title: 'Bouteille 6 kg', desc: 'Idéale pour les petits foyers, légère et facile à transporter.', price: 'Recharge dès 6 500 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteilles-domestiques' },
       { title: 'Bouteille 12,5 kg', desc: 'Le format familial le plus demandé pour une cuisine active.', price: 'Le plus populaire', icon: 'canister', slug: 'bouteilles-domestiques' },
       { title: 'Bouteille 50 kg', desc: 'Pour restaurants, hôtels et industries à forte consommation.', price: 'Recharge dès 26 000 FCFA', icon: 'factory', slug: 'bouteilles-domestiques' },
       { title: 'Réchauds & cuisinières', desc: 'Réchaud verre, allumage piézo — pratique et facile à nettoyer.', price: 'Dès 18 000 FCFA', icon: 'stove', slug: 'rechauds-cuisinieres' },
@@ -418,7 +418,7 @@ export const CONTENT = {
       learnMore: 'Learn more',
     },
     products: [
-      { title: '6 kg cylinder', desc: 'Ideal for small households, light and easy to carry.', price: 'Refill from 6,500 FCFA', icon: 'bottle', slug: 'bouteilles-domestiques' },
+      { title: '6 kg cylinder', desc: 'Ideal for small households, light and easy to carry.', price: 'Refill from 6,500 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteilles-domestiques' },
       { title: '12.5 kg cylinder', desc: 'The most requested family size for an active kitchen.', price: 'Most popular', icon: 'canister', slug: 'bouteilles-domestiques' },
       { title: '50 kg cylinder', desc: 'For restaurants, hotels and high-consumption industries.', price: 'Refill from 26,000 FCFA', icon: 'factory', slug: 'bouteilles-domestiques' },
       { title: 'Stoves & cookers', desc: 'Glass stove, piezo ignition — practical and easy to clean.', price: 'From 18,000 FCFA', icon: 'stove', slug: 'rechauds-cuisinieres' },

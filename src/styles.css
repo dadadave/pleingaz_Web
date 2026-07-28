@@ -531,6 +531,11 @@ ul { list-style: none; }
   margin: 0 auto 16px;
 }
 .product-ico svg { width: 32px; height: 32px; }
+.product-photo-thumb {
+  height: 96px; margin: 0 auto 14px;
+  display: grid; place-items: center;
+}
+.product-photo-thumb img { max-height: 96px; width: auto; object-fit: contain; }
 .product-card h3 { font-size: 15px; font-weight: 800; color: var(--navy); }
 .product-card .desc { font-size: 12.5px; color: var(--muted); margin: 6px 0 10px; }
 .product-card .price {
