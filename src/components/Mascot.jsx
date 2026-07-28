@@ -6,7 +6,8 @@ import { useLang } from '../i18n.jsx';
 const PHONE = '237680000075';
 
 // Floating "À votre service" mascot, fixed bottom-right on every page
-// (SIMAM-style). Clicking it opens a small contact panel (WhatsApp + call).
+// (SIMAM-style): the mascot stands next to an edge-anchored tab; clicking opens
+// a contact panel (WhatsApp + call).
 export default function Mascot() {
   const { t } = useLang();
   const m = t.mascot;
@@ -49,7 +50,10 @@ export default function Mascot() {
         type="button"
       >
         <img className="mascot-fig" src="/images/mascotte.png" alt="Mascotte PleinGaz" />
-        <span className="mascot-label">{m.label}</span>
+        <span className="mascot-tab">
+          <img className="mascot-tab-logo" src="/assets/logo.svg" alt="" aria-hidden="true" />
+          <span className="mascot-tab-text">{m.label}</span>
+        </span>
       </button>
     </div>
   );
