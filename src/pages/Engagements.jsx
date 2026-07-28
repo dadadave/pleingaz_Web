@@ -9,7 +9,7 @@ export default function Engagements() {
     <InnerPage title={e.title} bannerIcon="shield">
       {e.sections.map((s) => (
         <div className="engage" key={s.title}>
-          <h3><span className="list-star" aria-hidden="true">★</span>{s.title}</h3>
+          <h3><span className="list-star" aria-hidden="true">*</span>{s.title}</h3>
           <p>{s.text}</p>
         </div>
       ))}

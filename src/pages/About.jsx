@@ -13,7 +13,7 @@ export default function About() {
       <div className="values">
         {a.values.map((v) => (
           <div className="value" key={v.title}>
-            <h3><span className="list-star" aria-hidden="true">★</span>{v.title}</h3>
+            <h3><span className="list-star" aria-hidden="true">*</span>{v.title}</h3>
             <ul>
               {v.items.map((it) => <li key={it}>{it}</li>)}
             </ul>
