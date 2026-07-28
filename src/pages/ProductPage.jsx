@@ -52,7 +52,7 @@ export default function ProductPage() {
       <ul className="product-features">
         {product.features.map((f) => (
           <li key={f}>
-            <span className="list-star" aria-hidden="true">★</span>{f}
+            <span className="list-star" aria-hidden="true">*</span>{f}
           </li>
         ))}
       </ul>
