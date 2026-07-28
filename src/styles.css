@@ -1205,8 +1205,7 @@ a.contact-info-value:hover { color: var(--red); }
   font-size: 15px; font-weight: 800; color: var(--navy);
   text-transform: uppercase; letter-spacing: .03em; margin-bottom: 10px;
 }
-.value .flame-bullet { width: 20px; height: 26px; flex-shrink: 0; display: inline-flex; }
-.value .flame-bullet .flame { width: 100%; height: 100%; }
+.value h3 .list-star { color: var(--red); font-size: 16px; flex-shrink: 0; line-height: 1; }
 .value ul { list-style: none; display: grid; gap: 7px; padding-left: 30px; }
 .value li { position: relative; color: var(--muted); font-size: 13.5px; line-height: 1.5; }
 .value li::before { content: "•"; color: var(--red); position: absolute; left: -16px; }
@@ -1272,8 +1271,7 @@ a.contact-info-value:hover { color: var(--red); }
   display: flex; align-items: center; gap: 10px;
   font-size: 17px; font-weight: 800; color: var(--navy); margin-bottom: 10px;
 }
-.engage h3 .flame-bullet { width: 20px; height: 26px; display: inline-flex; }
-.engage h3 .flame-bullet .flame { width: 100%; height: 100%; }
+.engage h3 .list-star { color: var(--red); font-size: 16px; flex-shrink: 0; line-height: 1; }
 .engage p { color: var(--ink-2); line-height: 1.75; font-size: 14.5px; }
 
 /* Product detail page */
@@ -1300,8 +1298,7 @@ a.contact-info-value:hover { color: var(--red); }
   display: flex; align-items: center; gap: 10px;
   color: var(--ink-2); font-size: 14.5px; font-weight: 600;
 }
-.product-features .flame-bullet { width: 18px; height: 24px; flex-shrink: 0; display: inline-flex; }
-.product-features .flame-bullet .flame { width: 100%; height: 100%; }
+.product-features .list-star { color: var(--red); font-size: 15px; flex-shrink: 0; line-height: 1; }
 
 /* Product sidebar promo card */
 .side-promo { text-align: center; }
