@@ -1111,6 +1111,11 @@ ul { list-style: none; }
 .page { background: #fff; }
 .page-banner { position: relative; height: 260px; overflow: hidden; }
 .page-banner .ph { position: absolute; inset: 0; }
+.page-banner-img {
+  position: absolute; inset: 0;
+  background-color: #e6e6e6;
+  background-size: contain; background-position: center; background-repeat: no-repeat;
+}
 .page-banner-veil {
   position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(20,24,20,.15), rgba(20,24,20,.5));

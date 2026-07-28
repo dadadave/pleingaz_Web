@@ -9,7 +9,7 @@ import { useReveal } from '../useReveal.js';
 // banner + title/breadcrumb + body slot + sidebar, then the reused product
 // portfolio and approaches sections. `sidebar` defaults to the "Discover
 // PleinGaz" menu; pages can pass their own { title, links }.
-export default function InnerPage({ title, bannerIcon = 'workerHat', bannerPh = 'ph-worker', sidebar, aside, crumbParent, wide = false, children }) {
+export default function InnerPage({ title, bannerIcon = 'workerHat', bannerPh = 'ph-worker', bannerImage = '/images/banner-logo.png', sidebar, aside, crumbParent, wide = false, children }) {
   const { t } = useLang();
   const a = t.about;
   const side = sidebar || { title: a.sidebarTitle, links: a.sidebar };
@@ -21,10 +21,21 @@ export default function InnerPage({ title, bannerIcon = 'workerHat', bannerPh = 
     <main className="page">
       <div className="page-banner">
         <div className={`ph ${bannerPh}`} />
-        <div className="page-banner-veil" />
-        <span className="page-banner-ico" aria-hidden="true">
-          <Icon name={bannerIcon} strokeWidth={1.4} />
-        </span>
+        {bannerImage && (
+          <div
+            className="page-banner-img"
+            style={{ backgroundImage: `url(${bannerImage})` }}
+            aria-hidden="true"
+          />
+        )}
+        {!bannerImage && (
+          <>
+            <div className="page-banner-veil" />
+            <span className="page-banner-ico" aria-hidden="true">
+              <Icon name={bannerIcon} strokeWidth={1.4} />
+            </span>
+          </>
+        )}
       </div>
 
       <div className="container">
