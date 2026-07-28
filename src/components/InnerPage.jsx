@@ -9,7 +9,7 @@ import { useReveal } from '../useReveal.js';
 // banner + title/breadcrumb + body slot + sidebar, then the reused product
 // portfolio and approaches sections. `sidebar` defaults to the "Discover
 // PleinGaz" menu; pages can pass their own { title, links }.
-export default function InnerPage({ title, bannerIcon = 'workerHat', bannerPh = 'ph-worker', sidebar, aside, crumbParent, children }) {
+export default function InnerPage({ title, bannerIcon = 'workerHat', bannerPh = 'ph-worker', sidebar, aside, crumbParent, wide = false, children }) {
   const { t } = useLang();
   const a = t.about;
   const side = sidebar || { title: a.sidebarTitle, links: a.sidebar };
@@ -39,32 +39,36 @@ export default function InnerPage({ title, bannerIcon = 'workerHat', bannerPh = 
           </nav>
         </div>
 
-        <div className="page-grid">
-          <article className="page-body reveal">{children}</article>
+        {wide ? (
+          <div className="page-wide reveal">{children}</div>
+        ) : (
+          <div className="page-grid">
+            <article className="page-body reveal">{children}</article>
 
-          <aside className="page-side reveal">
-            {aside || (
-              <div className="side-card">
-                <h4>{side.title}</h4>
-                <ul>
-                  {side.links.map((s) => (
-                    <li key={s.label}>
-                      <Link to={s.href} className={pathname === s.href ? 'on' : ''}>
-                        <span className="dot" aria-hidden="true">›</span>{s.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            <a href="/#footer" className="side-btn">
-              {a.quote}<span className="ico"><Icon name="mail" strokeWidth={2} /></span>
-            </a>
-            <a href="/#footer" className="side-btn">
-              {a.pos}<span className="ico"><Icon name="mapPin" strokeWidth={2} /></span>
-            </a>
-          </aside>
-        </div>
+            <aside className="page-side reveal">
+              {aside || (
+                <div className="side-card">
+                  <h4>{side.title}</h4>
+                  <ul>
+                    {side.links.map((s) => (
+                      <li key={s.label}>
+                        <Link to={s.href} className={pathname === s.href ? 'on' : ''}>
+                          <span className="dot" aria-hidden="true">›</span>{s.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              <a href="/#footer" className="side-btn">
+                {a.quote}<span className="ico"><Icon name="mail" strokeWidth={2} /></span>
+              </a>
+              <a href="/#footer" className="side-btn">
+                {a.pos}<span className="ico"><Icon name="mapPin" strokeWidth={2} /></span>
+              </a>
+            </aside>
+          </div>
+        )}
       </div>
 
       {/* Curved (not straight) transition into the grey portfolio section. */}

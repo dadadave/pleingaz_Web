@@ -14,6 +14,22 @@ export const CONTENT = {
       city: 'Yaoundé, Cameroun',
       findLabel: 'Nous trouver',
     },
+    contactPage: {
+      title: 'Contactez-nous',
+      crumbParent: 'Contacts',
+      infoTitle: 'Informations',
+      formTitle: 'Formulaire',
+      info: [
+        { icon: 'mapPin', label: 'Siège social', value: 'Yaoundé, Cameroun' },
+        { icon: 'clock', label: 'Horaires', value: 'Lundi – Vendredi : 08h00 – 17h00' },
+        { icon: 'phone', label: 'Standard', value: '+237 6 80 00 00 75', href: 'tel:+237680000075' },
+        { icon: 'mail', label: 'E-mail', value: 'support@pleingaz.com', href: 'mailto:support@pleingaz.com' },
+      ],
+      form: {
+        name: 'Nom', email: 'E-mail', subject: 'Objet', message: 'Message',
+        send: 'Envoyer', required: '*',
+      },
+    },
     header: {
       reseller: 'Devenir revendeur',
       certified: 'Qualité certifiée',
@@ -69,7 +85,7 @@ export const CONTENT = {
         },
       },
       { key: 'careers', label: 'Carrières', href: '#footer' },
-      { key: 'contacts', label: 'Contacts', href: '#footer' },
+      { key: 'contacts', label: 'Contacts', href: '/contacts' },
     ],
     hero: {
       brand: 'PleinGaz.',
@@ -292,6 +308,22 @@ export const CONTENT = {
       city: 'Yaoundé, Cameroon',
       findLabel: 'Find us',
     },
+    contactPage: {
+      title: 'Contact us',
+      crumbParent: 'Contacts',
+      infoTitle: 'Information',
+      formTitle: 'Form',
+      info: [
+        { icon: 'mapPin', label: 'Head office', value: 'Yaoundé, Cameroon' },
+        { icon: 'clock', label: 'Hours', value: 'Monday – Friday: 08:00 – 17:00' },
+        { icon: 'phone', label: 'Switchboard', value: '+237 6 80 00 00 75', href: 'tel:+237680000075' },
+        { icon: 'mail', label: 'E-mail', value: 'support@pleingaz.com', href: 'mailto:support@pleingaz.com' },
+      ],
+      form: {
+        name: 'Name', email: 'E-mail', subject: 'Subject', message: 'Message',
+        send: 'Send', required: '*',
+      },
+    },
     header: {
       reseller: 'Become a reseller',
       certified: 'Certified quality',
@@ -347,7 +379,7 @@ export const CONTENT = {
         },
       },
       { key: 'careers', label: 'Careers', href: '#footer' },
-      { key: 'contacts', label: 'Contacts', href: '#footer' },
+      { key: 'contacts', label: 'Contacts', href: '/contacts' },
     ],
     hero: {
       brand: 'PleinGaz.',
