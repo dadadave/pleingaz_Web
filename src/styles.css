@@ -1119,6 +1119,10 @@ ul { list-style: none; }
 .page-banner-img {
   position: absolute; inset: 0;
   background-color: #e6e6e6;
+  /* Padding + content-box keep the logo fully visible with breathing room
+     (it no longer touches the top/bottom edges), responsive at any width. */
+  padding: 46px 30px;
+  background-origin: content-box;
   background-size: contain; background-position: center; background-repeat: no-repeat;
 }
 .page-banner-veil {
