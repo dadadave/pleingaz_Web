@@ -61,7 +61,7 @@ export const CONTENT = {
           links: [
             { label: 'Bouteilles domestiques', href: '/produit/bouteilles-domestiques' },
             { label: 'Gaz en vrac', href: '/produit/gaz-vrac' },
-            { label: 'Réchauds & cuisinières', href: '/produit/rechauds-cuisinieres' },
+            { label: 'Plaque à gaz', href: '/produit/rechauds-cuisinieres' },
             { label: 'Détendeurs & accessoires', href: '/produit/detendeurs-accessoires' },
             { label: 'Livraison à domicile', href: '/produit/livraison-domicile' },
             { label: 'Points de vente', href: '/reseau' },
@@ -127,7 +127,7 @@ export const CONTENT = {
       { title: 'Bouteille 6 kg', desc: 'Idéale pour les petits foyers, légère et facile à transporter.', price: 'Recharge dès 6 500 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteille-6kg' },
       { title: 'Bouteille 12,5 kg', desc: 'Le format familial le plus demandé pour une cuisine active.', price: 'Le plus populaire', icon: 'canister', image: '/images/products/bouteille-12kg.png', slug: 'bouteille-12-5kg' },
       { title: 'Bouteille 50 kg', desc: 'Pour restaurants, hôtels et industries à forte consommation.', price: 'Recharge dès 26 000 FCFA', icon: 'factory', image: '/images/products/bouteille-50kg.png', slug: 'bouteille-50kg' },
-      { title: 'Réchauds & cuisinières', desc: 'Réchaud verre, allumage piézo — pratique et facile à nettoyer.', price: 'Dès 18 000 FCFA', icon: 'stove', image: '/images/products/plaque-gaz.jpg', slug: 'rechauds-cuisinieres' },
+      { title: 'Plaque à gaz', desc: 'Réchaud verre, allumage piézo — pratique et facile à nettoyer.', price: 'Dès 18 000 FCFA', icon: 'stove', image: '/images/products/plaque-gaz.png', slug: 'rechauds-cuisinieres' },
       { title: 'Détendeurs & accessoires', desc: 'Détendeurs de sécurité, tuyaux et pièces homologués.', price: 'Sur devis', icon: 'wrench', slug: 'detendeurs-accessoires' },
     ],
     figures: {
@@ -188,7 +188,7 @@ export const CONTENT = {
       activities: [
         { label: 'Bouteilles domestiques', href: '/produit/bouteilles-domestiques' },
         { label: 'Gaz en vrac', href: '/produit/gaz-vrac' },
-        { label: 'Réchauds & cuisinières', href: '/produit/rechauds-cuisinieres' },
+        { label: 'Plaque à gaz', href: '/produit/rechauds-cuisinieres' },
         { label: 'Détendeurs & accessoires', href: '/produit/detendeurs-accessoires' },
         { label: 'Livraison à domicile', href: '/produit/livraison-domicile' },
       ],
@@ -296,12 +296,12 @@ export const CONTENT = {
         features: ['Livraison en citerne', 'Approvisionnement continu', 'Solutions sur mesure pour l’industrie'],
       },
       {
-        slug: 'rechauds-cuisinieres', title: 'Réchauds & cuisinières', icon: 'stove', ph: 'ph-crowd', image: '/images/products/plaque-gaz.jpg',
+        slug: 'rechauds-cuisinieres', title: 'Plaque à gaz', icon: 'stove', ph: 'ph-crowd', image: '/images/products/plaque-gaz.png',
         paragraphs: [
-          'Complétez votre installation avec nos réchauds et cuisinières : allumage piézo, plans en verre trempé, faciles à nettoyer et adaptés à un usage quotidien.',
-          'Des équipements fiables, pensés pour la sécurité et le confort de toute la famille.',
+          'Complétez votre installation avec notre plaque à gaz : allumage piézo, plan en verre trempé, facile à nettoyer et adaptée à un usage quotidien.',
+          'Un équipement fiable, pensé pour la sécurité et le confort de toute la famille.',
         ],
-        features: ['Allumage piézo', 'Verre trempé facile à nettoyer', 'Modèles 1 à 4 feux'],
+        features: ['Allumage piézo', 'Verre trempé facile à nettoyer', 'Plaque 3 feux'],
       },
       {
         slug: 'detendeurs-accessoires', title: 'Détendeurs & accessoires', icon: 'wrench', ph: 'ph-green',
@@ -379,7 +379,7 @@ export const CONTENT = {
           links: [
             { label: 'Domestic cylinders', href: '/produit/bouteilles-domestiques' },
             { label: 'Bulk gas', href: '/produit/gaz-vrac' },
-            { label: 'Stoves & cookers', href: '/produit/rechauds-cuisinieres' },
+            { label: 'Gas stove', href: '/produit/rechauds-cuisinieres' },
             { label: 'Regulators & accessories', href: '/produit/detendeurs-accessoires' },
             { label: 'Home delivery', href: '/produit/livraison-domicile' },
             { label: 'Points of sale', href: '/reseau' },
@@ -445,7 +445,7 @@ export const CONTENT = {
       { title: '6 kg cylinder', desc: 'Ideal for small households, light and easy to carry.', price: 'Refill from 6,500 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteille-6kg' },
       { title: '12.5 kg cylinder', desc: 'The most requested family size for an active kitchen.', price: 'Most popular', icon: 'canister', image: '/images/products/bouteille-12kg.png', slug: 'bouteille-12-5kg' },
       { title: '50 kg cylinder', desc: 'For restaurants, hotels and high-consumption industries.', price: 'Refill from 26,000 FCFA', icon: 'factory', image: '/images/products/bouteille-50kg.png', slug: 'bouteille-50kg' },
-      { title: 'Stoves & cookers', desc: 'Glass stove, piezo ignition — practical and easy to clean.', price: 'From 18,000 FCFA', icon: 'stove', image: '/images/products/plaque-gaz.jpg', slug: 'rechauds-cuisinieres' },
+      { title: 'Gas stove', desc: 'Glass stove, piezo ignition — practical and easy to clean.', price: 'From 18,000 FCFA', icon: 'stove', image: '/images/products/plaque-gaz.png', slug: 'rechauds-cuisinieres' },
       { title: 'Regulators & accessories', desc: 'Safety regulators, hoses and approved parts.', price: 'On quote', icon: 'wrench', slug: 'detendeurs-accessoires' },
     ],
     figures: {
@@ -506,7 +506,7 @@ export const CONTENT = {
       activities: [
         { label: 'Domestic cylinders', href: '/produit/bouteilles-domestiques' },
         { label: 'Bulk gas', href: '/produit/gaz-vrac' },
-        { label: 'Stoves & cookers', href: '/produit/rechauds-cuisinieres' },
+        { label: 'Gas stove', href: '/produit/rechauds-cuisinieres' },
         { label: 'Regulators & accessories', href: '/produit/detendeurs-accessoires' },
         { label: 'Home delivery', href: '/produit/livraison-domicile' },
       ],
@@ -614,12 +614,12 @@ export const CONTENT = {
         features: ['Tanker delivery', 'Continuous supply', 'Tailored solutions for industry'],
       },
       {
-        slug: 'rechauds-cuisinieres', title: 'Stoves & cookers', icon: 'stove', ph: 'ph-crowd', image: '/images/products/plaque-gaz.jpg',
+        slug: 'rechauds-cuisinieres', title: 'Gas stove', icon: 'stove', ph: 'ph-crowd', image: '/images/products/plaque-gaz.png',
         paragraphs: [
-          'Complete your setup with our stoves and cookers: piezo ignition, tempered-glass tops, easy to clean and built for daily use.',
+          'Complete your setup with our gas stove: piezo ignition, tempered-glass top, easy to clean and built for daily use.',
           'Reliable equipment designed for the safety and comfort of the whole family.',
         ],
-        features: ['Piezo ignition', 'Easy-clean tempered glass', '1 to 4-burner models'],
+        features: ['Piezo ignition', 'Easy-clean tempered glass', '3-burner hob'],
       },
       {
         slug: 'detendeurs-accessoires', title: 'Regulators & accessories', icon: 'wrench', ph: 'ph-green',
