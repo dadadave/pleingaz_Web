@@ -124,9 +124,9 @@ export const CONTENT = {
       learnMore: 'En savoir plus',
     },
     products: [
-      { title: 'Bouteille 6 kg', desc: 'Idéale pour les petits foyers, légère et facile à transporter.', price: 'Recharge dès 6 500 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteilles-domestiques' },
-      { title: 'Bouteille 12,5 kg', desc: 'Le format familial le plus demandé pour une cuisine active.', price: 'Le plus populaire', icon: 'canister', image: '/images/products/bouteille-12kg.png', slug: 'bouteilles-domestiques' },
-      { title: 'Bouteille 50 kg', desc: 'Pour restaurants, hôtels et industries à forte consommation.', price: 'Recharge dès 26 000 FCFA', icon: 'factory', image: '/images/products/bouteille-50kg.png', slug: 'bouteilles-domestiques' },
+      { title: 'Bouteille 6 kg', desc: 'Idéale pour les petits foyers, légère et facile à transporter.', price: 'Recharge dès 6 500 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteille-6kg' },
+      { title: 'Bouteille 12,5 kg', desc: 'Le format familial le plus demandé pour une cuisine active.', price: 'Le plus populaire', icon: 'canister', image: '/images/products/bouteille-12kg.png', slug: 'bouteille-12-5kg' },
+      { title: 'Bouteille 50 kg', desc: 'Pour restaurants, hôtels et industries à forte consommation.', price: 'Recharge dès 26 000 FCFA', icon: 'factory', image: '/images/products/bouteille-50kg.png', slug: 'bouteille-50kg' },
       { title: 'Réchauds & cuisinières', desc: 'Réchaud verre, allumage piézo — pratique et facile à nettoyer.', price: 'Dès 18 000 FCFA', icon: 'stove', image: '/images/products/plaque-gaz.jpg', slug: 'rechauds-cuisinieres' },
       { title: 'Détendeurs & accessoires', desc: 'Détendeurs de sécurité, tuyaux et pièces homologués.', price: 'Sur devis', icon: 'wrench', slug: 'detendeurs-accessoires' },
     ],
@@ -262,6 +262,30 @@ export const CONTENT = {
           'Chaque bouteille répond à des contrôles de sécurité stricts et bénéficie de notre réseau de recharge disponible partout au Cameroun.',
         ],
         features: ['Formats 6 kg, 12,5 kg et 50 kg', 'Recharge rapide chez plus de 850 revendeurs', 'Bouteilles contrôlées et sécurisées'],
+      },
+      {
+        slug: 'bouteille-6kg', title: 'Bouteille 6 kg', icon: 'bottle', ph: 'ph-warm', image: '/images/products/bouteille-6kg.png',
+        paragraphs: [
+          'La bouteille de 6 kg est le format le plus léger de la gamme PleinGaz : idéale pour les petits foyers, les studios et les usages d’appoint, elle se transporte et se range sans effort.',
+          'Facile à manipuler, elle offre une autonomie confortable pour une cuisine occasionnelle et se recharge en quelques minutes dans notre réseau de revendeurs.',
+        ],
+        features: ['Format léger 6 kg, facile à transporter', 'Idéale pour les petits foyers et les studios', 'Recharge rapide dès 6 500 FCFA'],
+      },
+      {
+        slug: 'bouteille-12-5kg', title: 'Bouteille 12,5 kg', icon: 'canister', ph: 'ph-warm', image: '/images/products/bouteille-12kg.png',
+        paragraphs: [
+          'La bouteille de 12,5 kg est le format familial le plus demandé : idéale pour une cuisine active au quotidien, elle offre une grande autonomie tout en restant facile à manipuler.',
+          'C’est le choix privilégié des familles : un bon équilibre entre autonomie et encombrement, avec une recharge disponible partout au Cameroun.',
+        ],
+        features: ['Format familial 12,5 kg', 'Grande autonomie pour un usage quotidien', 'Recharge rapide chez plus de 850 revendeurs'],
+      },
+      {
+        slug: 'bouteille-50kg', title: 'Bouteille 50 kg', icon: 'factory', ph: 'ph-slate', image: '/images/products/bouteille-50kg.png',
+        paragraphs: [
+          'La bouteille de 50 kg est le format le plus généreux de la gamme PleinGaz : pensée pour les restaurants, les hôtels et les activités à forte consommation, elle assure une longue autonomie sans recharges fréquentes.',
+          'Robuste et contrôlée selon des normes de sécurité strictes, elle garantit la continuité de votre activité professionnelle.',
+        ],
+        features: ['Grand format 50 kg, longue autonomie', 'Idéale pour restaurants, hôtels et industries', 'Recharge dès 26 000 FCFA'],
       },
       {
         slug: 'gaz-vrac', title: 'Gaz en vrac', icon: 'factory', ph: 'ph-slate', image: '/images/products/bouteille-50kg.png',
@@ -418,9 +442,9 @@ export const CONTENT = {
       learnMore: 'Learn more',
     },
     products: [
-      { title: '6 kg cylinder', desc: 'Ideal for small households, light and easy to carry.', price: 'Refill from 6,500 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteilles-domestiques' },
-      { title: '12.5 kg cylinder', desc: 'The most requested family size for an active kitchen.', price: 'Most popular', icon: 'canister', image: '/images/products/bouteille-12kg.png', slug: 'bouteilles-domestiques' },
-      { title: '50 kg cylinder', desc: 'For restaurants, hotels and high-consumption industries.', price: 'Refill from 26,000 FCFA', icon: 'factory', image: '/images/products/bouteille-50kg.png', slug: 'bouteilles-domestiques' },
+      { title: '6 kg cylinder', desc: 'Ideal for small households, light and easy to carry.', price: 'Refill from 6,500 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteille-6kg' },
+      { title: '12.5 kg cylinder', desc: 'The most requested family size for an active kitchen.', price: 'Most popular', icon: 'canister', image: '/images/products/bouteille-12kg.png', slug: 'bouteille-12-5kg' },
+      { title: '50 kg cylinder', desc: 'For restaurants, hotels and high-consumption industries.', price: 'Refill from 26,000 FCFA', icon: 'factory', image: '/images/products/bouteille-50kg.png', slug: 'bouteille-50kg' },
       { title: 'Stoves & cookers', desc: 'Glass stove, piezo ignition — practical and easy to clean.', price: 'From 18,000 FCFA', icon: 'stove', image: '/images/products/plaque-gaz.jpg', slug: 'rechauds-cuisinieres' },
       { title: 'Regulators & accessories', desc: 'Safety regulators, hoses and approved parts.', price: 'On quote', icon: 'wrench', slug: 'detendeurs-accessoires' },
     ],
@@ -556,6 +580,30 @@ export const CONTENT = {
           'Every cylinder meets strict safety checks and benefits from our refill network available throughout Cameroon.',
         ],
         features: ['6 kg, 12.5 kg and 50 kg formats', 'Fast refills at over 850 resellers', 'Inspected and secured cylinders'],
+      },
+      {
+        slug: 'bouteille-6kg', title: '6 kg cylinder', icon: 'bottle', ph: 'ph-warm', image: '/images/products/bouteille-6kg.png',
+        paragraphs: [
+          'The 6 kg cylinder is the lightest format in the PleinGaz range: ideal for small homes, studios and occasional use, it is effortless to carry and store.',
+          'Easy to handle, it offers comfortable autonomy for occasional cooking and refills in just a few minutes across our reseller network.',
+        ],
+        features: ['Light 6 kg format, easy to carry', 'Ideal for small homes and studios', 'Fast refill from 6,500 FCFA'],
+      },
+      {
+        slug: 'bouteille-12-5kg', title: '12.5 kg cylinder', icon: 'canister', ph: 'ph-warm', image: '/images/products/bouteille-12kg.png',
+        paragraphs: [
+          'The 12.5 kg cylinder is the most requested family size: perfect for active daily cooking, it offers plenty of autonomy while staying easy to handle.',
+          'It is the favourite choice for families: a great balance between autonomy and footprint, with refills available throughout Cameroon.',
+        ],
+        features: ['12.5 kg family format', 'Great autonomy for daily use', 'Fast refills at over 850 resellers'],
+      },
+      {
+        slug: 'bouteille-50kg', title: '50 kg cylinder', icon: 'factory', ph: 'ph-slate', image: '/images/products/bouteille-50kg.png',
+        paragraphs: [
+          'The 50 kg cylinder is the largest format in the PleinGaz range: designed for restaurants, hotels and high-consumption activities, it delivers long autonomy without frequent refills.',
+          'Sturdy and inspected to strict safety standards, it keeps your professional operations running smoothly.',
+        ],
+        features: ['Large 50 kg format, long autonomy', 'Ideal for restaurants, hotels and industry', 'Refill from 26,000 FCFA'],
       },
       {
         slug: 'gaz-vrac', title: 'Bulk gas', icon: 'factory', ph: 'ph-slate', image: '/images/products/bouteille-50kg.png',
