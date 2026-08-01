@@ -64,9 +64,9 @@ export default function Footer() {
               <div><p className="lbl">{t.contact.findLabel}</p><p className="val">{t.contact.city}</p></div>
             </div>
             <div className="socials">
-              <a href="#" aria-label="Facebook"><Social name="facebook" /></a>
-              <a href="#" aria-label="Instagram"><Social name="instagram" /></a>
-              <a href="#" aria-label="LinkedIn"><Social name="linkedin" /></a>
+              <a href="https://www.facebook.com/profile.php?id=61574464164434" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Social name="facebook" /></a>
+              <a href="https://www.instagram.com/pleingazofficiel/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Social name="instagram" /></a>
+              <a href="https://www.tiktok.com/@pleingaz_officiel" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><Social name="tiktok" /></a>
             </div>
           </div>
         </div>
