@@ -1290,6 +1290,23 @@ a.contact-info-value:hover { color: var(--red); }
   object-fit: contain; padding: 24px;
 }
 .product-copy p { color: var(--ink-2); line-height: 1.75; font-size: 14.5px; margin-bottom: 16px; }
+
+/* Optional variant gallery on a product page (e.g. camping-gas sizes) */
+.product-gallery {
+  display: flex; flex-wrap: wrap; gap: 16px; margin-top: 26px;
+}
+.product-gallery-item {
+  flex: 1 1 160px; max-width: 220px;
+  background: linear-gradient(160deg, #f7f7f7 0%, #ececec 100%);
+  border: 1px solid var(--line, #e6e6e6); border-radius: 12px;
+  padding: 16px; text-align: center;
+}
+.product-gallery-item img {
+  width: 100%; height: 150px; object-fit: contain;
+}
+.product-gallery-item span {
+  display: block; margin-top: 8px; font-weight: 700; color: var(--navy); font-size: 14px;
+}
 .product-features-title {
   font-size: 20px; font-weight: 800; color: var(--navy); margin: 32px 0 18px;
 }
