@@ -7,8 +7,8 @@ import { useLang } from '../i18n.jsx';
 const SLIDE_STYLE = [
   { bg: 'ph-slate', icon: 'cylinderBig', image: '/images/hero/hero-logo.jpg' },
   { bg: 'ph-blue', icon: 'phone', image: '/images/hero/hero-service.jpg' },
-  { bg: 'ph-worker', icon: 'team' },
-  { bg: 'ph-crowd', icon: 'shieldCheck' },
+  { bg: 'ph-worker', icon: 'team', image: '/images/hero/hero-logo.jpg' },
+  { bg: 'ph-crowd', icon: 'shieldCheck', image: '/images/hero/hero-logo.jpg' },
 ];
 
 const INTERVAL = 5000;
