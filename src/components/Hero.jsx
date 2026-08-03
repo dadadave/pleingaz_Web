@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react';
 import { Icon } from './Icons.jsx';
 import { useLang } from '../i18n.jsx';
 
-// Language-neutral look for each slide (background + watermark icon).
+// Language-neutral look for each slide (background photo, or fallback colour +
+// watermark icon when no photo is set yet).
 const SLIDE_STYLE = [
-  { bg: 'ph-slate', icon: 'cylinderBig' },
-  { bg: 'ph-blue', icon: 'phone' },
+  { bg: 'ph-slate', icon: 'cylinderBig', image: '/images/hero/hero-logo.jpg' },
+  { bg: 'ph-blue', icon: 'phone', image: '/images/hero/hero-service.jpg' },
   { bg: 'ph-worker', icon: 'team' },
   { bg: 'ph-crowd', icon: 'shieldCheck' },
 ];
@@ -59,9 +60,13 @@ export default function Hero() {
                 aria-hidden={i !== active}
               >
                 <div className={`ph ${style.bg}`} />
-                <div className="ph-icon" aria-hidden="true">
-                  <Icon name={style.icon} strokeWidth={1.5} />
-                </div>
+                {style.image ? (
+                  <img className="hero-photo" src={style.image} alt="" aria-hidden="true" />
+                ) : (
+                  <div className="ph-icon" aria-hidden="true">
+                    <Icon name={style.icon} strokeWidth={1.5} />
+                  </div>
+                )}
                 <div className="veil" />
                 <div className="slide-body">
                   <h2>{s.title}</h2>
