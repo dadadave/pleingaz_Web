@@ -134,7 +134,7 @@ export const CONTENT = {
       { title: 'Tuyau de gaz', desc: 'Tuyau flexible homologué pour raccorder votre bouteille en toute sécurité.', price: '6,3 mm × 13 mm', icon: 'wrench', image: '/images/products/tuyau-gaz.png', slug: 'tuyau-gaz' },
       { title: 'Support de réchaud', desc: 'Trépied en fonte robuste pour poser vos marmites sur le réchaud.', price: 'Fonte massive', icon: 'stove', image: '/images/products/support-rechaud.png', slug: 'support-rechaud' },
       { title: 'Camping gaz', desc: 'Cartouches de gaz butane pour la cuisine nomade, le camping et la randonnée.', price: '230 g / 450 g', icon: 'canister', image: '/images/products/camping-butane.png', slug: 'camping-gaz' },
-      { title: 'Détendeurs & accessoires', desc: 'Détendeurs de sécurité, tuyaux et pièces homologués.', price: 'Sur devis', icon: 'wrench', slug: 'detendeurs-accessoires' },
+      { title: 'Détendeurs & accessoires', desc: 'Détendeurs de sécurité, chalumeaux, brûleurs et pièces homologués.', price: 'Sur devis', icon: 'wrench', image: '/images/products/detendeur-28mbar.png', slug: 'detendeurs-accessoires' },
     ],
     figures: {
       eyebrow: 'Chiffres clés',
@@ -341,12 +341,17 @@ export const CONTENT = {
         ],
       },
       {
-        slug: 'detendeurs-accessoires', title: 'Détendeurs & accessoires', icon: 'wrench', ph: 'ph-green',
+        slug: 'detendeurs-accessoires', title: 'Détendeurs & accessoires', icon: 'wrench', ph: 'ph-green', image: '/images/products/detendeur-28mbar.png',
         paragraphs: [
-          'Détendeurs de sécurité, tuyaux, colliers et pièces homologuées : tout le nécessaire pour raccorder et utiliser votre installation en toute sérénité.',
-          'Des accessoires certifiés, conformes aux normes en vigueur.',
+          'Détendeurs de sécurité, chalumeaux, brûleurs et pièces homologuées : tout le nécessaire pour raccorder, allumer et compléter votre installation en toute sérénité.',
+          'Des accessoires certifiés, conformes aux normes en vigueur (EN 16129).',
         ],
-        features: ['Détendeurs de sécurité homologués', 'Tuyaux et raccords certifiés', 'Pièces de rechange disponibles'],
+        features: ['Détendeurs butane 28 & 30 mbar homologués', 'Chalumeau et brûleur haute puissance', 'Raccords et pièces certifiés'],
+        gallery: [
+          { src: '/images/products/detendeur-30mbar.png', label: 'Détendeur 30 mbar' },
+          { src: '/images/products/chalumeau.png', label: 'Chalumeau' },
+          { src: '/images/products/bruleur.png', label: 'Brûleur à gaz' },
+        ],
       },
       {
         slug: 'livraison-domicile', title: 'Livraison à domicile', icon: 'team', ph: 'ph-blue',
@@ -489,7 +494,7 @@ export const CONTENT = {
       { title: 'Gas hose', desc: 'Approved flexible hose to connect your cylinder safely.', price: '6.3 mm × 13 mm', icon: 'wrench', image: '/images/products/tuyau-gaz.png', slug: 'tuyau-gaz' },
       { title: 'Stove trivet', desc: 'Sturdy cast-iron stand to rest your pots on the burner.', price: 'Solid cast iron', icon: 'stove', image: '/images/products/support-rechaud.png', slug: 'support-rechaud' },
       { title: 'Camping gas', desc: 'Butane cartridges for outdoor cooking, camping and hiking.', price: '230 g / 450 g', icon: 'canister', image: '/images/products/camping-butane.png', slug: 'camping-gaz' },
-      { title: 'Regulators & accessories', desc: 'Safety regulators, hoses and approved parts.', price: 'On quote', icon: 'wrench', slug: 'detendeurs-accessoires' },
+      { title: 'Regulators & accessories', desc: 'Safety regulators, torches, burners and approved parts.', price: 'On quote', icon: 'wrench', image: '/images/products/detendeur-28mbar.png', slug: 'detendeurs-accessoires' },
     ],
     figures: {
       eyebrow: 'Key figures',
@@ -696,12 +701,17 @@ export const CONTENT = {
         ],
       },
       {
-        slug: 'detendeurs-accessoires', title: 'Regulators & accessories', icon: 'wrench', ph: 'ph-green',
-        paragraphs: [
-          'Safety regulators, hoses, clamps and approved parts: everything you need to connect and use your installation with complete peace of mind.',
-          'Certified accessories that comply with current standards.',
+        slug: 'detendeurs-accessoires', title: 'Regulators & accessories', icon: 'wrench', ph: 'ph-green', image: '/images/products/detendeur-28mbar.png',
+        gallery: [
+          { src: '/images/products/detendeur-30mbar.png', label: '30 mbar regulator' },
+          { src: '/images/products/chalumeau.png', label: 'Torch' },
+          { src: '/images/products/bruleur.png', label: 'Gas burner' },
         ],
-        features: ['Approved safety regulators', 'Certified hoses and fittings', 'Spare parts available'],
+        paragraphs: [
+          'Safety regulators, torches, burners and approved parts: everything you need to connect, ignite and complete your installation with complete peace of mind.',
+          'Certified accessories that comply with current standards (EN 16129).',
+        ],
+        features: ['Approved 28 & 30 mbar butane regulators', 'High-power torch and burner', 'Certified fittings and parts'],
       },
       {
         slug: 'livraison-domicile', title: 'Home delivery', icon: 'team', ph: 'ph-blue',
