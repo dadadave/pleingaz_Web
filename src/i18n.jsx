@@ -62,6 +62,9 @@ export const CONTENT = {
             { label: 'Bouteilles domestiques', href: '/produit/bouteilles-domestiques' },
             { label: 'Gaz en vrac', href: '/produit/gaz-vrac' },
             { label: 'Plaque à gaz', href: '/produit/rechauds-cuisinieres' },
+            { label: 'Tuyau de gaz', href: '/produit/tuyau-gaz' },
+            { label: 'Support de réchaud', href: '/produit/support-rechaud' },
+            { label: 'Camping gaz', href: '/produit/camping-gaz' },
             { label: 'Détendeurs & accessoires', href: '/produit/detendeurs-accessoires' },
             { label: 'Livraison à domicile', href: '/produit/livraison-domicile' },
             { label: 'Points de vente', href: '/reseau' },
@@ -128,6 +131,9 @@ export const CONTENT = {
       { title: 'Bouteille 12,5 kg', desc: 'Le format familial le plus demandé pour une cuisine active.', price: 'Le plus populaire', icon: 'canister', image: '/images/products/bouteille-12kg.png', slug: 'bouteille-12-5kg' },
       { title: 'Bouteille 50 kg', desc: 'Pour restaurants, hôtels et industries à forte consommation.', price: 'Recharge dès 26 000 FCFA', icon: 'factory', image: '/images/products/bouteille-50kg.png', slug: 'bouteille-50kg' },
       { title: 'Plaque à gaz', desc: 'Réchaud verre, allumage piézo — pratique et facile à nettoyer.', price: 'Dès 18 000 FCFA', icon: 'stove', image: '/images/products/plaque-gaz.png', slug: 'rechauds-cuisinieres' },
+      { title: 'Tuyau de gaz', desc: 'Tuyau flexible homologué pour raccorder votre bouteille en toute sécurité.', price: '6,3 mm × 13 mm', icon: 'wrench', image: '/images/products/tuyau-gaz.png', slug: 'tuyau-gaz' },
+      { title: 'Support de réchaud', desc: 'Trépied en fonte robuste pour poser vos marmites sur le réchaud.', price: 'Fonte massive', icon: 'stove', image: '/images/products/support-rechaud.png', slug: 'support-rechaud' },
+      { title: 'Camping gaz', desc: 'Cartouches de gaz butane pour la cuisine nomade, le camping et la randonnée.', price: '230 g / 450 g', icon: 'canister', image: '/images/products/camping-butane.png', slug: 'camping-gaz' },
       { title: 'Détendeurs & accessoires', desc: 'Détendeurs de sécurité, tuyaux et pièces homologués.', price: 'Sur devis', icon: 'wrench', slug: 'detendeurs-accessoires' },
     ],
     figures: {
@@ -189,6 +195,9 @@ export const CONTENT = {
         { label: 'Bouteilles domestiques', href: '/produit/bouteilles-domestiques' },
         { label: 'Gaz en vrac', href: '/produit/gaz-vrac' },
         { label: 'Plaque à gaz', href: '/produit/rechauds-cuisinieres' },
+        { label: 'Tuyau de gaz', href: '/produit/tuyau-gaz' },
+        { label: 'Support de réchaud', href: '/produit/support-rechaud' },
+        { label: 'Camping gaz', href: '/produit/camping-gaz' },
         { label: 'Détendeurs & accessoires', href: '/produit/detendeurs-accessoires' },
         { label: 'Livraison à domicile', href: '/produit/livraison-domicile' },
       ],
@@ -304,6 +313,34 @@ export const CONTENT = {
         features: ['Allumage piézo', 'Verre trempé facile à nettoyer', 'Plaque 3 feux'],
       },
       {
+        slug: 'tuyau-gaz', title: 'Tuyau de gaz', icon: 'wrench', ph: 'ph-warm', image: '/images/products/tuyau-gaz.png',
+        paragraphs: [
+          'Le tuyau de gaz PleinGaz assure un raccordement fiable et sûr entre votre bouteille et votre appareil. Souple et résistant, il est conçu pour un usage domestique quotidien.',
+          'Aux dimensions standard 6,3 mm × 13 mm, il se pose facilement et résiste dans le temps aux conditions d’utilisation.',
+        ],
+        features: ['Dimensions 6,3 mm × 13 mm', 'Souple et résistant', 'Raccordement sûr et durable'],
+      },
+      {
+        slug: 'support-rechaud', title: 'Support de réchaud', icon: 'stove', ph: 'ph-slate', image: '/images/products/support-rechaud.png',
+        paragraphs: [
+          'Le support de réchaud en fonte offre une base stable et robuste pour poser vos marmites et casseroles sur le brûleur.',
+          'Massif et durable, il résiste à la chaleur et à un usage intensif, pour une cuisine en toute sécurité.',
+        ],
+        features: ['Fonte massive et durable', 'Grande stabilité pour vos marmites', 'Résistant à la chaleur'],
+      },
+      {
+        slug: 'camping-gaz', title: 'Camping gaz', icon: 'canister', ph: 'ph-warm', image: '/images/products/camping-butane.png',
+        paragraphs: [
+          'Les cartouches de camping gaz PleinGaz sont pensées pour la cuisine nomade : camping, randonnée, pique-nique ou appoint à la maison.',
+          'Disponibles en plusieurs formats (230 g et 450 g), elles alimentent réchauds portatifs et brûleurs de plein air avec un gaz butane haute performance.',
+        ],
+        features: ['Formats 230 g et 450 g', 'Idéal camping, randonnée et cuisine nomade', 'Gaz butane haute performance'],
+        gallery: [
+          { src: '/images/products/camping-450g.png', label: '450 g' },
+          { src: '/images/products/camping-230g.png', label: '230 g' },
+        ],
+      },
+      {
         slug: 'detendeurs-accessoires', title: 'Détendeurs & accessoires', icon: 'wrench', ph: 'ph-green',
         paragraphs: [
           'Détendeurs de sécurité, tuyaux, colliers et pièces homologuées : tout le nécessaire pour raccorder et utiliser votre installation en toute sérénité.',
@@ -380,6 +417,9 @@ export const CONTENT = {
             { label: 'Domestic cylinders', href: '/produit/bouteilles-domestiques' },
             { label: 'Bulk gas', href: '/produit/gaz-vrac' },
             { label: 'Gas stove', href: '/produit/rechauds-cuisinieres' },
+            { label: 'Gas hose', href: '/produit/tuyau-gaz' },
+            { label: 'Stove trivet', href: '/produit/support-rechaud' },
+            { label: 'Camping gas', href: '/produit/camping-gaz' },
             { label: 'Regulators & accessories', href: '/produit/detendeurs-accessoires' },
             { label: 'Home delivery', href: '/produit/livraison-domicile' },
             { label: 'Points of sale', href: '/reseau' },
@@ -446,6 +486,9 @@ export const CONTENT = {
       { title: '12.5 kg cylinder', desc: 'The most requested family size for an active kitchen.', price: 'Most popular', icon: 'canister', image: '/images/products/bouteille-12kg.png', slug: 'bouteille-12-5kg' },
       { title: '50 kg cylinder', desc: 'For restaurants, hotels and high-consumption industries.', price: 'Refill from 26,000 FCFA', icon: 'factory', image: '/images/products/bouteille-50kg.png', slug: 'bouteille-50kg' },
       { title: 'Gas stove', desc: 'Glass stove, piezo ignition — practical and easy to clean.', price: 'From 18,000 FCFA', icon: 'stove', image: '/images/products/plaque-gaz.png', slug: 'rechauds-cuisinieres' },
+      { title: 'Gas hose', desc: 'Approved flexible hose to connect your cylinder safely.', price: '6.3 mm × 13 mm', icon: 'wrench', image: '/images/products/tuyau-gaz.png', slug: 'tuyau-gaz' },
+      { title: 'Stove trivet', desc: 'Sturdy cast-iron stand to rest your pots on the burner.', price: 'Solid cast iron', icon: 'stove', image: '/images/products/support-rechaud.png', slug: 'support-rechaud' },
+      { title: 'Camping gas', desc: 'Butane cartridges for outdoor cooking, camping and hiking.', price: '230 g / 450 g', icon: 'canister', image: '/images/products/camping-butane.png', slug: 'camping-gaz' },
       { title: 'Regulators & accessories', desc: 'Safety regulators, hoses and approved parts.', price: 'On quote', icon: 'wrench', slug: 'detendeurs-accessoires' },
     ],
     figures: {
@@ -507,6 +550,9 @@ export const CONTENT = {
         { label: 'Domestic cylinders', href: '/produit/bouteilles-domestiques' },
         { label: 'Bulk gas', href: '/produit/gaz-vrac' },
         { label: 'Gas stove', href: '/produit/rechauds-cuisinieres' },
+        { label: 'Gas hose', href: '/produit/tuyau-gaz' },
+        { label: 'Stove trivet', href: '/produit/support-rechaud' },
+        { label: 'Camping gas', href: '/produit/camping-gaz' },
         { label: 'Regulators & accessories', href: '/produit/detendeurs-accessoires' },
         { label: 'Home delivery', href: '/produit/livraison-domicile' },
       ],
@@ -620,6 +666,34 @@ export const CONTENT = {
           'Reliable equipment designed for the safety and comfort of the whole family.',
         ],
         features: ['Piezo ignition', 'Easy-clean tempered glass', '3-burner hob'],
+      },
+      {
+        slug: 'tuyau-gaz', title: 'Gas hose', icon: 'wrench', ph: 'ph-warm', image: '/images/products/tuyau-gaz.png',
+        paragraphs: [
+          'The PleinGaz gas hose provides a reliable, safe connection between your cylinder and your appliance. Flexible and durable, it is designed for everyday household use.',
+          'In the standard 6.3 mm × 13 mm size, it is easy to fit and withstands daily use over time.',
+        ],
+        features: ['6.3 mm × 13 mm size', 'Flexible and durable', 'Safe, long-lasting connection'],
+      },
+      {
+        slug: 'support-rechaud', title: 'Stove trivet', icon: 'stove', ph: 'ph-slate', image: '/images/products/support-rechaud.png',
+        paragraphs: [
+          'The cast-iron stove trivet offers a stable, sturdy base to rest your pots and pans on the burner.',
+          'Solid and durable, it withstands heat and heavy use for safe, comfortable cooking.',
+        ],
+        features: ['Solid, durable cast iron', 'Great stability for your pots', 'Heat-resistant'],
+      },
+      {
+        slug: 'camping-gaz', title: 'Camping gas', icon: 'canister', ph: 'ph-warm', image: '/images/products/camping-butane.png',
+        paragraphs: [
+          'PleinGaz camping gas cartridges are built for cooking on the move: camping, hiking, picnics or a backup at home.',
+          'Available in several sizes (230 g and 450 g), they power portable stoves and outdoor burners with high-performance butane gas.',
+        ],
+        features: ['230 g and 450 g sizes', 'Ideal for camping, hiking and outdoor cooking', 'High-performance butane gas'],
+        gallery: [
+          { src: '/images/products/camping-450g.png', label: '450 g' },
+          { src: '/images/products/camping-230g.png', label: '230 g' },
+        ],
       },
       {
         slug: 'detendeurs-accessoires', title: 'Regulators & accessories', icon: 'wrench', ph: 'ph-green',

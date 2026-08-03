@@ -48,6 +48,17 @@ export default function ProductPage() {
         </div>
       </div>
 
+      {product.gallery && (
+        <div className="product-gallery">
+          {product.gallery.map((g) => (
+            <div className="product-gallery-item" key={g.src}>
+              <img src={g.src} alt={g.label || product.title} />
+              {g.label && <span>{g.label}</span>}
+            </div>
+          ))}
+        </div>
+      )}
+
       <h2 className="product-features-title">{promo.features}</h2>
       <ul className="product-features">
         {product.features.map((f) => (
