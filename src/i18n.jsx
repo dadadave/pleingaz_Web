@@ -42,7 +42,7 @@ export const CONTENT = {
         label: 'Découvrir PleinGaz',
         href: '#top',
         mega: {
-          blurb: 'PleinGaz, acteur majeur de la distribution de gaz et d’énergie au Cameroun.',
+          blurb: 'PleinGaz, acteur majeur de la distribution de gaz au Cameroun.',
           links: [
             { label: 'Qui sommes-nous ?', href: '/apropos' },
             { label: 'Histoire', href: '/histoire' },
@@ -57,7 +57,7 @@ export const CONTENT = {
         href: '#portfolio',
         mega: {
           blurb:
-            'PleinGaz répond à tous vos besoins en énergie : bouteilles domestiques, gaz en vrac, réchauds, détendeurs et livraison à domicile.',
+            'PleinGaz répond à tous vos besoins en gaz : bouteilles domestiques, gaz en vrac, réchauds, détendeurs et livraison à domicile.',
           links: [
             { label: 'Bouteilles domestiques', href: '/produit/bouteilles-domestiques' },
             { label: 'Gaz en vrac', href: '/produit/gaz-vrac' },
@@ -106,14 +106,14 @@ export const CONTENT = {
           text: 'Prenez quelques minutes pour participer à notre enquête de satisfaction.',
         },
         {
-          title: 'Une énergie fiable, partout au Cameroun',
+          title: 'Du gaz fiable, partout au Cameroun',
           text: 'Un réseau de plus de 850 revendeurs partenaires, au service des foyers et des professionnels.',
         },
       ],
     },
     supplier: {
-      title: 'Votre fournisseur d’énergie au Cameroun',
-      text: 'Depuis 2015, PleinGaz alimente les foyers camerounais avec fiabilité, sécurité et passion. Particulier, professionnel ou secteur public : retrouvez toute notre gamme de produits.',
+      title: 'Votre fournisseur de gaz au Cameroun',
+      text: 'Depuis 2015, PleinGaz fournit du gaz et des accessoires de gaz aux foyers camerounais avec fiabilité, sécurité et passion. Particuliers et professionnels : retrouvez toute notre gamme de produits.',
       about: 'À propos ›',
       iam: 'Je suis un',
       choices: { individual: 'Particulier', professional: 'Professionnel' },
@@ -122,7 +122,7 @@ export const CONTENT = {
       eyebrow: 'Notre gamme',
       title: 'Découvrez notre gamme de produits',
       intro:
-        'Choisir PleinGaz, c’est choisir une énergie pratique et disponible pour un confort maximal au quotidien. Trouvez le produit qu’il vous faut.',
+        'Choisir PleinGaz, c’est choisir un gaz pratique et disponible pour un confort maximal au quotidien. Trouvez le produit qu’il vous faut.',
       learnMore: 'En savoir plus',
     },
     products: [
@@ -201,7 +201,7 @@ export const CONTENT = {
         { label: 'Livraison à domicile', href: '/produit/livraison-domicile' },
       ],
       partnersTitle: 'Nos partenaires',
-      partners: ['AfriqGaz', 'GazPlus', 'CamEnergy', 'SudGaz'],
+      partners: ['AfriqGaz', 'GazPlus', 'CamGaz', 'SudGaz'],
       copyright: '© 2026 PleinGaz — Cameroun. Tous droits réservés.',
       slogan: 'Bouteilles toujours pleines',
       designedBy: 'Conçu par',
@@ -224,8 +224,8 @@ export const CONTENT = {
       quote: 'Demander un devis',
       pos: 'Points de vente',
       paragraphs: [
-        'PleinGaz est un acteur majeur de la distribution de gaz et de produits énergétiques au Cameroun. Grâce à sa stratégie de distribution unique, les bouteilles sont livrées chaque jour à son vaste réseau de dépôts, garantissant la disponibilité du gaz.',
-        'Notre gamme s’adresse, d’une part, aux professionnels — bouteilles industrielles, gaz en vrac, lubrifiants, additifs et biocides — et, d’autre part, aux ménages, avec les bouteilles domestiques de 6 kg, 12,5 kg et 50 kg.',
+        'PleinGaz est un acteur majeur de la distribution de gaz et d’accessoires de gaz au Cameroun. Grâce à sa stratégie de distribution unique, les bouteilles sont livrées chaque jour à son vaste réseau de dépôts, garantissant la disponibilité du gaz.',
+        'Notre gamme s’adresse, d’une part, aux professionnels — bouteilles industrielles, gaz en vrac, détendeurs, tuyaux et accessoires de gaz — et, d’autre part, aux ménages, avec les bouteilles domestiques de 6 kg, 12,5 kg et 50 kg.',
         'Afin d’offrir un haut niveau de sécurité, des innovations majeures ont été apportées à nos bouteilles et à nos équipements. Avec plus de 850 revendeurs partenaires à travers le pays, PleinGaz met son expertise au service du plus grand nombre depuis 2015.',
         'PleinGaz est conscient de sa responsabilité face aux enjeux sociétaux et environnementaux. L’entreprise veille au respect de l’environnement, à la sécurité au travail et à la conformité de ses procédures, tout en multipliant ses initiatives sociales.',
       ],
@@ -250,7 +250,7 @@ export const CONTENT = {
     engagements: {
       title: 'Nos engagements',
       sections: [
-        { title: 'HSE (Hygiène, Sécurité, Environnement)', text: 'PleinGaz s’engage dans une démarche HSE afin de maîtriser les risques pour la santé et la sécurité au travail et d’assurer la protection des biens, des personnes et de l’environnement. En tant que distributeur d’énergie, nous veillons à ce que nos produits et la logistique associée limitent au maximum notre empreinte écologique, dans l’intérêt des générations futures.' },
+        { title: 'HSE (Hygiène, Sécurité, Environnement)', text: 'PleinGaz s’engage dans une démarche HSE afin de maîtriser les risques pour la santé et la sécurité au travail et d’assurer la protection des biens, des personnes et de l’environnement. En tant que distributeur de gaz, nous veillons à ce que nos produits et la logistique associée limitent au maximum notre empreinte écologique, dans l’intérêt des générations futures.' },
         { title: 'Fondation PleinGaz', text: 'À travers ses actions solidaires, PleinGaz s’investit sur le terrain pour la santé, l’éducation et le bien-être des communautés camerounaises : soutien aux écoles, dons aux structures d’accueil et participation à des initiatives sociales et culturelles.' },
       ],
     },
@@ -401,7 +401,7 @@ export const CONTENT = {
         label: 'Discover PleinGaz',
         href: '#top',
         mega: {
-          blurb: 'PleinGaz, a major player in gas and energy distribution in Cameroon.',
+          blurb: 'PleinGaz, a major player in gas distribution in Cameroon.',
           links: [
             { label: 'Who are we?', href: '/apropos' },
             { label: 'History', href: '/histoire' },
@@ -416,7 +416,7 @@ export const CONTENT = {
         href: '#portfolio',
         mega: {
           blurb:
-            'PleinGaz meets all your energy needs: domestic cylinders, bulk gas, stoves, regulators and home delivery.',
+            'PleinGaz meets all your gas needs: domestic cylinders, bulk gas, stoves, regulators and home delivery.',
           links: [
             { label: 'Domestic cylinders', href: '/produit/bouteilles-domestiques' },
             { label: 'Bulk gas', href: '/produit/gaz-vrac' },
@@ -465,14 +465,14 @@ export const CONTENT = {
           text: 'Take a few minutes to take part in our satisfaction survey.',
         },
         {
-          title: 'Reliable energy, everywhere in Cameroon',
+          title: 'Reliable gas, everywhere in Cameroon',
           text: 'A network of over 850 partner resellers, serving households and professionals.',
         },
       ],
     },
     supplier: {
-      title: 'Your energy supplier in Cameroon',
-      text: 'Since 2015, PleinGaz has supplied Cameroonian households with reliability, safety and passion. Individual, professional or public sector: find our full range of products.',
+      title: 'Your gas supplier in Cameroon',
+      text: 'Since 2015, PleinGaz has supplied Cameroonian households with gas and gas accessories, with reliability, safety and passion. Individuals and professionals: find our full range of products.',
       about: 'About us ›',
       iam: 'I am a',
       choices: { individual: 'Individual', professional: 'Professional' },
@@ -481,7 +481,7 @@ export const CONTENT = {
       eyebrow: 'Our range',
       title: 'Discover our product range',
       intro:
-        'Choosing PleinGaz means choosing practical, available energy for maximum daily comfort. Find the product you need.',
+        'Choosing PleinGaz means choosing practical, available gas for maximum daily comfort. Find the product you need.',
       learnMore: 'Learn more',
     },
     products: [
@@ -560,7 +560,7 @@ export const CONTENT = {
         { label: 'Home delivery', href: '/produit/livraison-domicile' },
       ],
       partnersTitle: 'Our partners',
-      partners: ['AfriqGaz', 'GazPlus', 'CamEnergy', 'SudGaz'],
+      partners: ['AfriqGaz', 'GazPlus', 'CamGaz', 'SudGaz'],
       copyright: '© 2026 PleinGaz — Cameroon. All rights reserved.',
       slogan: 'Always full cylinders',
       designedBy: 'Designed by',
@@ -583,8 +583,8 @@ export const CONTENT = {
       quote: 'Ask for a quote',
       pos: 'Points of sale',
       paragraphs: [
-        'PleinGaz is a major player in the distribution of gas and energy products in Cameroon. Thanks to its unique distribution strategy, cylinders are delivered daily to its extensive network of depots, ensuring the availability of gas.',
-        'Our range is aimed, on the one hand, at professionals — industrial cylinders, bulk gas, lubricants, additives and biocides — and, on the other hand, at households, with the 6 kg, 12.5 kg and 50 kg domestic cylinders.',
+        'PleinGaz is a major player in the distribution of gas and gas accessories in Cameroon. Thanks to its unique distribution strategy, cylinders are delivered daily to its extensive network of depots, ensuring the availability of gas.',
+        'Our range is aimed, on the one hand, at professionals — industrial cylinders, bulk gas, regulators, hoses and gas accessories — and, on the other hand, at households, with the 6 kg, 12.5 kg and 50 kg domestic cylinders.',
         'In order to offer a high level of safety, major innovations have been made to our cylinders and equipment. With more than 850 partner resellers across the country, PleinGaz has put its expertise at the service of the greatest number since 2015.',
         'PleinGaz is aware of its responsibility in the face of societal and environmental challenges. The company ensures respect for the environment, workplace safety and compliance of its procedures, while increasing its social initiatives.',
       ],
@@ -609,7 +609,7 @@ export const CONTENT = {
     engagements: {
       title: 'Our commitments',
       sections: [
-        { title: 'HSE (Health, Safety, Environment)', text: 'PleinGaz is committed to an HSE approach in order to control health and safety risks in the workplace and to ensure the protection of goods, people and the environment. As an energy distributor, we make sure that our products and the associated logistics limit our ecological footprint as much as possible, in the interest of future generations.' },
+        { title: 'HSE (Health, Safety, Environment)', text: 'PleinGaz is committed to an HSE approach in order to control health and safety risks in the workplace and to ensure the protection of goods, people and the environment. As a gas distributor, we make sure that our products and the associated logistics limit our ecological footprint as much as possible, in the interest of future generations.' },
         { title: 'PleinGaz Foundation', text: 'Through its charitable actions, PleinGaz works on the ground for the health, education and well-being of Cameroonian communities: support for schools, donations to care facilities and participation in social and cultural initiatives.' },
       ],
     },
