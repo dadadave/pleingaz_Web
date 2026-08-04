@@ -1,13 +1,8 @@
 import { Link } from 'react-router-dom';
-import { Icon } from './Icons.jsx';
 import { useLang } from '../i18n.jsx';
 
 export default function Supplier() {
   const { t } = useLang();
-  const CHOICES = [
-    { label: t.supplier.choices.individual, ph: 'ph-warm', icon: 'person' },
-    { label: t.supplier.choices.professional, ph: 'ph-worker', icon: 'workerHat' },
-  ];
 
   return (
     <section className="supplier">
@@ -24,23 +19,6 @@ export default function Supplier() {
             <h2>{t.supplier.title}</h2>
             <p>{t.supplier.text}</p>
             <Link to="/apropos" className="btn btn-gold">{t.supplier.about}</Link>
-          </div>
-
-          <div className="choice-cards reveal">
-            {CHOICES.map((c) => (
-              <article className="choice-card" key={c.label}>
-                <div className="thumb">
-                  <div className={`ph ${c.ph}`} />
-                  <div className="ph-icon"><Icon name={c.icon} strokeWidth={1.5} /></div>
-                </div>
-                <div className="choice-foot">
-                  <span className="label">{t.supplier.iam}<b>{c.label}</b></span>
-                  <a href="#portfolio" className="choice-arrow" aria-label={c.label}>
-                    <Icon name="arrow" strokeWidth={2.4} />
-                  </a>
-                </div>
-              </article>
-            ))}
           </div>
         </div>
       </div>
