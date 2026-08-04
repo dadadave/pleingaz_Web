@@ -87,7 +87,6 @@ export const CONTENT = {
           image: { ph: 'ph-green', icon: 'play' },
         },
       },
-      { key: 'careers', label: 'Carrières', href: '#footer' },
       { key: 'contacts', label: 'Contacts', href: '/contacts' },
     ],
     hero: {
@@ -447,7 +446,6 @@ export const CONTENT = {
           image: { ph: 'ph-green', icon: 'play' },
         },
       },
-      { key: 'careers', label: 'Careers', href: '#footer' },
       { key: 'contacts', label: 'Contacts', href: '/contacts' },
     ],
     hero: {

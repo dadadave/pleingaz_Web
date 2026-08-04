@@ -17,9 +17,6 @@ export default function Header() {
         </Link>
 
         <div className="nav-links">
-          <Link to="/" className="nav-home" aria-label={t.header.home}>
-            <Icon name="home" strokeWidth={2} />
-          </Link>
           {t.nav.map((l) => (
             <div className={`nav-item${l.mega ? ' has-mega' : ''}`} key={l.key}>
               <a href={l.href}>
@@ -72,7 +69,6 @@ export default function Header() {
               EN
             </button>
           </div>
-          <a href="#portfolio" className="btn btn-outline-gold">{t.header.reseller}</a>
           <span className="nav-badge" title={t.header.certified} aria-label={t.header.certified}>
             <Icon name="shieldCheck" strokeWidth={2} />
           </span>
@@ -114,7 +110,6 @@ export default function Header() {
               <button type="button" className={lang === 'fr' ? 'on' : ''} onClick={() => setLang('fr')}>FR</button>
               <button type="button" className={lang === 'en' ? 'on' : ''} onClick={() => setLang('en')}>EN</button>
             </div>
-            <a href="#portfolio" className="btn btn-outline-gold" onClick={closeMenu}>{t.header.reseller}</a>
           </div>
         </div>
       </div>
