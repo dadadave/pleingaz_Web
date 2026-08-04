@@ -1,7 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Icon } from './Icons.jsx';
 import Portfolio from './Portfolio.jsx';
-import Approaches from './Approaches.jsx';
 import { useLang } from '../i18n.jsx';
 import { useReveal } from '../useReveal.js';
 
@@ -90,7 +89,6 @@ export default function InnerPage({ title, bannerIcon = 'workerHat', bannerPh = 
       </div>
 
       <Portfolio />
-      <Approaches />
     </main>
   );
 }
