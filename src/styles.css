@@ -838,24 +838,23 @@ ul { list-style: none; }
 .footer-col a::before { content: "›"; color: rgba(255,255,255,.85); font-weight: 700; }
 .footer-col a:hover { color: #fff; }
 
-.partner-carousel { overflow: hidden; margin-top: 4px; min-width: 0; }
 .footer-col { min-width: 0; }
-.partner-track {
-  display: flex; width: max-content;
-  animation: partnerScroll 18s linear infinite;
-}
-.partner-carousel:hover .partner-track { animation-play-state: paused; }
-@keyframes partnerScroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+.partner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 4px;
 }
 .partner-card {
-  flex: 0 0 190px; width: 190px; margin-right: 16px;
-  background: #fff; border-radius: 12px; padding: 18px;
-  display: grid; place-items: center;
+  background: #fff; border-radius: 10px; padding: 12px 10px;
+  display: grid; place-items: center; min-width: 0;
 }
-.partner-card .plogo { display: flex; align-items: center; gap: 8px; font-weight: 800; color: var(--navy); font-size: 18px; }
-.partner-card .plogo .tri { color: var(--gold-deep); }
+.partner-card .plogo {
+  display: flex; align-items: center; gap: 6px;
+  font-weight: 800; color: var(--navy); font-size: 14px;
+  white-space: nowrap;
+}
+.partner-card .plogo .tri { color: var(--gold-deep); flex-shrink: 0; }
 
 .footer-bar { border-top: 1px solid rgba(255,255,255,.1); }
 .footer-bar-inner {
@@ -884,7 +883,7 @@ ul { list-style: none; }
   * { scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .btn, .product-card, .news-card, .video-card { transition: none; }
-  /* The product/news/partner carousels keep auto-scrolling: they're a core
+  /* The product/news carousels keep auto-scrolling: they're a core
      part of the design and should animate on every device. */
 }
 
