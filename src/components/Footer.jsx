@@ -106,23 +106,17 @@ export default function Footer() {
 
           <div className="footer-col">
             <h4>{t.footer.partnersTitle}</h4>
-            <div className="partner-carousel">
-              <div className="partner-track">
-                {[...t.footer.partners, ...t.footer.partners].map((name, i) => (
-                  <div
-                    className="partner-card"
-                    key={i}
-                    aria-hidden={i >= t.footer.partners.length ? 'true' : undefined}
-                  >
-                    <span className="plogo">
-                      <svg width="22" height="22" viewBox="0 0 24 24" className="tri" fill="currentColor">
-                        <path d="M12 3 2 20h20L12 3Z" />
-                      </svg>
-                      {name}
-                    </span>
-                  </div>
-                ))}
-              </div>
+            <div className="partner-grid">
+              {t.footer.partners.map((name) => (
+                <div className="partner-card" key={name}>
+                  <span className="plogo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" className="tri" fill="currentColor">
+                      <path d="M12 3 2 20h20L12 3Z" />
+                    </svg>
+                    {name}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
