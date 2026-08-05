@@ -31,10 +31,8 @@ export const CONTENT = {
       },
     },
     header: {
-      reseller: 'Devenir revendeur',
       certified: 'Qualité certifiée',
       menu: 'Menu',
-      home: 'Accueil',
     },
     nav: [
       {
@@ -115,8 +113,6 @@ export const CONTENT = {
       title: 'Votre fournisseur de gaz au Cameroun',
       text: 'Depuis 2015, PleinGaz fournit du gaz et des accessoires de gaz aux foyers camerounais avec fiabilité, sécurité et passion. Particuliers et professionnels : retrouvez toute notre gamme de produits.',
       about: 'À propos ›',
-      iam: 'Je suis un',
-      choices: { individual: 'Particulier', professional: 'Professionnel' },
     },
     portfolio: {
       eyebrow: 'Notre gamme',
@@ -175,11 +171,6 @@ export const CONTENT = {
         { date: '18 03 2026', ph: 'ph-crowd', icon: 'building', title: "Rapport d'avancement : rénovation du complexe scolaire", excerpt: "PleinGaz et la fondation ont effectué une visite de suivi du chantier de l'école primaire." },
       ],
     },
-    approaches: [
-      { bg: 'ph-green', icon: 'shield', lines: ['Approche', 'HSE'] },
-      { bg: 'ph-slate', icon: 'search', lines: ['Approche', 'Qualité'] },
-      { bg: 'ph-worker', icon: 'hand', lines: ['Fondation', 'PleinGaz'] },
-    ],
     footer: {
       newsletterTitle: 'Vous souhaitez recevoir nos actualités ?',
       newsletterPlaceholder: 'Saisissez votre adresse e-mail',
@@ -390,10 +381,8 @@ export const CONTENT = {
       },
     },
     header: {
-      reseller: 'Become a reseller',
       certified: 'Certified quality',
       menu: 'Menu',
-      home: 'Home',
     },
     nav: [
       {
@@ -474,8 +463,6 @@ export const CONTENT = {
       title: 'Your gas supplier in Cameroon',
       text: 'Since 2015, PleinGaz has supplied Cameroonian households with gas and gas accessories, with reliability, safety and passion. Individuals and professionals: find our full range of products.',
       about: 'About us ›',
-      iam: 'I am a',
-      choices: { individual: 'Individual', professional: 'Professional' },
     },
     portfolio: {
       eyebrow: 'Our range',
@@ -534,11 +521,6 @@ export const CONTENT = {
         { date: '18 03 2026', ph: 'ph-crowd', icon: 'building', title: 'Progress report: renovation of the school complex', excerpt: 'PleinGaz and the foundation carried out a follow-up visit to the primary school worksite.' },
       ],
     },
-    approaches: [
-      { bg: 'ph-green', icon: 'shield', lines: ['HSE', 'approach'] },
-      { bg: 'ph-slate', icon: 'search', lines: ['Quality', 'approach'] },
-      { bg: 'ph-worker', icon: 'hand', lines: ['PleinGaz', 'Foundation'] },
-    ],
     footer: {
       newsletterTitle: 'Want to receive our news?',
       newsletterPlaceholder: 'Enter your email address',
