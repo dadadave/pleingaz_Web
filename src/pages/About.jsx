@@ -1,4 +1,5 @@
 import InnerPage from '../components/InnerPage.jsx';
+import { Icon } from '../components/Icons.jsx';
 import { useLang } from '../i18n.jsx';
 
 export default function About() {
@@ -8,6 +9,24 @@ export default function About() {
   return (
     <InnerPage title={a.title} bannerIcon="workerHat">
       {a.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
+
+      {a.chain && (
+        <>
+          <h2 className="values-title">{a.chainTitle}</h2>
+          <div className="chain">
+            {a.chain.map((c) => (
+              <div className="chain-step" key={c.title}>
+                <span className="chain-ico"><Icon name={c.icon} strokeWidth={1.6} /></span>
+                <div className="chain-body">
+                  <h3>{c.title}</h3>
+                  <p>{c.text}</p>
+                  <p className="chain-stat"><strong>{c.stat}</strong> {c.statLabel}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
 
       <h2 className="values-title">{a.valuesTitle}</h2>
       <div className="values">
