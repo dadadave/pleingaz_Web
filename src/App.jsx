@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import History from './pages/History.jsx';
 import Engagements from './pages/Engagements.jsx';
+import Safety from './pages/Safety.jsx';
 import ProductPage from './pages/ProductPage.jsx';
 import Network from './pages/Network.jsx';
 import Contact from './pages/Contact.jsx';
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="/apropos" element={<About />} />
         <Route path="/histoire" element={<History />} />
         <Route path="/nos-engagements" element={<Engagements />} />
+        <Route path="/securite" element={<Safety />} />
         <Route path="/produit/:slug" element={<ProductPage />} />
         <Route path="/reseau" element={<Network />} />
         <Route path="/contacts" element={<Contact />} />

@@ -45,6 +45,7 @@ export const CONTENT = {
             { label: 'Qui sommes-nous ?', href: '/apropos' },
             { label: 'Histoire', href: '/histoire' },
             { label: 'Nos engagements', href: '/nos-engagements' },
+            { label: 'Conseils de sécurité', href: '/securite' },
           ],
           image: { ph: 'ph-slate', icon: 'team' },
         },
@@ -105,7 +106,7 @@ export const CONTENT = {
         },
         {
           title: 'Du gaz fiable, partout au Cameroun',
-          text: 'Un réseau de plus de 850 revendeurs partenaires, au service des foyers et des professionnels.',
+          text: 'Un réseau de plus de 1 000 points de vente, au service des foyers et des professionnels.',
         },
       ],
     },
@@ -135,8 +136,8 @@ export const CONTENT = {
       eyebrow: 'Chiffres clés',
       list: [
         { num: '2015', plus: '', cap: 'Au service des foyers depuis', icon: 'shieldCheck' },
-        { num: '120 000', plus: '+', cap: 'Bouteilles en circulation', icon: 'gasBottle' },
-        { num: '850', plus: '+', cap: 'Revendeurs partenaires', icon: 'house' },
+        { num: '1 000', plus: '+', cap: 'Points de vente au Cameroun', icon: 'house' },
+        { num: '1,5 M', plus: '', cap: 'Bouteilles remplies chaque année', icon: 'gasBottle' },
         { num: '24/7', plus: '', cap: 'Service client disponible', icon: 'headset' },
       ],
     },
@@ -179,6 +180,7 @@ export const CONTENT = {
         { label: 'Qui sommes-nous ?', href: '/apropos' },
         { label: 'Histoire', href: '/histoire' },
         { label: 'Nos engagements', href: '/nos-engagements' },
+        { label: 'Conseils de sécurité', href: '/securite' },
       ],
       activitiesTitle: 'Activités',
       activities: [
@@ -211,14 +213,23 @@ export const CONTENT = {
         { label: 'Qui sommes-nous ?', href: '/apropos' },
         { label: 'Histoire', href: '/histoire' },
         { label: 'Nos engagements', href: '/nos-engagements' },
+        { label: 'Conseils de sécurité', href: '/securite' },
       ],
       quote: 'Demander un devis',
       pos: 'Points de vente',
       paragraphs: [
-        'PleinGaz est un acteur majeur de la distribution de gaz et d’accessoires de gaz au Cameroun. Grâce à sa stratégie de distribution unique, les bouteilles sont livrées chaque jour à son vaste réseau de dépôts, garantissant la disponibilité du gaz.',
+        'PleinGaz est un acteur majeur de la distribution de gaz et d’accessoires de gaz au Cameroun. Portée par le groupe INFOTECH S.A., fondé en 1997 par l’ingénieur Blanchard Kenfack, la marque met le client au centre de ses actions depuis 2015.',
+        'Notre force, c’est de maîtriser toute la chaîne : de la fabrication de la bouteille à son remplissage, jusqu’à la distribution du produit chez le consommateur final, en passant par les réchauds et accessoires qui facilitent son utilisation au quotidien.',
         'Notre gamme s’adresse, d’une part, aux professionnels — bouteilles industrielles, gaz en vrac, détendeurs, tuyaux et accessoires de gaz — et, d’autre part, aux ménages, avec les bouteilles domestiques de 6 kg, 12,5 kg et 50 kg.',
-        'Afin d’offrir un haut niveau de sécurité, des innovations majeures ont été apportées à nos bouteilles et à nos équipements. Avec plus de 850 revendeurs partenaires à travers le pays, PleinGaz met son expertise au service du plus grand nombre depuis 2015.',
+        'Afin d’offrir un haut niveau de sécurité, des innovations majeures ont été apportées à nos bouteilles et à nos équipements. Avec plus de 1 000 points de vente à travers le pays, PleinGaz met son expertise au service du plus grand nombre.',
         'PleinGaz est conscient de sa responsabilité face aux enjeux sociétaux et environnementaux. L’entreprise veille au respect de l’environnement, à la sécurité au travail et à la conformité de ses procédures, tout en multipliant ses initiatives sociales.',
+      ],
+      chainTitle: 'Une chaîne intégrée, de la fabrication à la distribution',
+      chain: [
+        { icon: 'factory', title: 'Usine de fabrication', text: 'Nous fabriquons nos propres bouteilles de 6 kg et 12,5 kg, contrôlées avant leur mise en circulation.', stat: '600', statLabel: 'bouteilles produites / jour' },
+        { icon: 'gasBottle', title: 'Centres de remplissage GPL', text: 'Deux centres emplisseurs, à Yaoundé et à Douala, avec plus de 150 tonnes de stockage en vrac.', stat: '1,5 M', statLabel: 'bouteilles remplies / an' },
+        { icon: 'house', title: 'Réseau de distribution', text: 'Camions et camionnettes acheminent nos produits partout dans le triangle national, jusqu’au consommateur final.', stat: '1 000+', statLabel: 'points de vente' },
+        { icon: 'stove', title: 'Montage de réchauds', text: 'Une unité dédiée assemble les réchauds à gaz PleinGaz et leurs accessoires.', stat: '104 000', statLabel: 'réchauds montés / an' },
       ],
       valuesTitle: 'Nos valeurs',
       values: [
@@ -232,17 +243,77 @@ export const CONTENT = {
     history: {
       title: 'Histoire',
       timeline: [
-        { year: '2024', events: ['Extension du réseau à plus de 850 revendeurs partenaires à travers le Cameroun.', 'PleinGaz distingué pour la qualité de son service client.'] },
-        { year: '2021', events: ['Mise en service d’un nouveau centre d’emplissage à forte capacité de stockage.', 'Renforcement des normes de sécurité sur toute la chaîne de distribution.'] },
+        { year: '2024', events: ['Extension du réseau à plus de 1 000 points de vente à travers le Cameroun.', 'PleinGaz distingué pour la qualité de son service client.'] },
+        { year: '2021', events: ['Renforcement des capacités de remplissage et de stockage en vrac (plus de 150 tonnes) sur les centres emplisseurs.', 'Renforcement des normes de sécurité sur toute la chaîne de distribution.'] },
         { year: '2018', events: ['Lancement de la livraison à domicile pour les particuliers et les professionnels.'] },
-        { year: '2015', events: ['Création de PleinGaz au Cameroun.'] },
+        { year: '2015', events: ['Lancement de la marque PleinGaz, qui intègre toute la chaîne : fabrication des bouteilles, remplissage, montage de réchauds et distribution.'] },
+        { year: '1997', events: ['Création du groupe INFOTECH S.A. par le jeune ingénieur Blanchard Kenfack.'] },
       ],
     },
     engagements: {
       title: 'Nos engagements',
+      whyTitle: 'Pourquoi nous avons choisi le gaz',
+      whyIntro: 'Nous avons choisi le gaz pour aider notre pays, en sensibilisant la population et en vulgarisant ce combustible propre et accessible.',
+      why: [
+        { icon: 'shieldCheck', title: 'Santé', text: 'La cuisson au bois et au charbon expose les foyers à des fumées nocives pour les poumons. Le gaz, plus propre, protège la santé de toute la famille.' },
+        { icon: 'team', title: 'Social', text: 'Le temps passé à chercher du bois ou du charbon, c’est autant de temps en moins pour les enfants et la famille. Le gaz libère ce temps au quotidien.' },
+        { icon: 'shop', title: 'Économique', text: 'Le gaz revient moins cher que le bois ou le charbon — et le temps gagné sur le feu profite directement aux ménages et aux commerçantes.' },
+        { icon: 'drop', title: 'Environnemental', text: 'Réduire l’usage du bois, c’est lutter contre la déforestation et le réchauffement climatique, dans l’intérêt des générations futures.' },
+      ],
       sections: [
         { title: 'HSE (Hygiène, Sécurité, Environnement)', text: 'PleinGaz s’engage dans une démarche HSE afin de maîtriser les risques pour la santé et la sécurité au travail et d’assurer la protection des biens, des personnes et de l’environnement. En tant que distributeur de gaz, nous veillons à ce que nos produits et la logistique associée limitent au maximum notre empreinte écologique, dans l’intérêt des générations futures.' },
         { title: 'Fondation PleinGaz', text: 'À travers ses actions solidaires, PleinGaz s’investit sur le terrain pour la santé, l’éducation et le bien-être des communautés camerounaises : soutien aux écoles, dons aux structures d’accueil et participation à des initiatives sociales et culturelles.' },
+      ],
+    },
+    safety: {
+      title: 'Conseils de sécurité',
+      intro: 'Quelques conseils pratiques pour utiliser votre gaz domestique (GPL) en toute sécurité, au quotidien comme en cas d’urgence.',
+      groups: [
+        {
+          title: 'Utilisation courante', icon: 'gasBottle',
+          items: [
+            'Fermez bien votre bouteille après chaque utilisation.',
+            'Placez toujours la bouteille à la verticale, dans un endroit aéré.',
+            'Gardez la bouteille hors de portée des enfants.',
+            'Évitez d’entrer dans la cuisine avec un téléphone portable.',
+            'Vérifiez que la flamme est bien bleue ; signalez toute autre couleur.',
+            'N’allumez aucun feu à proximité d’une bouteille de gaz.',
+          ],
+        },
+        {
+          title: 'Installation d’une nouvelle bouteille', icon: 'wrench',
+          items: [
+            'Assurez-vous que la bouteille, même vide, est bien fermée avant de la transporter.',
+            'Vérifiez que le robinet et le tuyau disposent chacun d’un joint en caoutchouc.',
+            'Assurez-vous qu’il n’y a aucune fuite ni odeur anormale dans la cuisine.',
+          ],
+        },
+        {
+          title: 'Maintenance régulière', icon: 'shieldCheck',
+          items: [
+            'Vérifiez la date de péremption de vos accessoires (tuyau, détendeur).',
+            'Contrôlez l’état des brûleurs de votre cuisinière ou plaque à gaz.',
+          ],
+        },
+      ],
+      dangerTitle: 'En cas de danger',
+      danger: [
+        {
+          title: 'En cas de fuite ou d’odeur de gaz',
+          items: [
+            'N’actionnez aucun branchement électrique et ne touchez pas aux interrupteurs.',
+            'Ouvrez toutes les portes et fenêtres.',
+            'Éloignez les téléphones portables.',
+            'Demandez l’assistance d’un spécialiste ou appelez les pompiers.',
+          ],
+        },
+        {
+          title: 'Si la bouteille prend feu',
+          items: [
+            'Couvrez-la immédiatement d’un tissu lourd et trempé d’eau.',
+            'Demandez l’assistance d’un spécialiste ou appelez les pompiers.',
+          ],
+        },
       ],
     },
     catalogTitle: 'Nos activités',
@@ -260,7 +331,7 @@ export const CONTENT = {
           'PleinGaz met à disposition des ménages une gamme complète de bouteilles de gaz : 6 kg pour les petits foyers, 12,5 kg pour la cuisine familiale et 50 kg pour les besoins les plus importants.',
           'Chaque bouteille répond à des contrôles de sécurité stricts et bénéficie de notre réseau de recharge disponible partout au Cameroun.',
         ],
-        features: ['Formats 6 kg, 12,5 kg et 50 kg', 'Recharge rapide chez plus de 850 revendeurs', 'Bouteilles contrôlées et sécurisées'],
+        features: ['Formats 6 kg, 12,5 kg et 50 kg', 'Recharge rapide dans plus de 1 000 points de vente', 'Bouteilles contrôlées et sécurisées'],
       },
       {
         slug: 'bouteille-6kg', title: 'Bouteille 6 kg', icon: 'bottle', ph: 'ph-warm', image: '/images/products/bouteille-6kg.png',
@@ -276,7 +347,7 @@ export const CONTENT = {
           'La bouteille de 12,5 kg est le format familial le plus demandé : idéale pour une cuisine active au quotidien, elle offre une grande autonomie tout en restant facile à manipuler.',
           'C’est le choix privilégié des familles : un bon équilibre entre autonomie et encombrement, avec une recharge disponible partout au Cameroun.',
         ],
-        features: ['Format familial 12,5 kg', 'Grande autonomie pour un usage quotidien', 'Recharge rapide chez plus de 850 revendeurs'],
+        features: ['Format familial 12,5 kg', 'Grande autonomie pour un usage quotidien', 'Recharge rapide dans plus de 1 000 points de vente'],
       },
       {
         slug: 'bouteille-50kg', title: 'Bouteille 50 kg', icon: 'factory', ph: 'ph-slate', image: '/images/products/bouteille-50kg.png',
@@ -395,6 +466,7 @@ export const CONTENT = {
             { label: 'Who are we?', href: '/apropos' },
             { label: 'History', href: '/histoire' },
             { label: 'Our commitments', href: '/nos-engagements' },
+            { label: 'Safety tips', href: '/securite' },
           ],
           image: { ph: 'ph-slate', icon: 'team' },
         },
@@ -455,7 +527,7 @@ export const CONTENT = {
         },
         {
           title: 'Reliable gas, everywhere in Cameroon',
-          text: 'A network of over 850 partner resellers, serving households and professionals.',
+          text: 'A network of over 1,000 points of sale, serving households and professionals.',
         },
       ],
     },
@@ -485,8 +557,8 @@ export const CONTENT = {
       eyebrow: 'Key figures',
       list: [
         { num: '2015', plus: '', cap: 'Serving households since', icon: 'shieldCheck' },
-        { num: '120,000', plus: '+', cap: 'Cylinders in circulation', icon: 'gasBottle' },
-        { num: '850', plus: '+', cap: 'Partner resellers', icon: 'house' },
+        { num: '1,000', plus: '+', cap: 'Points of sale in Cameroon', icon: 'house' },
+        { num: '1.5 M', plus: '', cap: 'Cylinders filled each year', icon: 'gasBottle' },
         { num: '24/7', plus: '', cap: 'Customer service available', icon: 'headset' },
       ],
     },
@@ -529,6 +601,7 @@ export const CONTENT = {
         { label: 'Who are we?', href: '/apropos' },
         { label: 'History', href: '/histoire' },
         { label: 'Our commitments', href: '/nos-engagements' },
+        { label: 'Safety tips', href: '/securite' },
       ],
       activitiesTitle: 'Activities',
       activities: [
@@ -561,14 +634,23 @@ export const CONTENT = {
         { label: 'Who are we?', href: '/apropos' },
         { label: 'History', href: '/histoire' },
         { label: 'Our commitments', href: '/nos-engagements' },
+        { label: 'Safety tips', href: '/securite' },
       ],
       quote: 'Ask for a quote',
       pos: 'Points of sale',
       paragraphs: [
-        'PleinGaz is a major player in the distribution of gas and gas accessories in Cameroon. Thanks to its unique distribution strategy, cylinders are delivered daily to its extensive network of depots, ensuring the availability of gas.',
+        'PleinGaz is a major player in the distribution of gas and gas accessories in Cameroon. Backed by the INFOTECH S.A. group, founded in 1997 by engineer Blanchard Kenfack, the brand has put the customer at the heart of everything it does since 2015.',
+        'Our strength is mastering the whole chain: from manufacturing the cylinder to filling it, all the way to delivering the product to the end consumer, including the stoves and accessories that make everyday use easier.',
         'Our range is aimed, on the one hand, at professionals — industrial cylinders, bulk gas, regulators, hoses and gas accessories — and, on the other hand, at households, with the 6 kg, 12.5 kg and 50 kg domestic cylinders.',
-        'In order to offer a high level of safety, major innovations have been made to our cylinders and equipment. With more than 850 partner resellers across the country, PleinGaz has put its expertise at the service of the greatest number since 2015.',
+        'In order to offer a high level of safety, major innovations have been made to our cylinders and equipment. With more than 1,000 points of sale across the country, PleinGaz has put its expertise at the service of the greatest number.',
         'PleinGaz is aware of its responsibility in the face of societal and environmental challenges. The company ensures respect for the environment, workplace safety and compliance of its procedures, while increasing its social initiatives.',
+      ],
+      chainTitle: 'An integrated chain, from manufacturing to distribution',
+      chain: [
+        { icon: 'factory', title: 'Manufacturing plant', text: 'We manufacture our own 6 kg and 12.5 kg cylinders, inspected before they enter circulation.', stat: '600', statLabel: 'cylinders produced / day' },
+        { icon: 'gasBottle', title: 'LPG filling centres', text: 'Two filling centres, in Yaoundé and Douala, with over 150 tonnes of bulk storage.', stat: '1.5 M', statLabel: 'cylinders filled / year' },
+        { icon: 'house', title: 'Distribution network', text: 'Trucks and vans carry our products throughout the country, all the way to the end consumer.', stat: '1,000+', statLabel: 'points of sale' },
+        { icon: 'stove', title: 'Stove assembly', text: 'A dedicated unit assembles PleinGaz gas stoves and their accessories.', stat: '104,000', statLabel: 'stoves assembled / year' },
       ],
       valuesTitle: 'Our values',
       values: [
@@ -582,17 +664,77 @@ export const CONTENT = {
     history: {
       title: 'History',
       timeline: [
-        { year: '2024', events: ['Network extended to more than 850 partner resellers across Cameroon.', 'PleinGaz recognised for the quality of its customer service.'] },
-        { year: '2021', events: ['Commissioning of a new filling centre with large storage capacity.', 'Strengthened safety standards across the whole distribution chain.'] },
+        { year: '2024', events: ['Network extended to more than 1,000 points of sale across Cameroon.', 'PleinGaz recognised for the quality of its customer service.'] },
+        { year: '2021', events: ['Strengthened filling and bulk storage capacity (over 150 tonnes) across the filling centres.', 'Strengthened safety standards across the whole distribution chain.'] },
         { year: '2018', events: ['Launch of home delivery for individuals and professionals.'] },
-        { year: '2015', events: ['Creation of PleinGaz in Cameroon.'] },
+        { year: '2015', events: ['Launch of the PleinGaz brand, integrating the whole chain: cylinder manufacturing, filling, stove assembly and distribution.'] },
+        { year: '1997', events: ['Creation of the INFOTECH S.A. group by the young engineer Blanchard Kenfack.'] },
       ],
     },
     engagements: {
       title: 'Our commitments',
+      whyTitle: 'Why we chose gas',
+      whyIntro: 'We chose gas to help our country, by raising public awareness and promoting a clean, accessible fuel.',
+      why: [
+        { icon: 'shieldCheck', title: 'Health', text: 'Cooking with wood and charcoal exposes households to smoke that harms the lungs. Cleaner gas protects the health of the whole family.' },
+        { icon: 'team', title: 'Social', text: 'Time spent gathering wood or charcoal is time taken away from children and family. Gas frees up that time every day.' },
+        { icon: 'shop', title: 'Economic', text: 'Gas costs less than wood or charcoal — and the time saved on the fire directly benefits households and traders.' },
+        { icon: 'drop', title: 'Environmental', text: 'Reducing the use of wood means fighting deforestation and climate change, in the interest of future generations.' },
+      ],
       sections: [
         { title: 'HSE (Health, Safety, Environment)', text: 'PleinGaz is committed to an HSE approach in order to control health and safety risks in the workplace and to ensure the protection of goods, people and the environment. As a gas distributor, we make sure that our products and the associated logistics limit our ecological footprint as much as possible, in the interest of future generations.' },
         { title: 'PleinGaz Foundation', text: 'Through its charitable actions, PleinGaz works on the ground for the health, education and well-being of Cameroonian communities: support for schools, donations to care facilities and participation in social and cultural initiatives.' },
+      ],
+    },
+    safety: {
+      title: 'Safety tips',
+      intro: 'A few practical tips for using your domestic gas (LPG) safely, both day to day and in an emergency.',
+      groups: [
+        {
+          title: 'Everyday use', icon: 'gasBottle',
+          items: [
+            'Always close your cylinder properly after each use.',
+            'Always keep the cylinder upright, in a well-ventilated place.',
+            'Keep the cylinder out of the reach of children.',
+            'Avoid entering the kitchen with a mobile phone.',
+            'Check that the flame is blue; report any other colour.',
+            'Never light a fire near a gas cylinder.',
+          ],
+        },
+        {
+          title: 'Installing a new cylinder', icon: 'wrench',
+          items: [
+            'Make sure the cylinder, even when empty, is properly closed before moving it.',
+            'Check that the valve and hose each have a rubber seal.',
+            'Make sure there is no leak or abnormal smell in the kitchen.',
+          ],
+        },
+        {
+          title: 'Regular maintenance', icon: 'shieldCheck',
+          items: [
+            'Check the expiry date of your accessories (hose, regulator).',
+            'Check the condition of the burners on your cooker or gas hob.',
+          ],
+        },
+      ],
+      dangerTitle: 'In case of danger',
+      danger: [
+        {
+          title: 'If there is a leak or a smell of gas',
+          items: [
+            'Do not operate any electrical connection and do not touch the switches.',
+            'Open all doors and windows.',
+            'Keep mobile phones away.',
+            'Ask a specialist for help or call the fire brigade.',
+          ],
+        },
+        {
+          title: 'If the cylinder catches fire',
+          items: [
+            'Cover it immediately with a heavy cloth soaked in water.',
+            'Ask a specialist for help or call the fire brigade.',
+          ],
+        },
       ],
     },
     catalogTitle: 'Our activities',
@@ -610,7 +752,7 @@ export const CONTENT = {
           'PleinGaz offers households a full range of gas cylinders: 6 kg for small homes, 12.5 kg for family cooking and 50 kg for the heaviest needs.',
           'Every cylinder meets strict safety checks and benefits from our refill network available throughout Cameroon.',
         ],
-        features: ['6 kg, 12.5 kg and 50 kg formats', 'Fast refills at over 850 resellers', 'Inspected and secured cylinders'],
+        features: ['6 kg, 12.5 kg and 50 kg formats', 'Fast refills at over 1,000 points of sale', 'Inspected and secured cylinders'],
       },
       {
         slug: 'bouteille-6kg', title: '6 kg cylinder', icon: 'bottle', ph: 'ph-warm', image: '/images/products/bouteille-6kg.png',
@@ -626,7 +768,7 @@ export const CONTENT = {
           'The 12.5 kg cylinder is the most requested family size: perfect for active daily cooking, it offers plenty of autonomy while staying easy to handle.',
           'It is the favourite choice for families: a great balance between autonomy and footprint, with refills available throughout Cameroon.',
         ],
-        features: ['12.5 kg family format', 'Great autonomy for daily use', 'Fast refills at over 850 resellers'],
+        features: ['12.5 kg family format', 'Great autonomy for daily use', 'Fast refills at over 1,000 points of sale'],
       },
       {
         slug: 'bouteille-50kg', title: '50 kg cylinder', icon: 'factory', ph: 'ph-slate', image: '/images/products/bouteille-50kg.png',

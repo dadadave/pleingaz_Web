@@ -1234,6 +1234,63 @@ a.contact-info-value:hover { color: var(--red); }
 .engage h3 .list-star { color: var(--red); font-size: 16px; flex-shrink: 0; line-height: 1; }
 .engage p { color: var(--ink-2); line-height: 1.75; font-size: 14.5px; }
 
+/* Integrated value chain (About) */
+.chain { display: grid; gap: 16px; margin-bottom: 8px; }
+.chain-step {
+  display: grid; grid-template-columns: 56px 1fr; gap: 18px; align-items: start;
+  background: #fff; border: 1px solid var(--line); border-radius: 16px;
+  padding: 20px 22px; box-shadow: var(--shadow-card);
+}
+.chain-ico {
+  width: 56px; height: 56px; border-radius: 50%;
+  display: grid; place-items: center; color: #fff;
+  background: linear-gradient(150deg, var(--red), var(--red-deep));
+}
+.chain-ico svg { width: 28px; height: 28px; }
+.chain-body h3 { font-size: 16px; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+.chain-body p { color: var(--ink-2); line-height: 1.65; font-size: 14px; margin-bottom: 8px; }
+.chain-stat { color: var(--muted); font-size: 13px; margin-bottom: 0 !important; }
+.chain-stat strong { color: var(--red); font-size: 20px; font-weight: 800; margin-right: 4px; }
+
+/* "Why gas" grid (Engagements) */
+.why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 22px 0 34px; }
+.why-card {
+  background: #fff; border: 1px solid var(--line); border-radius: 16px;
+  padding: 22px; box-shadow: var(--shadow-soft);
+}
+.why-ico {
+  width: 46px; height: 46px; border-radius: 12px;
+  display: grid; place-items: center; color: var(--red);
+  background: rgba(238,28,37,.08); margin-bottom: 14px;
+}
+.why-ico svg { width: 24px; height: 24px; }
+.why-card h3 { font-size: 16px; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+.why-card p { color: var(--ink-2); line-height: 1.65; font-size: 13.5px; margin-bottom: 0; }
+@media (max-width: 600px) { .why-grid { grid-template-columns: 1fr; } }
+
+/* Safety group icons + danger block */
+.value-ico {
+  width: 30px; height: 30px; border-radius: 8px; flex-shrink: 0;
+  display: grid; place-items: center; color: var(--red);
+  background: rgba(238,28,37,.08);
+}
+.value-ico svg { width: 18px; height: 18px; }
+.danger {
+  margin-top: 30px; background: rgba(238,28,37,.05);
+  border: 1px solid rgba(238,28,37,.2); border-radius: 16px; padding: 24px 26px;
+}
+.danger-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 20px; font-weight: 800; color: var(--red-dark); margin-bottom: 18px;
+}
+.danger-title .value-ico { color: #fff; background: var(--red); }
+.danger-block { margin-bottom: 18px; }
+.danger-block:last-child { margin-bottom: 0; }
+.danger-block h3 { font-size: 15px; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+.danger-block ul { list-style: none; display: grid; gap: 7px; padding-left: 18px; }
+.danger-block li { position: relative; color: var(--ink-2); font-size: 13.5px; line-height: 1.55; }
+.danger-block li::before { content: "!"; color: var(--red); font-weight: 800; position: absolute; left: -16px; }
+
 /* Product detail page */
 .product-lead { display: grid; grid-template-columns: 300px 1fr; gap: 30px; align-items: start; }
 .product-photo {
