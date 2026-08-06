@@ -59,7 +59,7 @@ export const CONTENT = {
             'PleinGaz répond à tous vos besoins en gaz : bouteilles domestiques, gaz en vrac, réchauds, détendeurs et livraison à domicile.',
           links: [
             { label: 'Bouteilles domestiques', href: '/produit/bouteilles-domestiques' },
-            { label: 'Gaz en vrac', href: '/produit/gaz-vrac' },
+            { label: 'Bouteille 50 kg', href: '/produit/bouteille-50kg' },
             { label: 'Plaque à gaz', href: '/produit/rechauds-cuisinieres' },
             { label: 'Tuyau de gaz', href: '/produit/tuyau-gaz' },
             { label: 'Support de réchaud', href: '/produit/support-rechaud' },
@@ -185,7 +185,7 @@ export const CONTENT = {
       activitiesTitle: 'Activités',
       activities: [
         { label: 'Bouteilles domestiques', href: '/produit/bouteilles-domestiques' },
-        { label: 'Gaz en vrac', href: '/produit/gaz-vrac' },
+        { label: 'Bouteille 50 kg', href: '/produit/bouteille-50kg' },
         { label: 'Plaque à gaz', href: '/produit/rechauds-cuisinieres' },
         { label: 'Tuyau de gaz', href: '/produit/tuyau-gaz' },
         { label: 'Support de réchaud', href: '/produit/support-rechaud' },
@@ -358,14 +358,6 @@ export const CONTENT = {
         features: ['Grand format 50 kg, longue autonomie', 'Idéale pour restaurants, hôtels et industries', 'Recharge dès 26 000 FCFA'],
       },
       {
-        slug: 'gaz-vrac', title: 'Gaz en vrac', icon: 'factory', ph: 'ph-slate', image: '/images/products/bouteille-50kg.png',
-        paragraphs: [
-          'Pour les industriels et les professionnels à forte consommation, PleinGaz assure l’approvisionnement en gaz en vrac, livré directement dans vos citernes.',
-          'Un suivi régulier et une logistique dédiée garantissent la continuité de votre activité.',
-        ],
-        features: ['Livraison en citerne', 'Approvisionnement continu', 'Solutions sur mesure pour l’industrie'],
-      },
-      {
         slug: 'rechauds-cuisinieres', title: 'Plaque à gaz', icon: 'stove', ph: 'ph-crowd', image: '/images/products/plaque-gaz.png',
         paragraphs: [
           'Complétez votre installation avec notre plaque à gaz : allumage piézo, plan en verre trempé, facile à nettoyer et adaptée à un usage quotidien.',
@@ -480,7 +472,7 @@ export const CONTENT = {
             'PleinGaz meets all your gas needs: domestic cylinders, bulk gas, stoves, regulators and home delivery.',
           links: [
             { label: 'Domestic cylinders', href: '/produit/bouteilles-domestiques' },
-            { label: 'Bulk gas', href: '/produit/gaz-vrac' },
+            { label: '50 kg cylinder', href: '/produit/bouteille-50kg' },
             { label: 'Gas stove', href: '/produit/rechauds-cuisinieres' },
             { label: 'Gas hose', href: '/produit/tuyau-gaz' },
             { label: 'Stove trivet', href: '/produit/support-rechaud' },
@@ -606,7 +598,7 @@ export const CONTENT = {
       activitiesTitle: 'Activities',
       activities: [
         { label: 'Domestic cylinders', href: '/produit/bouteilles-domestiques' },
-        { label: 'Bulk gas', href: '/produit/gaz-vrac' },
+        { label: '50 kg cylinder', href: '/produit/bouteille-50kg' },
         { label: 'Gas stove', href: '/produit/rechauds-cuisinieres' },
         { label: 'Gas hose', href: '/produit/tuyau-gaz' },
         { label: 'Stove trivet', href: '/produit/support-rechaud' },
@@ -777,14 +769,6 @@ export const CONTENT = {
           'Sturdy and inspected to strict safety standards, it keeps your professional operations running smoothly.',
         ],
         features: ['Large 50 kg format, long autonomy', 'Ideal for restaurants, hotels and industry', 'Refill from 26,000 FCFA'],
-      },
-      {
-        slug: 'gaz-vrac', title: 'Bulk gas', icon: 'factory', ph: 'ph-slate', image: '/images/products/bouteille-50kg.png',
-        paragraphs: [
-          'For industry and high-consumption professionals, PleinGaz ensures a bulk gas supply, delivered directly into your tanks.',
-          'Regular monitoring and dedicated logistics keep your operations running without interruption.',
-        ],
-        features: ['Tanker delivery', 'Continuous supply', 'Tailored solutions for industry'],
       },
       {
         slug: 'rechauds-cuisinieres', title: 'Gas stove', icon: 'stove', ph: 'ph-crowd', image: '/images/products/plaque-gaz.png',
