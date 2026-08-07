@@ -59,6 +59,33 @@ export default function ProductPage() {
         </div>
       )}
 
+      {product.priceGrid && (
+        <>
+          <h2 className="product-features-title">{t.pricing.title}</h2>
+          <div className="price-table-wrap">
+            <table className="price-table">
+              <thead>
+                <tr>
+                  <th>{t.pricing.size}</th>
+                  <th>{t.pricing.consigne}</th>
+                  <th>{t.pricing.recharge}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {product.priceGrid.map((row) => (
+                  <tr key={row.size}>
+                    <th scope="row">{row.size}</th>
+                    <td>{row.consigne}</td>
+                    <td>{row.recharge}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="price-note">{t.pricing.note}</p>
+        </>
+      )}
+
       <h2 className="product-features-title">{promo.features}</h2>
       <ul className="product-features">
         {product.features.map((f) => (

@@ -1334,6 +1334,24 @@ a.contact-info-value:hover { color: var(--red); }
 }
 .product-features .list-star { color: var(--red); font-size: 15px; flex-shrink: 0; line-height: 1; }
 
+/* Product price table (grille tarifaire) */
+.price-table-wrap { overflow-x: auto; border-radius: 14px; box-shadow: var(--shadow-card); }
+.price-table {
+  width: 100%; border-collapse: collapse; background: #fff;
+  border-radius: 14px; overflow: hidden; font-size: 14.5px;
+}
+.price-table thead th {
+  background: var(--red); color: #fff; font-weight: 800;
+  text-align: left; padding: 14px 18px; font-size: 13px;
+  text-transform: uppercase; letter-spacing: .03em;
+}
+.price-table tbody th, .price-table tbody td { padding: 14px 18px; border-top: 1px solid var(--line); }
+.price-table tbody tr:first-child th, .price-table tbody tr:first-child td { border-top: none; }
+.price-table tbody th { font-weight: 800; color: var(--navy); }
+.price-table tbody td { color: var(--ink-2); font-weight: 700; font-variant-numeric: tabular-nums; }
+.price-table tbody tr:nth-child(even) { background: var(--gray-2); }
+.price-note { color: var(--muted); font-size: 12.5px; line-height: 1.55; margin: 12px 0 0; }
+
 /* Product sidebar promo card */
 .side-promo { text-align: center; }
 .side-promo-ico {
