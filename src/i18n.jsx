@@ -123,8 +123,8 @@ export const CONTENT = {
       learnMore: 'En savoir plus',
     },
     products: [
-      { title: 'Bouteille 6 kg', desc: 'Idéale pour les petits foyers, légère et facile à transporter.', price: 'Recharge dès 6 500 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteille-6kg' },
-      { title: 'Bouteille 12,5 kg', desc: 'Le format familial le plus demandé pour une cuisine active.', price: 'Le plus populaire', icon: 'canister', image: '/images/products/bouteille-12kg.png', slug: 'bouteille-12-5kg' },
+      { title: 'Bouteille 6 kg', desc: 'Idéale pour les petits foyers, légère et facile à transporter.', price: 'Recharge dès 3 120 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteille-6kg' },
+      { title: 'Bouteille 12,5 kg', desc: 'Le format familial le plus demandé pour une cuisine active.', price: 'Recharge dès 6 500 FCFA', icon: 'canister', image: '/images/products/bouteille-12kg.png', slug: 'bouteille-12-5kg' },
       { title: 'Bouteille 50 kg', desc: 'Pour restaurants, hôtels et industries à forte consommation.', price: 'Recharge dès 26 000 FCFA', icon: 'factory', image: '/images/products/bouteille-50kg.png', slug: 'bouteille-50kg' },
       { title: 'Plaque à gaz', desc: 'Réchaud verre, allumage piézo — pratique et facile à nettoyer.', price: 'Dès 18 000 FCFA', icon: 'stove', image: '/images/products/plaque-gaz.png', slug: 'rechauds-cuisinieres' },
       { title: 'Tuyau de gaz', desc: 'Tuyau flexible homologué pour raccorder votre bouteille en toute sécurité.', price: '6,3 mm × 13 mm', icon: 'wrench', image: '/images/products/tuyau-gaz.png', slug: 'tuyau-gaz' },
@@ -324,6 +324,13 @@ export const CONTENT = {
       pos: 'Points de vente',
       features: 'Nos atouts',
     },
+    pricing: {
+      title: 'Grille tarifaire',
+      size: 'Bouteille',
+      consigne: 'Consigne',
+      recharge: 'Recharge',
+      note: 'La consigne correspond à l’achat de la bouteille (première acquisition) ; la recharge, au remplissage de votre bouteille. Prix indicatifs, susceptibles d’évoluer.',
+    },
     catalog: [
       {
         slug: 'bouteilles-domestiques', title: 'Bouteilles domestiques', icon: 'bottle', ph: 'ph-warm', image: '/images/products/bouteille-6kg.png',
@@ -332,6 +339,11 @@ export const CONTENT = {
           'Chaque bouteille répond à des contrôles de sécurité stricts et bénéficie de notre réseau de recharge disponible partout au Cameroun.',
         ],
         features: ['Formats 6 kg, 12,5 kg et 50 kg', 'Recharge rapide dans plus de 1 000 points de vente', 'Bouteilles contrôlées et sécurisées'],
+        priceGrid: [
+          { size: '6 kg', consigne: '13 000 FCFA', recharge: '3 120 FCFA' },
+          { size: '12,5 kg', consigne: '18 500 FCFA', recharge: '6 500 FCFA' },
+          { size: '50 kg', consigne: '50 000 FCFA', recharge: '26 000 FCFA' },
+        ],
       },
       {
         slug: 'bouteille-6kg', title: 'Bouteille 6 kg', icon: 'bottle', ph: 'ph-warm', image: '/images/products/bouteille-6kg.png',
@@ -339,7 +351,8 @@ export const CONTENT = {
           'La bouteille de 6 kg est le format le plus léger de la gamme PleinGaz : idéale pour les petits foyers, les studios et les usages d’appoint, elle se transporte et se range sans effort.',
           'Facile à manipuler, elle offre une autonomie confortable pour une cuisine occasionnelle et se recharge en quelques minutes dans notre réseau de revendeurs.',
         ],
-        features: ['Format léger 6 kg, facile à transporter', 'Idéale pour les petits foyers et les studios', 'Recharge rapide dès 6 500 FCFA'],
+        features: ['Format léger 6 kg, facile à transporter', 'Idéale pour les petits foyers et les studios', 'Recharge dès 3 120 FCFA'],
+        priceGrid: [{ size: '6 kg', consigne: '13 000 FCFA', recharge: '3 120 FCFA' }],
       },
       {
         slug: 'bouteille-12-5kg', title: 'Bouteille 12,5 kg', icon: 'canister', ph: 'ph-warm', image: '/images/products/bouteille-12kg.png',
@@ -348,6 +361,7 @@ export const CONTENT = {
           'C’est le choix privilégié des familles : un bon équilibre entre autonomie et encombrement, avec une recharge disponible partout au Cameroun.',
         ],
         features: ['Format familial 12,5 kg', 'Grande autonomie pour un usage quotidien', 'Recharge rapide dans plus de 1 000 points de vente'],
+        priceGrid: [{ size: '12,5 kg', consigne: '18 500 FCFA', recharge: '6 500 FCFA' }],
       },
       {
         slug: 'bouteille-50kg', title: 'Bouteille 50 kg', icon: 'factory', ph: 'ph-slate', image: '/images/products/bouteille-50kg.png',
@@ -356,6 +370,7 @@ export const CONTENT = {
           'Robuste et contrôlée selon des normes de sécurité strictes, elle garantit la continuité de votre activité professionnelle.',
         ],
         features: ['Grand format 50 kg, longue autonomie', 'Idéale pour restaurants, hôtels et industries', 'Recharge dès 26 000 FCFA'],
+        priceGrid: [{ size: '50 kg', consigne: '50 000 FCFA', recharge: '26 000 FCFA' }],
       },
       {
         slug: 'rechauds-cuisinieres', title: 'Plaque à gaz', icon: 'stove', ph: 'ph-crowd', image: '/images/products/plaque-gaz.png',
@@ -536,8 +551,8 @@ export const CONTENT = {
       learnMore: 'Learn more',
     },
     products: [
-      { title: '6 kg cylinder', desc: 'Ideal for small households, light and easy to carry.', price: 'Refill from 6,500 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteille-6kg' },
-      { title: '12.5 kg cylinder', desc: 'The most requested family size for an active kitchen.', price: 'Most popular', icon: 'canister', image: '/images/products/bouteille-12kg.png', slug: 'bouteille-12-5kg' },
+      { title: '6 kg cylinder', desc: 'Ideal for small households, light and easy to carry.', price: 'Refill from 3,120 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteille-6kg' },
+      { title: '12.5 kg cylinder', desc: 'The most requested family size for an active kitchen.', price: 'Refill from 6,500 FCFA', icon: 'canister', image: '/images/products/bouteille-12kg.png', slug: 'bouteille-12-5kg' },
       { title: '50 kg cylinder', desc: 'For restaurants, hotels and high-consumption industries.', price: 'Refill from 26,000 FCFA', icon: 'factory', image: '/images/products/bouteille-50kg.png', slug: 'bouteille-50kg' },
       { title: 'Gas stove', desc: 'Glass stove, piezo ignition — practical and easy to clean.', price: 'From 18,000 FCFA', icon: 'stove', image: '/images/products/plaque-gaz.png', slug: 'rechauds-cuisinieres' },
       { title: 'Gas hose', desc: 'Approved flexible hose to connect your cylinder safely.', price: '6.3 mm × 13 mm', icon: 'wrench', image: '/images/products/tuyau-gaz.png', slug: 'tuyau-gaz' },
@@ -737,6 +752,13 @@ export const CONTENT = {
       pos: 'Points of sale',
       features: 'Key benefits',
     },
+    pricing: {
+      title: 'Price list',
+      size: 'Cylinder',
+      consigne: 'Deposit',
+      recharge: 'Refill',
+      note: 'The deposit covers the purchase of the cylinder (first acquisition); the refill is the cost of filling your cylinder. Indicative prices, subject to change.',
+    },
     catalog: [
       {
         slug: 'bouteilles-domestiques', title: 'Domestic cylinders', icon: 'bottle', ph: 'ph-warm', image: '/images/products/bouteille-6kg.png',
@@ -745,6 +767,11 @@ export const CONTENT = {
           'Every cylinder meets strict safety checks and benefits from our refill network available throughout Cameroon.',
         ],
         features: ['6 kg, 12.5 kg and 50 kg formats', 'Fast refills at over 1,000 points of sale', 'Inspected and secured cylinders'],
+        priceGrid: [
+          { size: '6 kg', consigne: '13,000 FCFA', recharge: '3,120 FCFA' },
+          { size: '12.5 kg', consigne: '18,500 FCFA', recharge: '6,500 FCFA' },
+          { size: '50 kg', consigne: '50,000 FCFA', recharge: '26,000 FCFA' },
+        ],
       },
       {
         slug: 'bouteille-6kg', title: '6 kg cylinder', icon: 'bottle', ph: 'ph-warm', image: '/images/products/bouteille-6kg.png',
@@ -752,7 +779,8 @@ export const CONTENT = {
           'The 6 kg cylinder is the lightest format in the PleinGaz range: ideal for small homes, studios and occasional use, it is effortless to carry and store.',
           'Easy to handle, it offers comfortable autonomy for occasional cooking and refills in just a few minutes across our reseller network.',
         ],
-        features: ['Light 6 kg format, easy to carry', 'Ideal for small homes and studios', 'Fast refill from 6,500 FCFA'],
+        features: ['Light 6 kg format, easy to carry', 'Ideal for small homes and studios', 'Refill from 3,120 FCFA'],
+        priceGrid: [{ size: '6 kg', consigne: '13,000 FCFA', recharge: '3,120 FCFA' }],
       },
       {
         slug: 'bouteille-12-5kg', title: '12.5 kg cylinder', icon: 'canister', ph: 'ph-warm', image: '/images/products/bouteille-12kg.png',
@@ -761,6 +789,7 @@ export const CONTENT = {
           'It is the favourite choice for families: a great balance between autonomy and footprint, with refills available throughout Cameroon.',
         ],
         features: ['12.5 kg family format', 'Great autonomy for daily use', 'Fast refills at over 1,000 points of sale'],
+        priceGrid: [{ size: '12.5 kg', consigne: '18,500 FCFA', recharge: '6,500 FCFA' }],
       },
       {
         slug: 'bouteille-50kg', title: '50 kg cylinder', icon: 'factory', ph: 'ph-slate', image: '/images/products/bouteille-50kg.png',
@@ -769,6 +798,7 @@ export const CONTENT = {
           'Sturdy and inspected to strict safety standards, it keeps your professional operations running smoothly.',
         ],
         features: ['Large 50 kg format, long autonomy', 'Ideal for restaurants, hotels and industry', 'Refill from 26,000 FCFA'],
+        priceGrid: [{ size: '50 kg', consigne: '50,000 FCFA', recharge: '26,000 FCFA' }],
       },
       {
         slug: 'rechauds-cuisinieres', title: 'Gas stove', icon: 'stove', ph: 'ph-crowd', image: '/images/products/plaque-gaz.png',
