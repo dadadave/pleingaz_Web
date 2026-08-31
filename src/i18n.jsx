@@ -121,6 +121,8 @@ export const CONTENT = {
       intro:
         'Choisir PleinGaz, c’est choisir un gaz pratique et disponible pour un confort maximal au quotidien. Trouvez le produit qu’il vous faut.',
       learnMore: 'En savoir plus',
+      prev: 'Produits précédents',
+      next: 'Produits suivants',
     },
     products: [
       { title: 'Bouteille 6 kg', desc: 'Idéale pour les petits foyers, légère et facile à transporter.', price: 'Recharge dès 3 120 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteille-6kg' },
@@ -547,6 +549,8 @@ export const CONTENT = {
       intro:
         'Choosing PleinGaz means choosing practical, available gas for maximum daily comfort. Find the product you need.',
       learnMore: 'Learn more',
+      prev: 'Previous products',
+      next: 'Next products',
     },
     products: [
       { title: '6 kg cylinder', desc: 'Ideal for small households, light and easy to carry.', price: 'Refill from 3,120 FCFA', icon: 'bottle', image: '/images/products/bouteille-6kg.png', slug: 'bouteille-6kg' },

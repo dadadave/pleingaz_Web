@@ -491,23 +491,68 @@ ul { list-style: none; }
 .portfolio-head p { color: var(--muted); font-size: 14.5px; max-width: 420px; }
 .portfolio-head .section-title { margin-top: 12px; }
 
+/* The carousel is a real scroll container: the visitor can drag, swipe, use the
+   wheel, the arrow buttons or the arrow keys to browse and open a product.
+   The drift itself is driven from JS (Portfolio.jsx), not a CSS keyframe. */
+.portfolio-carousel-wrap { position: relative; }
 .portfolio-carousel {
-  overflow: hidden;
-  /* Fade the cards in/out at the edges instead of a hard cut. */
-  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 4%, #000 96%, transparent 100%);
-  mask-image: linear-gradient(90deg, transparent 0, #000 4%, #000 96%, transparent 100%);
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  cursor: grab;
+  scrollbar-width: none;      /* the arrow buttons are the affordance */
+  -ms-overflow-style: none;
+  /* Fade the cards in/out at the edges instead of a hard cut. A fixed width
+     (rather than a %) keeps the arrow buttons sitting on transparent pixels
+     at every viewport size. */
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 46px, #000 calc(100% - 46px), transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 46px, #000 calc(100% - 46px), transparent 100%);
 }
+.portfolio-carousel::-webkit-scrollbar { display: none; }
+.portfolio-carousel:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+  border-radius: var(--radius);
+}
+.portfolio-carousel.is-dragging { cursor: grabbing; user-select: none; }
 .portfolio-track {
   display: flex;
   width: max-content;
   padding: 14px 0; /* room for the hover lift/shadow */
-  animation: portfolioScroll 26s linear infinite;
 }
-.portfolio-carousel:hover .portfolio-track { animation-play-state: paused; }
-@keyframes portfolioScroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+
+/* Prev / next buttons, floating over the faded edges of the carousel. */
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--white);
+  color: var(--navy);
+  display: grid;
+  place-items: center;
+  box-shadow: var(--shadow-card);
+  transition: transform .18s cubic-bezier(.2,.7,.3,1), background-color .18s ease,
+              color .18s ease, border-color .18s ease;
 }
+.carousel-nav svg { width: 20px; height: 20px; }
+/* Pulled into the container gutter (--pad is 24px at every width), so the
+   buttons sit beside the cards rather than on top of them. */
+.carousel-nav.prev { left: -22px; transform: translateY(-50%) rotate(180deg); }
+.carousel-nav.next { right: -22px; transform: translateY(-50%); }
+.carousel-nav:hover {
+  background: var(--red);
+  color: #fff;
+  border-color: var(--red);
+}
+.carousel-nav.prev:hover { transform: translateY(-50%) rotate(180deg) scale(1.08); }
+.carousel-nav.next:hover { transform: translateY(-50%) scale(1.08); }
+.carousel-nav.prev:active { transform: translateY(-50%) rotate(180deg) scale(.94); }
+.carousel-nav.next:active { transform: translateY(-50%) scale(.94); }
+.carousel-nav:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
 .product-card {
   flex: 0 0 236px;
   width: 236px;
@@ -823,9 +868,10 @@ ul { list-style: none; }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; transition: none; }
-  .btn, .product-card, .news-card, .video-card { transition: none; }
-  /* The product/news carousels keep auto-scrolling: they're a core
-     part of the design and should animate on every device. */
+  .btn, .product-card, .news-card, .video-card, .carousel-nav { transition: none; }
+  /* The news carousel keeps auto-scrolling: it's a core part of the design.
+     The product carousel stops drifting (Portfolio.jsx) — visitors can still
+     browse it by hand with the arrows, a swipe or the arrow keys. */
 }
 
 /* ============================ Placeholder imagery ============================ */
