@@ -28,7 +28,14 @@ export const Icon = ({ name, ...rest }) => {
     mapPin: (<><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10Z" /><circle cx="12" cy="11" r="2.5" /></>),
     whatsapp: (<><path d="M20.5 3.5A11 11 0 0 0 3.2 16.8L2 22l5.3-1.4A11 11 0 1 0 20.5 3.5Z" /><path d="M8.5 7.5c.3-.6.6-.6.9-.6h.6c.2 0 .5 0 .7.6l.9 2c.1.3.1.5 0 .7l-.5.8c-.1.2-.2.4 0 .7a7 7 0 0 0 3 2.9c.3.2.5.1.7 0l.8-.8c.2-.2.4-.2.7-.1l2 .9c.3.1.5.3.5.5s0 1.2-.4 1.8c-.4.6-1.6 1.2-2.3 1.2a8.5 8.5 0 0 1-8-6.4c-.2-.9 0-2 .5-2.8Z" /></>),
     clock: (<><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></>),
-    gasBottle: (<><path d="M8 12a4 4 0 0 1 8 0v7a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2z" /><path d="M10.5 8.2V6.5a1.5 1.5 0 0 1 3 0v1.7" /><path d="M10.5 4.5h3" /><path d="M8 14.5h8" /></>),
+    // LPG cylinder: straight body sides with a shoulder, neck and valve handwheel.
+    // Straight sides (rather than a dome) and the wide valve are what keep it from
+    // reading as a toiletry bottle at small sizes.
+    gasBottle: (<><path d="M7 19.5V13c0-2 1.4-3 3-3.4h4c1.6.4 3 1.4 3 3.4v6.5A1.5 1.5 0 0 1 15.5 21h-7A1.5 1.5 0 0 1 7 19.5Z" /><path d="M10.8 9.6V6.6h2.4v3" /><path d="M9.6 6.6h4.8" /></>),
+    calendar: (<><rect x="3" y="5" width="18" height="16" rx="2.5" /><path d="M3 10.5h18" /><path d="M8 3v4M16 3v4" /></>),
+    // Shop with a scalloped awning — reads as a point of sale, where the plain
+    // `shop` box can be mistaken for `house`.
+    storefront: (<><path d="M4 10v10h16V10" /><path d="M9.5 20v-5.5h5V20" /><path d="M2.7 9.6 4.4 4h15.2l1.7 5.6" /><path d="M2.7 9.6a2.3 2.3 0 0 0 4.6 0 2.3 2.3 0 0 0 4.7 0 2.3 2.3 0 0 0 4.7 0 2.3 2.3 0 0 0 4.6 0" /></>),
     house: (<><path d="M3 11 12 3l9 8" /><path d="M5 10v10h14V10" /><path d="M10 20v-6h4v6" /></>),
     headset: (<><path d="M4 13v-1a8 8 0 0 1 16 0v1" /><rect x="3" y="13" width="4" height="6.5" rx="1.6" /><rect x="17" y="13" width="4" height="6.5" rx="1.6" /><path d="M20 19.5a3 3 0 0 1-3 3h-2.5" /></>),
     alert: (<><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" /><path d="M12 9v4" /><path d="M12 17h.01" /></>),

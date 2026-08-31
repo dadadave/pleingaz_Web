@@ -137,8 +137,8 @@ export const CONTENT = {
     figures: {
       eyebrow: 'Chiffres clés',
       list: [
-        { num: '2015', plus: '', cap: 'Au service des foyers depuis', icon: 'shieldCheck' },
-        { num: '1 000', plus: '+', cap: 'Points de vente au Cameroun', icon: 'house' },
+        { num: '2015', plus: '', cap: 'Au service des foyers depuis', icon: 'calendar' },
+        { num: '1 000', plus: '+', cap: 'Points de vente au Cameroun', icon: 'storefront' },
         { num: '1,5 M', plus: '', cap: 'Bouteilles remplies chaque année', icon: 'gasBottle' },
         { num: '24/7', plus: '', cap: 'Service client disponible', icon: 'headset' },
       ],
@@ -565,8 +565,8 @@ export const CONTENT = {
     figures: {
       eyebrow: 'Key figures',
       list: [
-        { num: '2015', plus: '', cap: 'Serving households since', icon: 'shieldCheck' },
-        { num: '1,000', plus: '+', cap: 'Points of sale in Cameroon', icon: 'house' },
+        { num: '2015', plus: '', cap: 'Serving households since', icon: 'calendar' },
+        { num: '1,000', plus: '+', cap: 'Points of sale in Cameroon', icon: 'storefront' },
         { num: '1.5 M', plus: '', cap: 'Cylinders filled each year', icon: 'gasBottle' },
         { num: '24/7', plus: '', cap: 'Customer service available', icon: 'headset' },
       ],
