@@ -103,22 +103,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
-          <div className="footer-col">
-            <h4>{t.footer.partnersTitle}</h4>
-            <div className="partner-grid">
-              {t.footer.partners.map((name) => (
-                <div className="partner-card" key={name}>
-                  <span className="plogo">
-                    <svg width="18" height="18" viewBox="0 0 24 24" className="tri" fill="currentColor">
-                      <path d="M12 3 2 20h20L12 3Z" />
-                    </svg>
-                    {name}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 

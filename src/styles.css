@@ -763,7 +763,7 @@ ul { list-style: none; }
 
 .footer-main {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  grid-template-columns: 1.5fr 1fr 1fr;
   gap: 40px;
   padding: 44px 0;
 }
@@ -797,23 +797,6 @@ ul { list-style: none; }
 .footer-col a:hover { color: #fff; }
 
 .footer-col { min-width: 0; }
-.partner-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 4px;
-}
-.partner-card {
-  background: #fff; border-radius: 10px; padding: 12px 10px;
-  display: grid; place-items: center; min-width: 0;
-}
-.partner-card .plogo {
-  display: flex; align-items: center; gap: 6px;
-  font-weight: 800; color: var(--navy); font-size: 14px;
-  white-space: nowrap;
-}
-.partner-card .plogo .tri { color: var(--gold-deep); flex-shrink: 0; }
-
 .footer-bar { border-top: 1px solid rgba(255,255,255,.1); }
 .footer-bar-inner {
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
