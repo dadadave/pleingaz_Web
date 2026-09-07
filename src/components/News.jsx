@@ -4,6 +4,7 @@ import { useLang } from '../i18n.jsx';
 
 export default function News() {
   const { t } = useLang();
+  const v = t.news.video;
   const video = useRef(null);
   const [playing, setPlaying] = useState(false);
 
@@ -26,15 +27,24 @@ export default function News() {
   return (
     <section className="news" id="news">
       <div className="container">
-        <div className="videos reveal">
-          <span className="eyebrow">{t.news.videosEyebrow}</span>
-          <article className={`video-card${playing ? ' is-playing' : ''}`}>
+        <div className="videos-grid">
+          <div className="videos-intro reveal">
+            <span className="eyebrow">{t.news.videosEyebrow}</span>
+            <h2 className="section-title">{t.news.videosTitle}</h2>
+            <p className="videos-lead">{t.news.videosLead}</p>
+            <p className="videos-meta">
+              <span className="date"><Icon name="clock" strokeWidth={2} />{v.date}</span>
+              <span className="videos-meta-title">{v.title}</span>
+            </p>
+          </div>
+
+          <div className={`video-card reveal${playing ? ' is-playing' : ''}`}>
             <div className="video-thumb">
               <video
                 ref={video}
                 className="video-media"
-                src={t.news.video.src}
-                poster={t.news.video.poster}
+                src={v.src}
+                poster={v.poster}
                 preload="none"
                 playsInline
                 controls={playing}
@@ -45,19 +55,16 @@ export default function News() {
                 <button
                   type="button"
                   className="video-play"
-                  aria-label={`${t.news.video.play} : ${t.news.video.title}`}
+                  aria-label={`${v.play} : ${v.title}`}
                   onClick={start}
                 >
                   <span className="video-veil" aria-hidden="true" />
                   <span className="pbtn"><Icon name="play" /></span>
+                  <span className="video-length" aria-hidden="true">{v.length}</span>
                 </button>
               )}
             </div>
-            <div className="video-info">
-              <span className="date">◷ {t.news.video.date}</span>
-              <h3>{t.news.video.title}</h3>
-            </div>
-          </article>
+          </div>
         </div>
       </div>
     </section>

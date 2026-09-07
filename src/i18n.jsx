@@ -164,12 +164,15 @@ export const CONTENT = {
     },
     news: {
       videosEyebrow: 'Vidéos',
+      videosTitle: 'PleinGaz en vidéo',
+      videosLead: 'Bouteilles, réchauds et accessoires : découvrez la gamme PleinGaz en images.',
       video: {
         date: '03 01 2026',
         title: 'PleinGaz sensibilise aux incidents liés au gaz',
         src: '/videos/pleingaz-1.mp4',
         poster: '/images/video-poster.jpg',
         play: 'Lire la vidéo',
+        length: '0:34',
       },
     },
     footer: {
@@ -590,12 +593,15 @@ export const CONTENT = {
     },
     news: {
       videosEyebrow: 'Videos',
+      videosTitle: 'PleinGaz on video',
+      videosLead: 'Cylinders, stoves and accessories: see the PleinGaz range in motion.',
       video: {
         date: '03 01 2026',
         title: 'PleinGaz raises awareness about gas-related incidents',
         src: '/videos/pleingaz-1.mp4',
         poster: '/images/video-poster.jpg',
         play: 'Play video',
+        length: '0:34',
       },
     },
     footer: {
