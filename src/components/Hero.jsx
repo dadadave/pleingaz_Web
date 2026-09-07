@@ -2,13 +2,15 @@ import { useEffect, useState } from 'react';
 import { Icon } from './Icons.jsx';
 import { useLang } from '../i18n.jsx';
 
-// Language-neutral look for each slide (background photo, or fallback colour +
-// watermark icon when no photo is set yet).
+// Language-neutral look for each slide. `image` is a photo that fills the card;
+// `logo` is the brand plate — the wordmark is artwork, not a photograph, so it
+// gets laid over a light panel at its own proportions instead of being cropped
+// to fill the frame.
 const SLIDE_STYLE = [
-  { bg: 'ph-slate', icon: 'cylinderBig', image: '/images/hero/hero-logo.jpg' },
+  { bg: 'hero-plate', icon: 'cylinderBig', logo: '/assets/logo.png' },
   { bg: 'ph-blue', icon: 'phone', image: '/images/hero/hero-service.jpg' },
-  { bg: 'ph-worker', icon: 'team', image: '/images/hero/hero-logo.jpg' },
-  { bg: 'ph-crowd', icon: 'shieldCheck', image: '/images/hero/hero-logo.jpg' },
+  { bg: 'hero-plate', icon: 'team', logo: '/assets/logo.png' },
+  { bg: 'hero-plate', icon: 'shieldCheck', logo: '/assets/logo.png' },
 ];
 
 const INTERVAL = 5000;
@@ -60,18 +62,25 @@ export default function Hero() {
                 aria-hidden={i !== active}
               >
                 <div className={`ph ${style.bg}`} />
-                {style.image ? (
+                {style.image && (
                   <img className="hero-photo" src={style.image} alt="" aria-hidden="true" />
-                ) : (
+                )}
+                {!style.image && !style.logo && (
                   <div className="ph-icon" aria-hidden="true">
                     <Icon name={style.icon} strokeWidth={1.5} />
                   </div>
                 )}
-                <div className="veil" />
+                <div className={`veil${style.logo ? ' veil-plate' : ''}`} />
                 <div className="slide-body">
                   <h2>{s.title}</h2>
                   <p>{s.text}</p>
                 </div>
+                {/* Above the veil, so the wordmark keeps its brand colours. */}
+                {style.logo && (
+                  <div className="hero-logo-plate" aria-hidden="true">
+                    <img src={style.logo} alt="" />
+                  </div>
+                )}
               </div>
             );
           })}
