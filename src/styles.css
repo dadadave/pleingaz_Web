@@ -741,18 +741,41 @@ ul { list-style: none; }
   position: relative;
   box-shadow: var(--shadow-soft);
 }
-.video-thumb { height: 210px; position: relative; }
+/* 16:9 — matches the source clip, so the still and the playback frame agree. */
+.video-thumb { aspect-ratio: 16 / 9; position: relative; background: #0d1116; }
+/* Poster still is a real image, so the 14 MB clip is only fetched on play. */
+.video-media {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
 .video-play {
   position: absolute; inset: 0; display: grid; place-items: center;
+  border: 0; padding: 0; background: transparent; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+/* Gradient + brand tint over the still, so the white play button reads on any frame. */
+.video-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,.12) 55%, rgba(0,0,0,.3)),
+    radial-gradient(120% 90% at 50% 55%, rgba(238,28,37,.18), transparent 70%);
 }
 .video-play .pbtn {
+  position: relative;
   width: 58px; height: 58px; border-radius: 50%;
   background: rgba(255,255,255,.92); color: var(--navy);
   display: grid; place-items: center;
   box-shadow: 0 10px 26px -8px rgba(0,0,0,.5);
-  transition: transform .18s ease;
+  transition: transform .22s cubic-bezier(.34, 1.56, .64, 1);
 }
-.video-card:hover .pbtn { transform: scale(1.08); }
+.video-card:hover .pbtn,
+.video-play:focus-visible .pbtn { transform: scale(1.08); }
+.video-play:active .pbtn { transform: scale(.96); }
+.video-play:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: -3px;
+}
 .video-info { background: #fff; padding: 16px; }
 .video-info .date { font-size: 10.5px; color: var(--gold-deep); font-weight: 700; display:inline-flex; gap:5px; align-items:center; }
 .video-info h3 { font-size: 14px; font-weight: 800; color: var(--navy); margin-top: 6px; line-height: 1.3; }
@@ -868,7 +891,7 @@ ul { list-style: none; }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; transition: none; }
-  .btn, .product-card, .news-card, .video-card, .carousel-nav { transition: none; }
+  .btn, .product-card, .news-card, .video-card, .carousel-nav, .video-play .pbtn { transition: none; }
   /* The news carousel keeps auto-scrolling: it's a core part of the design.
      The product carousel stops drifting (Portfolio.jsx) — visitors can still
      browse it by hand with the arrows, a swipe or the arrow keys. */

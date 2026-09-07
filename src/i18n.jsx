@@ -167,7 +167,13 @@ export const CONTENT = {
       tag: 'News',
       readMore: 'Lire la suite',
       videosEyebrow: 'Vidéos',
-      video: { date: '03 01 2026', title: 'PleinGaz sensibilise aux incidents liés au gaz' },
+      video: {
+        date: '03 01 2026',
+        title: 'PleinGaz sensibilise aux incidents liés au gaz',
+        src: '/videos/pleingaz-1.mp4',
+        poster: '/images/video-poster.jpg',
+        play: 'Lire la vidéo',
+      },
       items: [
         { date: '06 06 2026', ph: 'ph-blue', icon: 'team', title: 'PleinGaz certifié conforme aux normes environnementales', excerpt: 'PleinGaz et son partenaire transport ont reçu leurs certificats de conformité environnementale.' },
         { date: '18 03 2026', ph: 'ph-warm', icon: 'person', title: 'Don à la pouponnière : PleinGaz aux côtés des familles', excerpt: 'Dans le cadre de ses actions solidaires, PleinGaz a soutenu une pouponnière de la région.' },
@@ -595,7 +601,13 @@ export const CONTENT = {
       tag: 'News',
       readMore: 'Read more',
       videosEyebrow: 'Videos',
-      video: { date: '03 01 2026', title: 'PleinGaz raises awareness about gas-related incidents' },
+      video: {
+        date: '03 01 2026',
+        title: 'PleinGaz raises awareness about gas-related incidents',
+        src: '/videos/pleingaz-1.mp4',
+        poster: '/images/video-poster.jpg',
+        play: 'Play video',
+      },
       items: [
         { date: '06 06 2026', ph: 'ph-blue', icon: 'team', title: 'PleinGaz certified compliant with environmental standards', excerpt: 'PleinGaz and its transport partner received their environmental compliance certificates.' },
         { date: '18 03 2026', ph: 'ph-warm', icon: 'person', title: 'Nursery donation: PleinGaz alongside families', excerpt: 'As part of its charitable actions, PleinGaz supported a nursery in the region.' },
