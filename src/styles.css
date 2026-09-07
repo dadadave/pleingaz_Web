@@ -668,72 +668,10 @@ ul { list-style: none; }
 .distributors h3 { font-size: 26px; font-weight: 800; line-height: 1.15; }
 .distributors p { font-size: 13.5px; color: rgba(255,255,255,.92); margin: 14px 0 22px; }
 
-/* ============================ News + video ============================ */
+/* ============================ Video ============================ */
 .news { background: var(--gray-2); padding: 74px 0; }
-.news-top {
-  display: grid; grid-template-columns: 1fr auto; align-items: center;
-  margin-bottom: 34px;
-}
-.news-grid {
-  display: grid;
-  grid-template-columns: 2.2fr 1fr;
-  gap: 30px;
-  align-items: start;
-}
-/* Keep the carousel column from blowing out and pushing the videos column
-   off to the right (grid items default to min-width: auto). */
-.news-grid > * { min-width: 0; }
-.news-carousel {
-  overflow: hidden; min-width: 0;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 3%, #000 97%, transparent 100%);
-  mask-image: linear-gradient(90deg, transparent 0, #000 3%, #000 97%, transparent 100%);
-}
-.news-track {
-  display: flex;
-  width: max-content;
-  padding: 10px 0;
-  animation: newsScroll 24s linear infinite;
-}
-.news-carousel:hover .news-track { animation-play-state: paused; }
-@keyframes newsScroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-.news-card {
-  flex: 0 0 262px;
-  width: 262px;
-  margin-right: 20px;
-  background: #fff;
-  border: 2px solid transparent;
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-soft);
-  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
-  display: flex; flex-direction: column;
-}
-.news-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-card); border-color: var(--red); }
-.news-card .thumb { height: 128px; position: relative; }
-.news-card .body { padding: 16px 16px 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
-.news-meta { display: flex; align-items: center; gap: 10px; font-size: 10.5px; }
-.news-meta .date { color: var(--gold-deep); font-weight: 700; display: inline-flex; gap: 5px; align-items: center; }
-.news-meta .tag {
-  color: var(--muted); font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
-  display: inline-flex; gap: 5px; align-items: center;
-}
-.news-card h3 { font-size: 13.5px; font-weight: 800; color: var(--navy); line-height: 1.3; }
-.news-card p { font-size: 12px; color: var(--muted); flex: 1; }
-.read-more {
-  display: inline-flex; align-items: center; gap: 8px;
-  font-size: 11.5px; font-weight: 700; color: var(--navy); margin-top: 4px;
-}
-.read-more .box {
-  width: 22px; height: 22px; border-radius: 6px;
-  border: 1.5px solid var(--orange); color: var(--orange);
-  display: grid; place-items: center;
-  transition: background-color .16s ease, color .16s ease;
-}
-.read-more:hover .box { background: var(--orange); color: #fff; }
-
+/* Single featured clip, centred — wide enough to watch, not a full-bleed hero. */
+.videos { max-width: 760px; margin: 0 auto; }
 .videos .eyebrow { margin-bottom: 20px; }
 .video-card {
   border-radius: var(--radius);
@@ -776,9 +714,10 @@ ul { list-style: none; }
   outline: 3px solid var(--red);
   outline-offset: -3px;
 }
-.video-info { background: #fff; padding: 16px; }
-.video-info .date { font-size: 10.5px; color: var(--gold-deep); font-weight: 700; display:inline-flex; gap:5px; align-items:center; }
-.video-info h3 { font-size: 14px; font-weight: 800; color: var(--navy); margin-top: 6px; line-height: 1.3; }
+/* Caption scales with the featured card — 14px read as an afterthought here. */
+.video-info { background: #fff; padding: 18px 22px 20px; }
+.video-info .date { font-size: 11px; color: var(--gold-deep); font-weight: 700; display:inline-flex; gap:5px; align-items:center; }
+.video-info h3 { font-size: 18px; font-weight: 800; color: var(--navy); margin-top: 7px; line-height: 1.3; letter-spacing: -.01em; }
 
 /* ============================ Footer ============================ */
 .footer {
@@ -891,9 +830,8 @@ ul { list-style: none; }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; transition: none; }
-  .btn, .product-card, .news-card, .video-card, .carousel-nav, .video-play .pbtn { transition: none; }
-  /* The news carousel keeps auto-scrolling: it's a core part of the design.
-     The product carousel stops drifting (Portfolio.jsx) — visitors can still
+  .btn, .product-card, .video-card, .carousel-nav, .video-play .pbtn { transition: none; }
+  /* The product carousel stops drifting (Portfolio.jsx) — visitors can still
      browse it by hand with the arrows, a swipe or the arrow keys. */
 }
 
@@ -954,7 +892,6 @@ ul { list-style: none; }
   .figures-grid { grid-template-columns: 1fr; }
   /* Stacked layout: keep the card contained, no right bleed / no lift. */
   .distributors { min-height: 260px; width: auto; border-radius: 22px; margin-top: 0; }
-  .news-grid { grid-template-columns: 1fr; }
   .footer-main { grid-template-columns: 1fr 1fr; }
   .footer-top { grid-template-columns: 1fr; }
   .socials { margin-left: 0; }

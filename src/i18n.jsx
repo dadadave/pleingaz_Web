@@ -163,9 +163,6 @@ export const CONTENT = {
       note: 'Réseau en expansion continue — de nouveaux points de vente sont ajoutés régulièrement.',
     },
     news: {
-      eyebrow: 'Actualités PleinGaz',
-      tag: 'News',
-      readMore: 'Lire la suite',
       videosEyebrow: 'Vidéos',
       video: {
         date: '03 01 2026',
@@ -174,11 +171,6 @@ export const CONTENT = {
         poster: '/images/video-poster.jpg',
         play: 'Lire la vidéo',
       },
-      items: [
-        { date: '06 06 2026', ph: 'ph-blue', icon: 'team', title: 'PleinGaz certifié conforme aux normes environnementales', excerpt: 'PleinGaz et son partenaire transport ont reçu leurs certificats de conformité environnementale.' },
-        { date: '18 03 2026', ph: 'ph-warm', icon: 'person', title: 'Don à la pouponnière : PleinGaz aux côtés des familles', excerpt: 'Dans le cadre de ses actions solidaires, PleinGaz a soutenu une pouponnière de la région.' },
-        { date: '18 03 2026', ph: 'ph-crowd', icon: 'building', title: "Rapport d'avancement : rénovation du complexe scolaire", excerpt: "PleinGaz et la fondation ont effectué une visite de suivi du chantier de l'école primaire." },
-      ],
     },
     footer: {
       newsletterTitle: 'Vous souhaitez recevoir nos actualités ?',
@@ -597,9 +589,6 @@ export const CONTENT = {
       note: 'A continuously growing network — new points of sale are added regularly.',
     },
     news: {
-      eyebrow: 'PleinGaz news',
-      tag: 'News',
-      readMore: 'Read more',
       videosEyebrow: 'Videos',
       video: {
         date: '03 01 2026',
@@ -608,11 +597,6 @@ export const CONTENT = {
         poster: '/images/video-poster.jpg',
         play: 'Play video',
       },
-      items: [
-        { date: '06 06 2026', ph: 'ph-blue', icon: 'team', title: 'PleinGaz certified compliant with environmental standards', excerpt: 'PleinGaz and its transport partner received their environmental compliance certificates.' },
-        { date: '18 03 2026', ph: 'ph-warm', icon: 'person', title: 'Nursery donation: PleinGaz alongside families', excerpt: 'As part of its charitable actions, PleinGaz supported a nursery in the region.' },
-        { date: '18 03 2026', ph: 'ph-crowd', icon: 'building', title: 'Progress report: renovation of the school complex', excerpt: 'PleinGaz and the foundation carried out a follow-up visit to the primary school worksite.' },
-      ],
     },
     footer: {
       newsletterTitle: 'Want to receive our news?',
